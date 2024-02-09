@@ -1,9 +1,11 @@
-import Header from "./components/Header";
+import PageHeader from "./components/PageHeader";
+import PageContent from "./components/PageContent";
 
 const App = () => {
   return (
     <>
-      <Header />
+      <PageHeader />
+      <PageContent />
     </>
   );
 };

@@ -1,13 +1,20 @@
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Logo from "./Logo";
+
 import styled from "styled-components";
 
-const Navbar = () => {
+const Navbar = ({ showMenu, setShowMenu }) => {
   return (
     <Container>
-      <h1 className="logo">Shipn.</h1>
-      <div className="menu-cover">
-        <Menu />
-      </div>
+      <Logo />
+      <button
+        className="menu-btn"
+        onClick={() => {
+          setShowMenu(!showMenu);
+        }}
+      >
+        {showMenu ? <X /> : <Menu />}
+      </button>
     </Container>
   );
 };
@@ -21,16 +28,12 @@ const Container = styled.nav`
   align-items: center;
   padding: 0 15px;
   height: 4rem;
+  position: relative;
 
-  .logo {
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: -1px;
-  }
-
-  .menu-cover {
+  .menu-btn {
     border: 1px solid black;
     display: flex;
     padding: 2px;
+    background: none;
   }
 `;
