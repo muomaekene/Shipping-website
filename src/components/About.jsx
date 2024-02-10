@@ -9,7 +9,7 @@ import GroupButton from "./Button";
 
 const About = () => {
   return (
-    <Section>
+    <Section idValue="about">
       <SectionTitle title="Who Are We?" />
       <SectionImage
         imgSrc={menInWharehouse}

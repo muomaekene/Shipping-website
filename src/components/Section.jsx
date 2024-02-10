@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 const Section = ({ backgroundColor, ...props }) => {
-  console.log(backgroundColor);
-
-  return <Container style={{ backgroundColor }}>{props.children}</Container>;
+  return (
+    <Container id={props.idValue} style={{ backgroundColor }}>
+      {props.children}
+    </Container>
+  );
 };
 
 export default Section;

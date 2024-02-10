@@ -12,7 +12,7 @@ import SectionImage from "./SectionImage";
 
 const Careers = () => {
   return (
-    <Section>
+    <Section idValue="careers">
       <SectionTitle title="Become Part of Our Team" />
       <SectionImage imgSrc={deliveryPeople} imgAlt="delivering items" />
       <SectionImage imgSrc={manWriting} imgAlt="man writing" />

@@ -12,7 +12,7 @@ import styled from "styled-components";
 
 const ContactUs = () => {
   return (
-    <Section backgroundColor="#eff6fd">
+    <Section idValue="contact-us" backgroundColor="#eff6fd">
       <SectionTitle title="We'd Love to Hear From You" />
       <SectionImage
         imgSrc={customerService}

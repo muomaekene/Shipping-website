@@ -4,11 +4,21 @@ const MobileMenu = () => {
   return (
     <Container>
       <ul>
-        <li>Home</li>
-        <li>About Our Company</li>
-        <li>Services We Offer</li>
-        <li>Career & Jobs</li>
-        <li>Contact Us</li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="#about">About Our Company</a>
+        </li>
+        <li>
+          <a href="#services">Services We Offer</a>
+        </li>
+        <li>
+          <a href="#careers">Career & Jobs</a>
+        </li>
+        <li>
+          <a href="#contact-us">Contact Us</a>
+        </li>
       </ul>
     </Container>
   );
@@ -29,5 +39,10 @@ const Container = styled.section`
     margin: 20px 0;
     font-size: 14px;
     font-weight: 300;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
 `;

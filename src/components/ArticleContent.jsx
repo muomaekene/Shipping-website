@@ -7,7 +7,7 @@ const ArticleContent = ({ content }) => {
 export default ArticleContent;
 
 const Paragraph = styled.p`
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   margin-top: 5px;
   margin-bottom: 10px;

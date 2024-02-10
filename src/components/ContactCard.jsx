@@ -20,7 +20,7 @@ const Card = styled.div`
   background: #fff;
 
   .contact {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
     margin-left: 10px;
     border-bottom: 1px solid #b60606;

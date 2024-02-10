@@ -46,13 +46,12 @@ const Article = styled.article`
     font-weight: 500;
     margin-top: 10px;
     font-size: 14px;
-    text-transform: <caption></caption>;
   }
 
   .review {
     text-align: center;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   span {

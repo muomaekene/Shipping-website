@@ -14,7 +14,7 @@ import styled from "styled-components";
 
 const Services = () => {
   return (
-    <Section backgroundColor="#f1f3f5">
+    <Section idValue="services" backgroundColor="#f1f3f5">
       <SectionTitle title="How Can We Help You?" />
 
       <Article>
