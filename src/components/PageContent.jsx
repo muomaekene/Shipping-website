@@ -1,25 +1,27 @@
 import About from "./About";
 import Careers from "./Careers";
 import ContactUs from "./ContactUs";
-import Footer from "./Footer";
 import Reviews from "./Reviews";
 import Services from "./Services";
+import TopFooter from "./TopFooter";
+import Footer from "./Footer";
 
 import styled from "styled-components";
 
 const PageContent = () => {
   return (
-    <Container>
+    <Main>
       <About />
       <Reviews />
       <Services />
       <Careers />
       <ContactUs />
+      <TopFooter />
       <Footer />
-    </Container>
+    </Main>
   );
 };
 
 export default PageContent;
 
-const Container = styled.main``;
+const Main = styled.main``;

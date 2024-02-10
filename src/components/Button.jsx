@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-const GroupButton = ({ name }) => {
-  return <Container>{name}</Container>;
+const Button = ({ name }) => {
+  return <CustomButton>{name}</CustomButton>;
 };
 
-export default GroupButton;
+export default Button;
 
-const Container = styled.button`
+const CustomButton = styled.button`
   width: fit-content;
   padding: 5px 10px;
   background: lightblue;

@@ -1,36 +1,27 @@
-import SectionTitle from "./SectionTitle";
 import menInWharehouse from "../images/men-in-wharehouse.jpg";
 
-import GroupTitle from "../components/GroupTitle";
-import GroupContent from "../components/GroupContent";
-import GroupButton from "../components/GroupButton";
-
-import styled from "styled-components";
+import Section from "./Section";
+import SectionImage from "./SectionImage";
+import SectionTitle from "./SectionTitle";
+import ArticleTitle from "./ArticleTitle";
+import ArticleContent from "./ArticleContent";
+import GroupButton from "./Button";
 
 const About = () => {
   return (
-    <Container>
+    <Section>
       <SectionTitle title="Who Are We?" />
-      <img
-        src={menInWharehouse}
-        alt="Men standing in wharehouse"
-        className="image"
+      <SectionImage
+        imgSrc={menInWharehouse}
+        imgAlt="Men standing in wharehouse"
       />
-      <GroupTitle title="We Are Global Leaders in the Business of Logistics and Shipping" />
-      <GroupContent content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorem, quo libero sequi cupiditate magnam, eum placeat ab explicabo dolorum molestiae dolor totam ex laboriosam quam inventore quisquam esse fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugiat, illo fugit quisquam sapiente voluptates nemo. Hic tenetur veniam beatae cupiditate temporibus sed, maxime corporis aliquam officia ex, deleniti est!" />
+      <ArticleTitle title="We Are Global Leaders in the Business of Logistics and Shipping" />
+      <ArticleContent content="Shippn Co is an international forwarder specialized in managing your shipments from one destination to another. We design and implement industry-leading solutions together with our worldwide network of partners." />
+      <ArticleContent content="With over 100+ dedicated employees, working around the globe, we deliver operational excellence to provide viable solutions to the most challenging supply chain questions. Therefore, most of our clients see us as one of the best logistics companies in the United States." />
+      <ArticleContent content="Our focus on providing excellence and value to our customers is made possible by our team of experts who bring passion to their work. We are totally committed to meeting and exceeding our customers' expectations." />
       <GroupButton name="Learn More" />
-    </Container>
+    </Section>
   );
 };
 
 export default About;
-
-const Container = styled.section`
-  padding: 20px;
-
-  .image {
-    width: 100%;
-    height: auto;
-    margin: 30px 0;
-  }
-`;

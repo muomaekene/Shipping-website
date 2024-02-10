@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Review = ({ image, name, comment }) => {
   return (
-    <Container>
+    <Article>
       <div className="image-cover">
         <img
           src={image}
@@ -20,13 +20,13 @@ const Review = ({ image, name, comment }) => {
         </p>
         <p className="customer-name">{name}</p>
       </div>
-    </Container>
+    </Article>
   );
 };
 
 export default Review;
 
-const Container = styled.article`
+const Article = styled.article`
   margin: 20px 0;
   border: 1px solid black;
   padding: 15px;

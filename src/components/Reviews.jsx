@@ -1,6 +1,5 @@
-import React from "react";
-import styled from "styled-components";
-import GroupTitle from "./GroupTitle";
+import Section from "./Section";
+import ArticleTitle from "./ArticleTitle";
 import Review from "./Review";
 
 import womanSmiling from "../images/woman-smiling.jpeg";
@@ -10,8 +9,8 @@ import olderWoman from "../images/older-woman.jpg";
 
 const Reviews = () => {
   return (
-    <Container>
-      <GroupTitle title="Over 50 000 People Have Trusted Us With Their Shipping. Here Are Some Of The Feeback We Got" />
+    <Section backgroundColor="#eff6fd">
+      <ArticleTitle title="Over 50 000 People Have Trusted Us With Their Shipping. Here Are Some Of The Feeback We Got" />
       <Review
         image={womanSmiling}
         name="Jane Doe"
@@ -40,13 +39,8 @@ const Reviews = () => {
           recusandae non molestiae quis unde qui architecto, velit, quae quia,
           obcaecati soluta!"
       />
-    </Container>
+    </Section>
   );
 };
 
 export default Reviews;
-
-const Container = styled.section`
-  background: #f7f7e0;
-  padding: 20px;
-`;

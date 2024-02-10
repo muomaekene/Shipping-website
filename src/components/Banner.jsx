@@ -1,22 +1,23 @@
+import ArticleContent from "./ArticleContent";
+import Button from "./Button";
+
 import goldenGate from "../images/golden-gate.jpeg";
 
 import styled from "styled-components";
-import GroupButton from "./GroupButton";
-import GroupContent from "./GroupContent";
 
 const Banner = () => {
   return (
     <Container>
       <article className="banner-article">
         <h2 className="banner-title">
-          The Most Reliable Shipping Company in San Francisco.
+          The Most Reliable Shipping Company in The West.
         </h2>
-        <GroupContent
+        <ArticleContent
           content="We move and deliver freight from the Bay Area to the world in a
           breeze. Don't hesitate to reach out to us whenever you want to send
           packages across the world."
         />
-        <GroupButton name="Get a Quote" />
+        <Button name="Get a Quote" />
       </article>
       <img
         src={goldenGate}

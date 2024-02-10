@@ -10,14 +10,14 @@ const PageHeader = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <Container>
+    <Header>
       <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
       {showMenu && <MobileMenu />}
       <Banner />
-    </Container>
+    </Header>
   );
 };
 
 export default PageHeader;
 
-const Container = styled.header``;
+const Header = styled.header``;

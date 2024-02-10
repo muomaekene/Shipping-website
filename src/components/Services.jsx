@@ -3,74 +3,58 @@ import cargoPlane from "../images/cargo-plane.jpg";
 import wharehouse from "../images/wharehouse.jpg";
 import doorstepDelivery from "../images/doorstep-delivery.jpg";
 
+import Section from "./Section";
 import SectionTitle from "./SectionTitle";
-import GroupTitle from "./GroupTitle";
-import GroupContent from "./GroupContent";
+import ArticleTitle from "./ArticleTitle";
+import ArticleContent from "./ArticleContent";
+import ArticleImage from "./ArticleImage";
+import Button from "./Button";
 
 import styled from "styled-components";
-import GroupButton from "./GroupButton";
 
 const Services = () => {
   return (
-    <Container>
+    <Section backgroundColor="#f1f3f5">
       <SectionTitle title="How Can We Help You?" />
 
-      <article className="item-group">
-        <img src={shipAtSea} alt="Ship sailing at sea" className="image" />
-        <GroupTitle title="International Freight Shipment of Every Size and Quantity" />
-        <GroupContent
+      <Article>
+        <ArticleImage imgSrc={shipAtSea} imgAlt="Ship sailing at sea" />
+        <ArticleTitle title="International Freight Shipment of Every Size and Quantity" />
+        <ArticleContent
           content="We move and deliver freight of all sizes and quantity to over 120
           destinations all over the world"
         />
-      </article>
+      </Article>
+      <Article>
+        <ArticleImage imgSrc={cargoPlane} imgAlt="Cargo plane in airport" />
+        <ArticleTitle title="Clearing and Forwarding" />
+        <ArticleContent
+          content="We move and deliver freight of all sizes and quantity to over 120
+          destinations all over the world"
+        />
+      </Article>
+      <Article>
+        <ArticleImage imgSrc={wharehouse} imgAlt="Wharehouse operator" />
+        <ArticleTitle title="Storage and Inventory Management" />
+        <ArticleContent
+          content="We move and deliver freight of all sizes and quantity to over 120
+          destinations all over the world"
+        />
+      </Article>
+      <Article>
+        <ArticleImage imgSrc={doorstepDelivery} imgAlt="Doorstep delivery" />
+        <ArticleTitle title="Speedy and Convenient Doorstep Delivery" />
+        <ArticleContent
+          content="We move and deliver freight of all sizes and quantity to over 120
+          destinations all over the world"
+        />
+      </Article>
 
-      <article className="item-group">
-        <img src={cargoPlane} alt="Cargo plane in airport" className="image" />
-        <GroupTitle title="Clearing and Forwarding" />
-        <GroupContent
-          content="We move and deliver freight of all sizes and quantity to over 120
-          destinations all over the world"
-        />
-      </article>
-
-      <article className="item-group">
-        <img src={wharehouse} alt="Wharehouse operator" className="image" />
-        <GroupTitle title="Storage and Inventory Management" />
-        <GroupContent
-          content="We move and deliver freight of all sizes and quantity to over 120
-          destinations all over the world"
-        />
-      </article>
-
-      <article className="item-group">
-        <img src={doorstepDelivery} alt="Doorstep delivery" className="image" />
-        <GroupTitle title="Speedy and Convenient Doorstep Delivery" />
-        <GroupContent
-          content="We move and deliver freight of all sizes and quantity to over 120
-          destinations all over the world"
-        />
-      </article>
-      <GroupButton name="View More Services" />
-    </Container>
+      <Button name="View More Services" />
+    </Section>
   );
 };
 
 export default Services;
 
-const Container = styled.section`
-  background: #f1f3f5;
-  width: 100%;
-  padding: 20px;
-
-  .item-group {
-    margin-top: 30px;
-  }
-
-  .image {
-    width: 100%;
-    height: auto;
-    border: 1px solid black;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-`;
+const Article = styled.article``;

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const Logo = () => {
-  return <Container>Shippn</Container>;
+  return <Heading>Shippn.</Heading>;
 };
 
 export default Logo;
 
-const Container = styled.h1`
+const Heading = styled.h1`
   font-size: 24px;
   font-weight: 400;
   letter-spacing: -1px;

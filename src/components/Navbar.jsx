@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Navbar = ({ showMenu, setShowMenu }) => {
   return (
-    <Container>
+    <Nav>
       <Logo />
       <button
         className="menu-btn"
@@ -15,13 +15,13 @@ const Navbar = ({ showMenu, setShowMenu }) => {
       >
         {showMenu ? <X /> : <Menu />}
       </button>
-    </Container>
+    </Nav>
   );
 };
 
 export default Navbar;
 
-const Container = styled.nav`
+const Nav = styled.nav`
   background: lightblue;
   display: flex;
   justify-content: space-between;

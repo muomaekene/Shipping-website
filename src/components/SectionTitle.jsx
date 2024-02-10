@@ -10,7 +10,7 @@ export default SectionTitle;
 const Container = styled.h3`
   font-size: 16px;
   font-weight: 400;
-  margin-top: 20px;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
 `;
