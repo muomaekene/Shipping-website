@@ -7,10 +7,12 @@ import TopFooter from "./TopFooter";
 import Footer from "./Footer";
 
 import styled from "styled-components";
+import Partners from "./Partners";
 
 const PageContent = () => {
   return (
     <Main>
+      <Partners />
       <About />
       <Reviews />
       <Services />

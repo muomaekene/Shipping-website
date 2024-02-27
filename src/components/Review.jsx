@@ -1,3 +1,5 @@
+import { devices } from "../utils/breakpoints";
+
 import styled from "styled-components";
 
 const Review = ({ image, name, comment }) => {
@@ -13,11 +15,7 @@ const Review = ({ image, name, comment }) => {
         />
       </div>
       <div className="review-group">
-        <p className="review">
-          <span>"</span>
-          {comment}
-          <span>"</span>
-        </p>
+        <p className="review">{comment}</p>
         <p className="customer-name">{name}</p>
       </div>
     </Article>
@@ -27,31 +25,49 @@ const Review = ({ image, name, comment }) => {
 export default Review;
 
 const Article = styled.article`
-  margin: 20px 0;
-  border: 1px solid black;
+  margin-top: 20px;
+  border: 1px solid #b4b4b8;
+  border-radius: 4px;
   padding: 15px;
-  background: #fff;
+  color: #445069;
+
+  @media ${devices.tablet} {
+    margin: 0;
+  }
 
   .image-cover {
     display: flex;
     justify-content: center;
   }
+
   .customer-image {
-    border: 1px solid black;
-    margin-bottom: 10px;
+    border: 1px solid #b4b4b8;
     object-fit: cover;
   }
 
   .customer-name {
-    font-weight: 500;
-    margin-top: 10px;
+    font-weight: 600;
     font-size: 14px;
+
+    @media ${devices.laptop} {
+      font-size: 16px;
+    }
+  }
+
+  .review-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .review {
-    text-align: center;
-    font-weight: 300;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0;
+
+    @media ${devices.tablet} {
+      font-size: 16px;
+    }
   }
 
   span {

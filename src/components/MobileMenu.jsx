@@ -27,8 +27,7 @@ const MobileMenu = () => {
 export default MobileMenu;
 
 const Container = styled.section`
-  background: #fff;
-  padding: 0 15px;
+  padding: 0 20px;
   width: 100%;
 
   ul {
@@ -43,6 +42,6 @@ const Container = styled.section`
 
   a {
     text-decoration: none;
-    color: black;
+    color: #445069;
   }
 `;

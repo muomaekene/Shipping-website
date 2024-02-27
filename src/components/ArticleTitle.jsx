@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { devices } from "../utils/breakpoints";
+
 const ArticleTitle = ({ title }) => {
   return <Heading>{title}</Heading>;
 };
@@ -7,7 +9,13 @@ const ArticleTitle = ({ title }) => {
 export default ArticleTitle;
 
 const Heading = styled.h4`
-  font-weight: 500;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 18px;
-  color: #b60606;
+  color: #d90429;
+
+  @media ${devices.mobileL} {
+    font-size: 20px;
+  }
 `;

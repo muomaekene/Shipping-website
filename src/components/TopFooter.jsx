@@ -1,27 +1,31 @@
 import Logo from "../components/Logo";
 
-import Section from "./Section";
-import GroupTitle from "./ArticleTitle";
-import GroupContent from "./ArticleContent";
+import ArticleTitle from "./ArticleTitle";
 
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { devices } from "../utils/breakpoints";
 
 import styled from "styled-components";
 
 const TopFooter = () => {
   return (
-    <Section backgroundColor="#addae6">
+    <Container>
       <Logo />
+      <Paragraph>
+        SHIPQUEST simplifies how individuals and companies send and receive
+        freight from all over the world.
+      </Paragraph>
+
       <ItemGroup>
-        <GroupTitle title="Our Location" />
-        <GroupContent content="3895 Harrison Street, San Francisco, CA 94103" />
+        <ArticleTitle title="Our Location" />
+        <Paragraph>3895 Harrison Street, San Francisco, CA 94103</Paragraph>
       </ItemGroup>
       <ItemGroup>
-        <GroupTitle title="Connect With Us" />
+        <ArticleTitle title="Get the Latest from Us" />
         <Socials>
-          <Instagram size={20} strokeWidth={1} />
-          <Facebook size={20} strokeWidth={1} />
-          <Linkedin size={20} strokeWidth={1} />
+          <Instagram color="#dee2e6" size={20} strokeWidth={1} />
+          <Facebook color="#dee2e6" size={20} strokeWidth={1} />
+          <Linkedin color="#dee2e6" size={20} strokeWidth={1} />
         </Socials>
       </ItemGroup>
       <MoreLinks>
@@ -35,11 +39,16 @@ const TopFooter = () => {
           <Link href="#">Cookie Policy</Link>
         </ListItem>
       </MoreLinks>
-    </Section>
+    </Container>
   );
 };
 
 export default TopFooter;
+
+const Container = styled.section`
+  background: #090976;
+  padding: 40px 20px;
+`;
 
 const ItemGroup = styled.div`
   margin-top: 30px;
@@ -50,19 +59,43 @@ const Socials = styled.div`
   display: flex;
   justify-content: space-between;
   width: 30%;
+
+  @media ${devices.tablet} {
+    width: 20%;
+  }
+
+  @media ${devices.laptop} {
+    width: 15%;
+  }
 `;
 
 const MoreLinks = styled.ul`
   list-style-type: none;
   margin-top: 30px;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
+
+  @media ${devices.tablet} {
+    font-size: 12px;
+  }
 `;
 
 const ListItem = styled.li`
   margin-top: 10px;
 `;
+
 const Link = styled.a`
-  color: #6a6a6a;
+  color: #afb1b4;
+`;
+
+const Paragraph = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+  color: #ced4da;
+  margin-top: 10px;
+
+  @media ${devices.laptop} {
+    font-size: 16px;
+  }
 `;

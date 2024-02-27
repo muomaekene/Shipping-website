@@ -1,10 +1,14 @@
+import { devices } from "../utils/breakpoints";
+
 import styled from "styled-components";
 
 const Footer = () => {
   return (
     <PageFooter>
       <Paragraph className="copyright">
-        Copyright &copy; 2024 Shippn Co.
+        &copy; 2024 SHIPQUEST Co. <br />
+        All rights reserved. SHIPQUEST and its logo are registered trademarks of
+        ShipQuest Co.
       </Paragraph>
     </PageFooter>
   );
@@ -13,14 +17,16 @@ const Footer = () => {
 export default Footer;
 
 const PageFooter = styled.footer`
-  background: #eeeded;
+  padding: 10px 20px;
 `;
 
 const Paragraph = styled.p`
   width: 100%;
-  padding: 15px;
-  font-size: 14px;
-  font-weight: 300;
-  display: flex;
-  justify-content: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #445069;
+
+  @media ${devices.tablet} {
+    font-size: 14px;
+  }
 `;

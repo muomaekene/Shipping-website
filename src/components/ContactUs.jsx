@@ -1,44 +1,71 @@
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
+import ArticleContent from "./ArticleContent";
 import ArticleTitle from "./ArticleTitle";
-import SectionImage from "./SectionImage";
-import ContactCard from "./ContactCard";
 import ContactForm from "./ContactForm";
 
-import customerService from "../images/customer-service.jpg";
+import { devices } from "../utils/breakpoints";
 
-import { Mail, Phone } from "lucide-react";
 import styled from "styled-components";
 
 const ContactUs = () => {
   return (
-    <Section idValue="contact-us" backgroundColor="#eff6fd">
+    <Section idValue="contact-us" backgroundColor="#f1f3f5">
       <SectionTitle title="We'd Love to Hear From You" />
-      <SectionImage
-        imgSrc={customerService}
-        imgAlt="female customer service worker"
-      />
-      <Contact>
-        <ArticleTitle title="Want To Use Our Services, Discuss Partnership, Give a Feedback, or Make a Complaint? You Can Always Reach Us" />
-        <ContactCard
-          name="customersupport@shippn.com"
-          icon={<Mail size={18} strokeWidth={1} />}
-        />
-        <ContactCard
-          name="+1 234 567 980"
-          icon={<Phone size={18} strokeWidth={1} />}
-        />
-        <ContactForm />
-      </Contact>
+
+      <Grid>
+        <div className="grid-item-1">
+          <ArticleTitle title="Get in Touch Today" />
+          <ArticleContent
+            content="Use the secure form to send a message regarding any concerns you may
+            have. Should you have any information regarding a referral from a GP
+            please also include this and we will be in touch with the next
+            steps."
+          />
+          <Link href="">info@shipquest.com</Link>
+          <Link href="">723 548 4843</Link>
+        </div>
+
+        <div className="grid-item-2">
+          <ContactForm />
+        </div>
+      </Grid>
     </Section>
   );
 };
 
 export default ContactUs;
 
-const Contact = styled.div`
+const Grid = styled.div`
+  display: block;
   margin-top: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+
+  @media ${devices.tablet} {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .grid-item-1 {
+    display: flex;
+    flex-direction: column;
+    justify-self: right;
+  }
+`;
+
+const Link = styled.a`
+  font-size: 14px;
+  font-weight: 400;
+  color: #445069;
+  margin-bottom: 2px;
+  width: fit-content;
+
+  @media ${devices.tablet} {
+    font-size: 14px;
+  }
+
+  @media ${devices.laptop} {
+    font-size: 16px;
+  }
 `;

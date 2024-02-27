@@ -7,7 +7,8 @@ const SectionImage = ({ imgSrc, imgAlt }) => {
 export default SectionImage;
 
 const Image = styled.img`
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   width: 100%;
   height: auto;
+  border-radius: 4px;
 `;

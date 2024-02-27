@@ -1,3 +1,4 @@
+import { devices } from "../utils/breakpoints";
 import Button from "./Button";
 
 import styled from "styled-components";
@@ -10,7 +11,7 @@ const ContactForm = () => {
       <textarea
         className="feedback-field"
         name="feedback"
-        placeholder="Lets hear from you..."
+        placeholder="Your Message"
         cols="30"
         rows="5"
       />
@@ -23,26 +24,38 @@ const ContactForm = () => {
 export default ContactForm;
 
 const Form = styled.form`
-  padding: 15px;
-  margin-top: 15px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  margin-top: 10px;
+
+  @media ${devices.tablet} {
+    padding: 20px;
+  }
 
   .input-field {
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 13px;
-    font-weight: 300;
+    border: 1px solid #b4b4b8;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 400;
     margin-bottom: 10px;
+
+    @media ${devices.laptop} {
+      font-size: 16px;
+    }
   }
 
   .feedback-field {
     margin-bottom: 10px;
-    border: 1px solid black;
-    padding: 10px;
+    border: 1px solid #b4b4b8;
+    border-radius: 4px;
+    padding: 15px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
+
+    @media ${devices.laptop} {
+      font-size: 16px;
+    }
   }
 `;

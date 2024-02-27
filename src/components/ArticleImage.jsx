@@ -9,7 +9,7 @@ export default ArticleImage;
 const Image = styled.img`
   width: 100%;
   height: auto;
-  border: 1px solid black;
-  padding: 10px;
+  border: 1px solid #b4b4b8;
+  /* padding: 10px; */
   margin-bottom: 10px;
 `;
