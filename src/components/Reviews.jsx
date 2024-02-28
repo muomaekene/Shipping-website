@@ -13,7 +13,7 @@ import styled from "styled-components";
 const Reviews = () => {
   return (
     <Section>
-      <Title>Over 50 000 People Have Trusted Us With Their Shipping.</Title>
+      <Title>Over 50 000 People Have Trusted Us With Their Shipping</Title>
       <Paragraph>
         Some of our satistified customers have reached out and told us how the
         felt about our services. Here are some of the things they had to say

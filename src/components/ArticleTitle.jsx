@@ -12,10 +12,10 @@ const Heading = styled.h4`
   font-family: "Sen", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
   color: #d90429;
 
-  @media ${devices.mobileL} {
-    font-size: 20px;
+  @media ${devices.tablet} {
+    font-size: 22px;
   }
 `;

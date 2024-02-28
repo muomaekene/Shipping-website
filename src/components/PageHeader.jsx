@@ -20,4 +20,6 @@ const PageHeader = () => {
 
 export default PageHeader;
 
-const Header = styled.header``;
+const Header = styled.header`
+  position: relative;
+`;

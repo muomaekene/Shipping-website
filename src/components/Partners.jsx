@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../utils/breakpoints";
 
 const Partners = () => {
   return (
@@ -37,7 +38,11 @@ const Container = styled.div`
   display: flex;
   overflow-y: scroll;
   padding: 20px 20px 0 20px;
-  margin: 30px 0;
+  margin-top: 30px;
+
+  @media ${devices.tablet} {
+    margin-bottom: 20px;
+  }
 
   img {
     margin-right: 40px;

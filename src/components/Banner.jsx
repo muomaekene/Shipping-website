@@ -23,13 +23,13 @@ export default Banner;
 
 const Container = styled.section`
   height: calc(100vh - 80px);
-  background-image: url("https://img.freepik.com/free-photo/busy-shipping-port-with-containers-trade-action_91128-4581.jpg?w=1380&t=st=1709090150~exp=1709090750~hmac=48e2fb30c5794f5c5e9746d3d444407f915a6bd60909be07dac7c9d9d7ec1684");
+  background-image: url("https://images.unsplash.com/photo-1578163677454-b3933804a354?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
   background-size: cover;
 
   .banner-article {
     padding: 20px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     height: 100%;
     display: flex;
     flex-direction: column;

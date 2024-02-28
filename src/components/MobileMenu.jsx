@@ -29,13 +29,15 @@ export default MobileMenu;
 const Container = styled.section`
   padding: 0 20px;
   width: 100%;
+  position: absolute;
+  background: #fff;
 
   ul {
     list-style-type: none;
   }
 
   li {
-    margin: 20px 0;
+    margin: 25px 0;
     font-size: 16px;
     font-weight: 300;
   }
