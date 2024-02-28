@@ -52,8 +52,6 @@ const Nav = styled.nav`
   align-items: center;
   height: 80px;
   padding: 0 20px;
-  position: sticky;
-  top: 0;
 
   ul {
     display: none;
@@ -79,6 +77,7 @@ const Nav = styled.nav`
 
       @media ${devices.tablet} {
         font-size: 18px;
+        margin-right: 20px;
       }
 
       a {

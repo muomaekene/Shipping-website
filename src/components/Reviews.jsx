@@ -23,24 +23,22 @@ const Reviews = () => {
         <Review
           image={manSmiling1}
           name="Jon Schumer"
-          comment="I get my packages in the right conditions and on time. SHIPPN is very reliable and consistent"
+          comment="EXPEDY SHIPPING is very knowledgeable about the market and helps us prepare our shipment to avoid issues."
         />
         <Review
           image={manSmiling2}
           name="Randy Whitaker"
-          comment="Before I started using SHIPPN I had problems with hidden charges and complicated shipping processes. Now I clear packages with ease and at more affordable costs"
+          comment="It's hard to find a prompt and reliable provider in this industry, but their team is an exception."
         />
         <Review
           image={olderWoman}
           name="Olivia Porter"
-          comment="I've had to escape customs hassles and very high duties because I use SHIPPN."
+          comment="This team thinks quickly on their feet and always figures out a way to make things happen."
         />
         <Review
           image={blackWoman}
           name="Aisha Jordan"
-          comment="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          recusandae non molestiae quis unde qui architecto, velit, quae quia,
-          obcaecati soluta!"
+          comment="They were highly responsive whenever we had any requests or concerns."
         />
       </Grid>
     </Section>
@@ -56,6 +54,7 @@ const Title = styled.h4`
   text-align: left;
   color: #d90429;
   margin-bottom: 10px;
+  letter-spacing: -1px;
 
   @media ${devices.tablet} {
     font-size: 24px;

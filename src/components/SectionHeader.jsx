@@ -15,6 +15,7 @@ const Header = styled.h4`
   text-align: left;
   color: #d90429;
   margin-bottom: 10px;
+  letter-spacing: -1px;
 
   @media ${devices.tablet} {
     font-size: 22px;

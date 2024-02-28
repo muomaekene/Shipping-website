@@ -21,7 +21,7 @@ const Partners = () => {
       <img
         src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/apm-terminals_pos.svg"
         alt="partner-logo"
-        width="200"
+        width="300"
       />
       <img
         src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/svitzer.svg"
@@ -36,9 +36,13 @@ export default Partners;
 
 const Container = styled.div`
   display: flex;
-  overflow-y: scroll;
-  padding: 20px 20px 0 20px;
-  margin-top: 30px;
+  padding: 20px 0 20px 20px;
+  overflow: auto;
+  background: #f1f3f5;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   @media ${devices.tablet} {
     margin-bottom: 20px;

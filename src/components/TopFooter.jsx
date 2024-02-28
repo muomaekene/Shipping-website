@@ -75,10 +75,6 @@ const MoreLinks = styled.ul`
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-
-  @media ${devices.tablet} {
-    font-size: 16px;
-  }
 `;
 
 const ListItem = styled.li`
@@ -86,7 +82,7 @@ const ListItem = styled.li`
 `;
 
 const Link = styled.a`
-  color: #afb1b4;
+  color: #d8d8d9;
 `;
 
 const Paragraph = styled.p`

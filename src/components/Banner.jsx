@@ -39,11 +39,12 @@ const Container = styled.section`
   .banner-title {
     font-family: "Sen", sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     font-size: 36px;
     color: #fff;
     line-height: 1.1;
+    letter-spacing: -2px;
 
     @media ${devices.tablet} {
       width: 50%;

@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <PageFooter>
       <Paragraph className="copyright">
-        &copy; 2024 EXPEDI Co. <br />
-        All rights reserved. EXPEDI and its logo are registered trademarks of
-        Expedi Co.
+        &copy; 2024 EXPEDY Shipping Co. <br />
+        All rights reserved. EXPEDY and its logo are registered trademarks of
+        Expedy Shipping Company
       </Paragraph>
     </PageFooter>
   );
