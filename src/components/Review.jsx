@@ -47,10 +47,10 @@ const Article = styled.article`
 
   .customer-name {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
 
-    @media ${devices.laptop} {
-      font-size: 16px;
+    @media ${devices.tablet} {
+      font-size: 18px;
     }
   }
 
@@ -62,16 +62,11 @@ const Article = styled.article`
 
   .review {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     margin: 10px 0;
 
     @media ${devices.tablet} {
-      font-size: 16px;
+      font-size: 18px;
     }
-  }
-
-  span {
-    font-size: 20px;
-    font-weight: 500;
   }
 `;

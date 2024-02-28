@@ -22,7 +22,7 @@ const ContactUs = () => {
             please also include this and we will be in touch with the next
             steps."
           />
-          <Link href="">info@shipquest.com</Link>
+          <Link href="">info@expedy.com</Link>
           <Link href="">723 548 4843</Link>
         </div>
 
@@ -55,17 +55,13 @@ const Grid = styled.div`
 `;
 
 const Link = styled.a`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #445069;
   margin-bottom: 2px;
   width: fit-content;
 
   @media ${devices.tablet} {
-    font-size: 14px;
-  }
-
-  @media ${devices.laptop} {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;

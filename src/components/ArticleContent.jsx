@@ -9,12 +9,12 @@ const ArticleContent = ({ content }) => {
 export default ArticleContent;
 
 const Paragraph = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #445069;
   margin-bottom: 20px;
 
   @media ${devices.tablet} {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;

@@ -9,11 +9,10 @@ export default Button;
 
 const CustomButton = styled.button`
   width: fit-content;
-  padding: 10px 30px;
+  padding: 12px 30px;
   background: #090976;
-  color: #ced4da;
-  font-family: "Overpass", sans-serif;
-  font-size: 14px;
+  color: #fff;
+  font-size: 16px;
   font-weight: 400;
   cursor: pointer;
   border-radius: 4px;
@@ -25,10 +24,10 @@ const CustomButton = styled.button`
 
   @media ${devices.tablet} {
     padding: 12px 35px;
+    font-size: 18px;
   }
 
   @media ${devices.laptop} {
     padding: 14px 40px;
-    font-size: 16px;
   }
 `;

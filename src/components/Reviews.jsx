@@ -50,30 +50,31 @@ const Reviews = () => {
 export default Reviews;
 
 const Title = styled.h4`
-  font-size: 18px;
-  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+  font-family: "Sen", sans-serif;
   font-weight: 400;
   text-align: left;
   color: #d90429;
+  margin-bottom: 10px;
 
   @media ${devices.tablet} {
-    font-size: 22px;
+    font-size: 24px;
     width: 60%;
   }
 
   @media ${devices.laptop} {
-    font-size: 24px;
+    font-size: 26px;
   }
 `;
 
 const Paragraph = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #445069;
   margin-bottom: 20px;
 
   @media ${devices.tablet} {
-    font-size: 16px;
+    font-size: 18px;
     width: 60%;
   }
 `;

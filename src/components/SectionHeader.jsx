@@ -8,11 +8,13 @@ const SectionHeader = ({ content }) => {
 export default SectionHeader;
 
 const Header = styled.h4`
-  font-size: 18px;
-  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+  font-family: "Sen", sans-serif;
+  text-transform: uppercase;
   font-weight: 400;
   text-align: left;
   color: #d90429;
+  margin-bottom: 10px;
 
   @media ${devices.tablet} {
     font-size: 22px;

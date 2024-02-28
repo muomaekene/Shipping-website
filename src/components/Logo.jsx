@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { devices } from "../utils/breakpoints";
 
 const Logo = () => {
-  return <Heading>ShipQuest</Heading>;
+  return <Heading>EXPEDY</Heading>;
 };
 
 export default Logo;
@@ -12,7 +12,7 @@ const Heading = styled.h1`
   letter-spacing: -1px;
   text-transform: uppercase;
   color: #fff;
-  font-family: "Ruslan Display", sans-serif;
+  font-family: "Anta", sans-serif;
 
   @media ${devices.tablet} {
     font-size: 26px;

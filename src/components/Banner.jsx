@@ -7,9 +7,7 @@ const Banner = () => {
   return (
     <Container>
       <article className="banner-article">
-        <h2 className="banner-title">
-          Let Us Worry About Your Shipping Hassles
-        </h2>
+        <h2 className="banner-title">Take the first step to ship with us</h2>
         <p className="banner-content">
           We move and deliver freight from the Bay Area to the world in a
           breeze. Don't hesitate to reach out to us whenever you want to send
@@ -24,14 +22,14 @@ const Banner = () => {
 export default Banner;
 
 const Container = styled.section`
-  height: calc(100vh - 4.5rem);
-  background-image: url("https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: calc(100vh - 80px);
+  background-image: url("https://img.freepik.com/free-photo/busy-shipping-port-with-containers-trade-action_91128-4581.jpg?w=1380&t=st=1709090150~exp=1709090750~hmac=48e2fb30c5794f5c5e9746d3d444407f915a6bd60909be07dac7c9d9d7ec1684");
   background-repeat: no-repeat;
   background-size: cover;
 
   .banner-article {
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -39,16 +37,17 @@ const Container = styled.section`
   }
 
   .banner-title {
-    font-family: "Overpass", sans-serif;
+    font-family: "Sen", sans-serif;
+    text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
-    font-size: 32px;
+    font-size: 36px;
     color: #fff;
     line-height: 1.1;
 
     @media ${devices.tablet} {
       width: 50%;
-      font-size: 32px;
+      font-size: 40px;
     }
 
     @media ${devices.laptop} {
@@ -62,7 +61,7 @@ const Container = styled.section`
   }
 
   .banner-content {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -71,7 +70,7 @@ const Container = styled.section`
 
     @media ${devices.tablet} {
       width: 50%;
-      font-size: 16px;
+      font-size: 18px;
     }
 
     @media ${devices.laptop} {

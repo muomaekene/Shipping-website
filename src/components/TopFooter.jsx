@@ -12,8 +12,8 @@ const TopFooter = () => {
     <Container>
       <Logo />
       <Paragraph>
-        SHIPQUEST simplifies how individuals and companies send and receive
-        freight from all over the world.
+        EXPEDY simplifies how individuals and companies send and receive freight
+        from all over the world.
       </Paragraph>
 
       <ItemGroup>
@@ -23,9 +23,9 @@ const TopFooter = () => {
       <ItemGroup>
         <ArticleTitle title="Get the Latest from Us" />
         <Socials>
-          <Instagram color="#dee2e6" size={20} strokeWidth={1} />
-          <Facebook color="#dee2e6" size={20} strokeWidth={1} />
-          <Linkedin color="#dee2e6" size={20} strokeWidth={1} />
+          <Instagram color="#dee2e6" size={22} strokeWidth={1} />
+          <Facebook color="#dee2e6" size={22} strokeWidth={1} />
+          <Linkedin color="#dee2e6" size={22} strokeWidth={1} />
         </Socials>
       </ItemGroup>
       <MoreLinks>
@@ -72,12 +72,12 @@ const Socials = styled.div`
 const MoreLinks = styled.ul`
   list-style-type: none;
   margin-top: 30px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
 
   @media ${devices.tablet} {
-    font-size: 12px;
+    font-size: 16px;
   }
 `;
 
@@ -90,12 +90,12 @@ const Link = styled.a`
 `;
 
 const Paragraph = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #ced4da;
   margin-top: 10px;
 
-  @media ${devices.laptop} {
-    font-size: 16px;
+  @media ${devices.tablet} {
+    font-size: 18px;
   }
 `;

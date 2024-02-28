@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <PageFooter>
       <Paragraph className="copyright">
-        &copy; 2024 SHIPQUEST Co. <br />
-        All rights reserved. SHIPQUEST and its logo are registered trademarks of
-        ShipQuest Co.
+        &copy; 2024 EXPEDI Co. <br />
+        All rights reserved. EXPEDI and its logo are registered trademarks of
+        Expedi Co.
       </Paragraph>
     </PageFooter>
   );
@@ -22,11 +22,11 @@ const PageFooter = styled.footer`
 
 const Paragraph = styled.p`
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   color: #445069;
 
   @media ${devices.tablet} {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;

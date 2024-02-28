@@ -33,7 +33,11 @@ const Navbar = ({ showMenu, setShowMenu }) => {
           setShowMenu(!showMenu);
         }}
       >
-        {showMenu ? <X color="#ced4da" /> : <Menu color="#ced4da" />}
+        {showMenu ? (
+          <X size="28" color="#ced4da" />
+        ) : (
+          <Menu size="28" color="#ced4da" />
+        )}
       </button>
     </Nav>
   );
@@ -46,7 +50,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4.5rem;
+  height: 80px;
   padding: 0 20px;
   position: sticky;
   top: 0;
@@ -61,7 +65,7 @@ const Nav = styled.nav`
 
     li {
       display: inline;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 300;
       margin-right: 25px;
       padding-bottom: 10px;
@@ -73,8 +77,8 @@ const Nav = styled.nav`
         text-underline-position: under;
       }
 
-      @media ${devices.laptop} {
-        font-size: 16px;
+      @media ${devices.tablet} {
+        font-size: 18px;
       }
 
       a {
@@ -89,6 +93,7 @@ const Nav = styled.nav`
     display: flex;
     padding: 2px;
     background: none;
+    border-radius: 4px;
 
     @media ${devices.tablet} {
       display: none;
