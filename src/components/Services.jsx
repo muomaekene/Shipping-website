@@ -19,7 +19,7 @@ import styled from "styled-components";
 const Services = () => {
   return (
     <Section idValue="services" backgroundColor="">
-      <SectionTitle title="Our range of services and solutions" />
+      <SectionTitle title="Services and solutions we offer" />
 
       <Grid>
         <Article>
