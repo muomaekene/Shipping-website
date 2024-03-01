@@ -8,7 +8,7 @@ const Footer = () => {
       <Paragraph className="copyright">
         &copy; 2024 EXPEDY Shipping Co. <br />
         All rights reserved. EXPEDY and its logo are registered trademarks of
-        Expedy Shipping Company
+        Expedy Shipping Company.
       </Paragraph>
     </PageFooter>
   );

@@ -26,7 +26,7 @@ const Careers = () => {
         <div className="flex-item-2">
           <ArticleTitle title="Interested in Building a Career While Making an Impact in a Fast Developing and Connected World?" />
           <ArticleContent content="Meet our people, see where we work and join a diverse, dynamic and growing organization that continually invests in advancing your skills and professional opportunites while contributing something meaniful to the modern world." />
-          <ArticleContent content="SHIPPN is home and every staff is a family member. Check out our job openings and see where you can come in." />
+          <ArticleContent content="EXPEDY is home and every staff is a family member. Check out our job openings and see where you can come in." />
           <Button name="Find Opportunities" />
         </div>
       </Flex>

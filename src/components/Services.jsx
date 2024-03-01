@@ -43,7 +43,7 @@ const Services = () => {
         <Article>
           <ArticleImage imgSrc={semiTruck} imgAlt="Doorstep delivery" />
           <ArticleTitle title="Road Freight Forwarding" />
-          <ArticleContent content="With our network of expert and resilient drivers, we move packages of every size and quantity all over the country" />
+          <ArticleContent content="With our network of expert and dedicated drivers, we move packages of every size and quantity all over the country" />
         </Article>
         <Article>
           <ArticleImage imgSrc={cargoPlane} imgAlt="Cargo plane at airport" />

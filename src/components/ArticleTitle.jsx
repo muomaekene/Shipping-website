@@ -9,7 +9,6 @@ const ArticleTitle = ({ title }) => {
 export default ArticleTitle;
 
 const Heading = styled.h4`
-  /* font-family: "Sen", sans-serif; */
   font-weight: 500;
   font-style: normal;
   font-size: 22px;

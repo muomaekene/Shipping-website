@@ -16,7 +16,7 @@ const Reviews = () => {
       <Title>Over 200 000 People Have Trusted Us With Their Shipping</Title>
       <Paragraph>
         Some of our satistified customers have reached out and told us how they
-        felt about our services. Here are some of the things they had to say
+        felt about our services. Here are some of the things they had to say.
       </Paragraph>
 
       <Grid>
@@ -50,7 +50,7 @@ export default Reviews;
 const Title = styled.h4`
   font-size: 22px;
   font-family: "Sen", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
   color: #d90429;
   margin-bottom: 10px;

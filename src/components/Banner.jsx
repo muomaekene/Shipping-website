@@ -13,7 +13,7 @@ const Banner = () => {
           breeze. Don't hesitate to reach out to us whenever you want to send
           packages across the world.
         </p>
-        <Button name="Get A Quote" />
+        <Button name="Get a Quote" />
       </article>
     </Container>
   );
