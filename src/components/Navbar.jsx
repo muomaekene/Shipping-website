@@ -34,9 +34,9 @@ const Navbar = ({ showMenu, setShowMenu }) => {
         }}
       >
         {showMenu ? (
-          <X size="28" color="#ced4da" />
+          <X size="30" color="#fff" />
         ) : (
-          <Menu size="28" color="#ced4da" />
+          <Menu size="30" color="#fff" />
         )}
       </button>
     </Nav>
@@ -88,7 +88,7 @@ const Nav = styled.nav`
   }
 
   .menu-btn {
-    border: 1px solid #ced4da;
+    border: 1px solid #fff;
     display: flex;
     padding: 2px;
     background: none;

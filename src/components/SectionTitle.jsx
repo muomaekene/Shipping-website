@@ -11,7 +11,7 @@ export default SectionTitle;
 const Container = styled.h3`
   font-family: "Sen", sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   margin-top: 40px;
   margin-bottom: 20px;

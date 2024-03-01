@@ -66,7 +66,6 @@ const Container = styled.section`
     font-weight: 400;
     margin-top: 15px;
     margin-bottom: 20px;
-    text-align: justify;
     color: #fff;
 
     @media ${devices.tablet} {

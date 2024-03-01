@@ -8,7 +8,7 @@ const Logo = () => {
 export default Logo;
 
 const Heading = styled.h1`
-  font-size: 24px;
+  font-size: 26px;
   letter-spacing: -1px;
   text-transform: uppercase;
   color: #fff;

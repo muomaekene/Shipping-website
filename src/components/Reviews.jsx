@@ -15,7 +15,7 @@ const Reviews = () => {
     <Section>
       <Title>Over 50 000 People Have Trusted Us With Their Shipping</Title>
       <Paragraph>
-        Some of our satistified customers have reached out and told us how the
+        Some of our satistified customers have reached out and told us how they
         felt about our services. Here are some of the things they had to say
       </Paragraph>
 
@@ -23,7 +23,7 @@ const Reviews = () => {
         <Review
           image={manSmiling1}
           name="Jon Schumer"
-          comment="EXPEDY SHIPPING is very knowledgeable about the market and helps us prepare our shipment to avoid issues."
+          comment="EXPEDY SHIPPING is very knowledgeable about the market and help us prepare our shipment to avoid issues."
         />
         <Review
           image={manSmiling2}
@@ -50,7 +50,7 @@ export default Reviews;
 const Title = styled.h4`
   font-size: 22px;
   font-family: "Sen", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
   color: #d90429;
   margin-bottom: 10px;

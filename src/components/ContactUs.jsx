@@ -22,8 +22,12 @@ const ContactUs = () => {
             please also include this and we will be in touch with the next
             steps."
           />
-          <Link href="">info@expedy.com</Link>
-          <Link href="">723 548 4843</Link>
+          <Link>
+            Email: <a href="/">info@expedy.com</a>
+          </Link>
+          <Link>
+            Tel: <a href="/">(723) 548 4843</a>
+          </Link>
         </div>
 
         <div className="grid-item-2">
@@ -54,7 +58,7 @@ const Grid = styled.div`
   }
 `;
 
-const Link = styled.a`
+const Link = styled.p`
   font-size: 16px;
   font-weight: 400;
   color: #445069;
