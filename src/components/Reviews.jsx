@@ -48,7 +48,7 @@ const Reviews = () => {
 export default Reviews;
 
 const Title = styled.h4`
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Sen", sans-serif;
   font-weight: 400;
   text-align: left;

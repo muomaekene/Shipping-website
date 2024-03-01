@@ -1,7 +1,7 @@
-import { devices } from "../utils/breakpoints";
 import Button from "./Button";
 
 import styled from "styled-components";
+import { devices } from "../utils/breakpoints";
 
 const ContactForm = () => {
   return (
@@ -37,7 +37,7 @@ const Form = styled.form`
     border: 1px solid #b4b4b8;
     border-radius: 4px;
     padding: 15px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
 
@@ -51,7 +51,7 @@ const Form = styled.form`
     border: 1px solid #b4b4b8;
     border-radius: 4px;
     padding: 15px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 
     @media ${devices.laptop} {

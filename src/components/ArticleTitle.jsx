@@ -12,11 +12,12 @@ const Heading = styled.h4`
   font-family: "Sen", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 22px;
   color: #d90429;
   letter-spacing: -1px;
+  margin-bottom: 5px;
 
   @media ${devices.tablet} {
-    font-size: 22px;
+    font-size: 24px;
   }
 `;

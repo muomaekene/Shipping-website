@@ -13,6 +13,7 @@ const Container = styled.h3`
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: 40px;
   margin-bottom: 20px;
   color: #1d2b53;
   letter-spacing: -1px;

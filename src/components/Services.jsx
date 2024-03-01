@@ -33,42 +33,27 @@ const Services = () => {
         <Article>
           <ArticleImage imgSrc={containers} imgAlt="Container in a port" />
           <ArticleTitle title="Clearing and Forwarding" />
-          <ArticleContent
-            content="We move and deliver freight of all sizes and quantity to over 120
-          destinations all over the world"
-          />
+          <ArticleContent content="Our agents are experts in providing assistance to get goods cleared through customs formalities quickly and with less hassle" />
         </Article>
         <Article>
           <ArticleImage imgSrc={wharehouse} imgAlt="Wharehouse operator" />
           <ArticleTitle title="Storage and Inventory Management" />
-          <ArticleContent
-            content="We move and deliver freight of all sizes and quantity to over 120
-          destinations all over the world"
-          />
+          <ArticleContent content="We safely store and keep accurate records of goods of every size and quantity" />
         </Article>
         <Article>
           <ArticleImage imgSrc={semiTruck} imgAlt="Doorstep delivery" />
-          <ArticleTitle title="Road Freight Haulage" />
-          <ArticleContent
-            content="We move and deliver freight of all sizes and quantity to over 120
-          destinations all over the world."
-          />
+          <ArticleTitle title="Road Freight Forwarding" />
+          <ArticleContent content="With our network of expert and resilient drivers, we move packages of every size and quantity all over the country" />
         </Article>
         <Article>
           <ArticleImage imgSrc={cargoPlane} imgAlt="Cargo plane at airport" />
-          <ArticleTitle title="Air Freight Haulage" />
-          <ArticleContent
-            content="We move and deliver freight of all sizes and quantity to over 120
-          destinations all over the world."
-          />
+          <ArticleTitle title="Air Freight Forwarding" />
+          <ArticleContent content="We also move goods in a fast, reliable, and secure way internationally over air" />
         </Article>
         <Article>
           <ArticleImage imgSrc={doorstepDelivery} imgAlt="Doorstep delivery" />
           <ArticleTitle title="Speedy Doorstep Delivery" />
-          <ArticleContent
-            content="We move and deliver freight of all sizes and quantity to over 120
-          destinations all over the world."
-          />
+          <ArticleContent content="From the convevience of your home, your packages would be delivered to you on time and in good condition" />
         </Article>
       </Grid>
 
