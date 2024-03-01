@@ -8,7 +8,7 @@ const ContactForm = () => {
     <Form>
       <input placeholder="Name" className="input-field" type="text" />
       <input placeholder="Email Address" className="input-field" type="email" />
-      <input placeholder="Phone Number" className="input-field" type="number" />
+      <input placeholder="Phone Number" className="input-field" type="text" />
       <textarea
         className="feedback-field"
         name="feedback"

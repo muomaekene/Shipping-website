@@ -13,7 +13,7 @@ import styled from "styled-components";
 const Reviews = () => {
   return (
     <Section>
-      <Title>Over 50 000 People Have Trusted Us With Their Shipping</Title>
+      <Title>Over 200 000 People Have Trusted Us With Their Shipping</Title>
       <Paragraph>
         Some of our satistified customers have reached out and told us how they
         felt about our services. Here are some of the things they had to say
@@ -23,7 +23,7 @@ const Reviews = () => {
         <Review
           image={manSmiling1}
           name="Jon Schumer"
-          comment="EXPEDY SHIPPING is very knowledgeable about the market and help us prepare our shipment to avoid issues."
+          comment="EXPEDY shipping company is very knowledgeable about the market and helps us prepare our shipment to avoid issues and unnecessary delays."
         />
         <Review
           image={manSmiling2}
