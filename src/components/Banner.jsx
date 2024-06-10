@@ -1,20 +1,32 @@
-import Button from "./Button";
+import truckIllustration from "../images/truck-illustration.png";
 
-import styled from "styled-components";
 import { devices } from "../utils/breakpoints";
+import styled from "styled-components";
+import Button from "./Button";
+import Numbers from "./Numbers";
+import BannerImage from "./BannerImage";
+import BodyContent from "./BodyContent";
 
 const Banner = () => {
   return (
     <Container>
       <article className="banner-article">
-        <h2 className="banner-title">Take the first step to ship with us</h2>
-        <p className="banner-content">
-          We move and deliver freight from the Bay Area to the world in a
-          breeze. Don't hesitate to reach out to us whenever you want to send
-          packages across the world.
-        </p>
-        <Button name="Get a Quote" />
+        <h2 className="banner-title">
+          Swift Solutions <br />
+          Seamless Services <br />
+          Tailored For You
+        </h2>
+        <BodyContent
+          color="#a0a0a4"
+          content=" With our state-of-the-art logistics network and experienced team, we offer a comprehensive range of services tailored to your requirements. "
+        />
+        <Button name="Explore Now" />
+        <Numbers />
       </article>
+      <BannerImage
+        imgSrc={truckIllustration}
+        imgAlt="Illustration of track with a driver in it"
+      />
     </Container>
   );
 };
@@ -22,69 +34,69 @@ const Banner = () => {
 export default Banner;
 
 const Container = styled.section`
-  height: calc(100vh - 80px);
-  background-image: url("https://images.unsplash.com/photo-1578163677454-b3933804a354?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  @media ${devices.tablet} {
+    flex-direction: row;
+    height: calc(100vh - 60px);
+  }
+
+  @media ${devices.laptop} {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media ${devices.laptopL} {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
   .banner-article {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .banner-title {
-    font-family: "Sen", sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 36px;
-    color: #fff;
-    line-height: 1.1;
-    letter-spacing: -2px;
 
     @media ${devices.tablet} {
       width: 50%;
-      font-size: 40px;
+    }
+  }
+
+  .banner-title {
+    font-family: "Raleway", sans-serif;
+    text-transform: capitalize;
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 10px;
+
+    @media ${devices.mobileL} {
+      font-size: 38px;
     }
 
     @media ${devices.laptop} {
-      font-size: 44px;
-      width: 45%;
+      font-size: 42px;
+      width: 90%;
     }
 
     @media ${devices.laptopL} {
-      font-size: 46px;
+      font-size: 50px;
     }
   }
 
   .banner-content {
     font-size: 16px;
-    font-weight: 400;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #fff;
+    color: #a0a0a4;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.5;
 
-    @media ${devices.tablet} {
-      width: 50%;
+    @media ${devices.laptop} {
       font-size: 18px;
     }
 
-    @media ${devices.laptop} {
-      width: 45%;
-    }
-  }
-
-  .banner-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-
-    @media ${devices.tablet} {
-      width: 50%;
+    @media ${devices.laptopL} {
+      font-size: 20px;
     }
   }
 `;

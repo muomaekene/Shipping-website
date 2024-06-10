@@ -1,22 +1,26 @@
-import { devices } from "../utils/breakpoints";
+import ArticleContent from "./ArticleContent";
+import starIcon from "./../images/star.png";
 
+import { devices } from "../utils/breakpoints";
 import styled from "styled-components";
 
-const Review = ({ image, name, comment }) => {
+const Review = ({ name, comment, imgSrc, imgAlt }) => {
   return (
     <Article>
-      <div className="image-cover">
-        <img
-          src={image}
-          width="100"
-          height="100"
-          alt="customer-1"
-          className="customer-image"
-        />
+      <div className="stars">
+        <img width="20" height="20" src={starIcon} alt="star icon" />
+        <img width="20" height="20" src={starIcon} alt="star icon" />
+        <img width="20" height="20" src={starIcon} alt="star icon" />
+        <img width="20" height="20" src={starIcon} alt="star icon" />
       </div>
-      <div className="review-group">
-        <p className="review">{comment}</p>
-        <p className="customer-name">{name}</p>
+
+      <ArticleContent content={comment} />
+
+      <div className="details">
+        <div className="image">
+          <img height="30" src={imgSrc} alt={imgAlt} />
+        </div>
+        <h4>{name}</h4>
       </div>
     </Article>
   );
@@ -26,47 +30,55 @@ export default Review;
 
 const Article = styled.article`
   margin-top: 20px;
-  border: 1px solid #b4b4b8;
   border-radius: 4px;
-  padding: 15px;
-  color: #445069;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   @media ${devices.tablet} {
     margin: 0;
   }
 
-  .image-cover {
+  .stars {
     display: flex;
-    justify-content: center;
+    margin-bottom: 10px;
+    gap: 5px;
   }
 
-  .customer-image {
-    border: 1px solid #b4b4b8;
-    object-fit: cover;
-  }
+  h4 {
+    font-weight: 400;
+    color: #1d2b53;
+    font-size: 18px;
 
-  .customer-name {
-    font-weight: 600;
-    font-size: 16px;
+    @media ${devices.laptop} {
+      font-size: 20px;
+    }
 
-    @media ${devices.tablet} {
-      font-size: 18px;
+    @media ${devices.laptopL} {
+      font-size: 22px;
     }
   }
 
-  .review-group {
+  .details {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
 
-  .review {
-    font-weight: 400;
-    font-size: 16px;
-    margin: 10px 0;
+  .image {
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    margin-right: 10px;
 
-    @media ${devices.tablet} {
-      font-size: 18px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
     }
   }
 `;

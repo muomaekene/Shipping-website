@@ -1,25 +1,44 @@
+import { X } from "lucide-react";
+import Button from "./Button";
+
 import styled from "styled-components";
 
-const MobileMenu = () => {
+const MobileMenu = ({ showMenu, setShowMenu }) => {
   return (
     <Container>
+      <div className="menu-top">
+        <p>MENU</p>
+
+        <button
+          onClick={() => {
+            setShowMenu(!showMenu);
+          }}
+        >
+          <X size="25" color="#000" />
+        </button>
+      </div>
+
       <ul>
         <li>
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="#about">About Our Company</a>
+          <a href="#about">Company</a>
         </li>
         <li>
-          <a href="#services">Services We Offer</a>
+          <a href="#services">Services</a>
         </li>
         <li>
-          <a href="#careers">Career & Jobs</a>
+          <a href="#careers">Careers</a>
+        </li>
+        <li>
+          <a href="#news">News</a>
         </li>
         <li>
           <a href="#contact-us">Contact Us</a>
         </li>
       </ul>
+      <Button name="Ship Now" />
     </Container>
   );
 };
@@ -27,19 +46,36 @@ const MobileMenu = () => {
 export default MobileMenu;
 
 const Container = styled.section`
-  padding: 0 20px;
   width: 100%;
+  height: 100vh;
   position: absolute;
+  top: 0;
+  /* touch-action: none; */
+  z-index: 667;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  .menu-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-weight: 400;
+      font-size: 22px;
+    }
+  }
 
   ul {
     list-style-type: none;
+    margin-top: 30px;
   }
 
   li {
     margin: 25px 0;
     font-size: 16px;
-    font-weight: 300;
   }
 
   a {

@@ -14,7 +14,7 @@ const ContactForm = () => {
         name="feedback"
         placeholder="Message"
         cols="30"
-        rows="5"
+        rows="6"
       />
 
       <Button name="Send Message" />
@@ -31,32 +31,50 @@ const Form = styled.form`
   margin-top: 10px;
 
   @media ${devices.tablet} {
-    padding: 20px;
+    margin-top: 0;
   }
 
   .input-field {
-    border: 1px solid #b4b4b8;
+    /* border: 1px solid #b4b4b8; */
     border-radius: 4px;
-    padding: 15px;
+    padding-left: 15px;
     font-size: 16px;
-    font-weight: 400;
     margin-bottom: 10px;
+    height: 55px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
     @media ${devices.laptop} {
-      font-size: 16px;
+      font-size: 18px;
+    }
+
+    @media ${devices.laptopL} {
+      font-size: 20px;
+      height: 70px;
+      padding-left: 20px;
+      margin-bottom: 15px;
     }
   }
 
   .feedback-field {
     margin-bottom: 10px;
-    border: 1px solid #b4b4b8;
+    /* border: 1px solid #b4b4b8; */
     border-radius: 4px;
     padding: 15px;
     font-size: 16px;
-    font-weight: 400;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
     @media ${devices.laptop} {
-      font-size: 16px;
+      font-size: 18px;
+    }
+
+    @media ${devices.laptopL} {
+      font-size: 20px;
+      padding-left: 20px;
+      margin-bottom: 15px;
     }
   }
 `;

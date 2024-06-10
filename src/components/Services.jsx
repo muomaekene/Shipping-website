@@ -1,16 +1,13 @@
-import shipAtSea from "../images/ship-at-sea.jpg";
-import cargoPlane from "../images/cargo-plane.jpg";
-import containers from "../images/containers.jpg";
-import wharehouse from "../images/wharehouse.jpg";
-import doorstepDelivery from "../images/doorstep-delivery.jpg";
-import semiTruck from "../images/semi-truck.jpg";
-
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
+import SectionContent from "./SectionContent";
 import ArticleTitle from "./ArticleTitle";
 import ArticleContent from "./ArticleContent";
-import ArticleImage from "./ArticleImage";
-import Button from "./Button";
+
+import payIcon from "../images/pay.png";
+import locationIcon from "../images/location.png";
+import securityIcon from "../images/security.png";
+import transportIcon from "../images/transport.png";
 
 import { devices } from "../utils/breakpoints";
 
@@ -18,80 +15,86 @@ import styled from "styled-components";
 
 const Services = () => {
   return (
-    <Section idValue="services" backgroundColor="">
-      <SectionTitle title="Services and solutions we offer" />
+    <Section backgroundColor="#f0f6fc" idValue="services">
+      <SectionTitle title="Why Choose Us" />
+      <SectionContent content="US-based Freight moving and OTR Trucking company offers Roll-On-Roll-Off services, which is the simplest and cheapest way to get your packages across the country in the shortest time possible" />
 
       <Grid>
-        <Article>
-          <ArticleImage imgSrc={shipAtSea} imgAlt="Ship sailing at sea" />
-          <ArticleTitle title="International Freight Shipment" />
-          <ArticleContent
-            content="We move and deliver freight of all sizes and quantity to over 120
-          destinations all over the world"
+        <div className="grid-item">
+          <img
+            src={transportIcon}
+            width="70"
+            height="70"
+            alt="icon of delivery van"
           />
-        </Article>
-        <Article>
-          <ArticleImage imgSrc={containers} imgAlt="Container in a port" />
-          <ArticleTitle title="Clearing and Forwarding" />
-          <ArticleContent content="Our agents are experts in providing assistance to get goods cleared through customs formalities quickly and with less hassle" />
-        </Article>
-        <Article>
-          <ArticleImage imgSrc={wharehouse} imgAlt="Wharehouse operator" />
-          <ArticleTitle title="Storage and Inventory Management" />
-          <ArticleContent content="We safely store and keep accurate records of goods of every size and quantity" />
-        </Article>
-        <Article>
-          <ArticleImage imgSrc={semiTruck} imgAlt="Doorstep delivery" />
-          <ArticleTitle title="Road Freight Forwarding" />
-          <ArticleContent content="With our network of expert and dedicated drivers, we move packages of every size and quantity all over the country" />
-        </Article>
-        <Article>
-          <ArticleImage imgSrc={cargoPlane} imgAlt="Cargo plane at airport" />
-          <ArticleTitle title="Air Freight Forwarding" />
-          <ArticleContent content="We also move goods in a fast, reliable, and secure way internationally over air" />
-        </Article>
-        <Article>
-          <ArticleImage imgSrc={doorstepDelivery} imgAlt="Doorstep delivery" />
-          <ArticleTitle title="Speedy Doorstep Delivery" />
-          <ArticleContent content="From the convevience of your home, your packages would be delivered to you on time and in good condition" />
-        </Article>
-      </Grid>
+          <ArticleTitle title="Fastest Service" />
+          <ArticleContent content="We deliver your items on the same day, especially if you live nearby" />
+        </div>
 
-      <Button name="View More Services" />
+        <div className="grid-item">
+          <img
+            src={securityIcon}
+            width="70"
+            height="70"
+            alt="icon of cellphone with checkmark"
+          />
+          <ArticleTitle title="OTP Confirmation" />
+          <ArticleContent content="Your deliveries are verified so we make sure you're the one receiving them" />
+        </div>
+        <div className="grid-item">
+          <img
+            src={locationIcon}
+            width="70"
+            height="70"
+            alt="icon of cellphone with location"
+          />
+          <ArticleTitle title="Full Tracking" />
+          <ArticleContent content="You can track your deliveries and find out when you'll receive them" />
+        </div>
+        <div className="grid-item">
+          <img
+            src={payIcon}
+            width="70"
+            height="70"
+            alt="icon of cash being handed over"
+          />
+          <ArticleTitle title="Cash on Delivery" />
+          <ArticleContent content="Can't access any of our secure payments, we also accept cash" />
+        </div>
+      </Grid>
     </Section>
   );
 };
 
 export default Services;
 
-const Article = styled.article`
-  margin-bottom: 20px;
-  border: 1px solid #b4b4b8;
-  border-radius: 4px;
-  padding: 10px;
-
-  @media ${devices.tablet} {
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media ${devices.tablet} {
-    margin-bottom: 0;
-  }
-`;
-
 const Grid = styled.div`
   display: block;
-  margin-bottom: 20px;
 
   @media ${devices.tablet} {
+    gap: 20px;
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
   }
 
   @media ${devices.laptop} {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .grid-item {
+    border-radius: 4px;
+    padding: 0 20px;
+    margin-top: 20px;
+    height: 17rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    img {
+      margin-bottom: 20px;
+    }
   }
 `;

@@ -1,13 +1,7 @@
-import PageHeader from "./components/PageHeader";
 import PageContent from "./components/PageContent";
 
 const App = () => {
-  return (
-    <>
-      <PageHeader />
-      <PageContent />
-    </>
-  );
+  return <PageContent />;
 };
 
 export default App;

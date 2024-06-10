@@ -1,24 +1,30 @@
+import PageHeader from "./PageHeader";
 import About from "./About";
+import Services from "./Services";
+import Reviews from "./Reviews";
+import Blogs from "./Blogs";
 import Careers from "./Careers";
 import ContactUs from "./ContactUs";
-import Reviews from "./Reviews";
-import Services from "./Services";
-import TopFooter from "./TopFooter";
 import Footer from "./Footer";
+import Partners from "./Partners";
 
 import styled from "styled-components";
-import Partners from "./Partners";
+import Quote from "./Quote";
+import Track from "./Track";
 
 const PageContent = () => {
   return (
     <Main>
+      <PageHeader />
       <Partners />
       <About />
-      <Reviews />
       <Services />
+      <Quote />
+      <Reviews />
       <Careers />
+      <Track />
+      <Blogs />
       <ContactUs />
-      <TopFooter />
       <Footer />
     </Main>
   );

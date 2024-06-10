@@ -1,11 +1,6 @@
-import menInWharehouse from "../images/men-in-wharehouse.jpg";
-
 import Section from "./Section";
-import SectionImage from "./SectionImage";
 import SectionTitle from "./SectionTitle";
-import ArticleTitle from "./ArticleTitle";
-import ArticleContent from "./ArticleContent";
-import GroupButton from "./Button";
+import BodyContent from "./BodyContent";
 
 import styled from "styled-components";
 
@@ -13,23 +8,15 @@ import { devices } from "../utils/breakpoints";
 
 const About = () => {
   return (
-    <Section backgroundColor="" idValue="about">
-      <SectionTitle title="Our company profile" />
-
+    <Section backgroundColor="#f0f6fc" idValue="about">
       <Flex>
         <div className="flex-item-1">
-          <SectionImage
-            imgSrc={menInWharehouse}
-            imgAlt="Men standing in wharehouse"
-          />
+          <SectionTitle title="We Provide Services That You Can Rely On & Be Totally Satified With" />
         </div>
+
         <div className="flex-item-2">
-          <ArticleTitle title="We Are Global Leaders and Innovators in the Logistics and Shipping Business" />
-          <ArticleContent content="EXPEDY Shipping Co. is an international forwarder specialized in managing your shipments from one destination to another. We design and implement industry-leading solutions together with our worldwide network of partners." />
-          <ArticleContent content="With over 100+ dedicated employees, working around the globe, we deliver operational excellence to provide viable solutions to the most challenging supply chain questions. Therefore, most of our clients see us as one of the best logistics companies in the United States." />
-          <ArticleContent content="Our focus on providing excellence and value to our customers is made possible by our team of experts who bring passion to their work. We are totally committed to meeting and exceeding our customers' expectations." />
-          <ArticleContent content="EXPEDY Shipping Co. was established in 2019 and has since been a leading shipping services provider. We have built a reputation of reliability in shipping of goods and parcels nationally and internationally due to our professional approach, competitive pricing and large network." />
-          <GroupButton name="Learn More" />
+          <BodyContent content="EXPEDY Shipping Co. is an international forwarder specialized in managing your shipments from one destination to another. We design and implement industry-leading solutions together with our worldwide network of partners. " />
+          <BodyContent content="With over 100+ dedicated employees, working around the globe, we deliver operational excellence to provide viable solutions to the most challenging supply chain questions. Therefore, most of our clients see us as one of the best logistics companies in the United States." />
         </div>
       </Flex>
     </Section>
@@ -47,15 +34,11 @@ const Flex = styled.div`
 
     .flex-item-1 {
       flex: 1;
+      margin-right: 20px;
     }
 
     .flex-item-2 {
       flex: 1;
-      margin-left: 20px;
-
-      @media ${devices.laptop} {
-        margin-left: 20px;
-      }
     }
   }
 `;

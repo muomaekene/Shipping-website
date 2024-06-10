@@ -1,6 +1,5 @@
 import SectionTitle from "./SectionTitle";
-import ArticleContent from "./ArticleContent";
-import ArticleTitle from "./ArticleTitle";
+import BodyContent from "./BodyContent";
 import Section from "./Section";
 import SectionImage from "./SectionImage";
 import Button from "./Button";
@@ -15,19 +14,19 @@ import { devices } from "../utils/breakpoints";
 
 const Careers = () => {
   return (
-    <Section idValue="careers">
-      <SectionTitle title="Become A Part of Our Team" />
+    <Section backgroundColor="#fcfbf0" idValue="careers">
       <Flex>
         <div className="flex-item-1">
+          <SectionTitle title="Become A Part of Our Team" />
+          <BodyContent content="Interested in building a career while making an impact in a fast developing and connected world? Meet our people, see where we work and join a diverse, dynamic and growing organization that continually invests in advancing your skills and professional opportunites while contributing something meaningful to the modern and connected world." />
+          <BodyContent content="EXPEDY is home and every staff is a member of a big and diverse family of innovative service providers. Check out our job openings and see where you can come in." />
+          <Button name="Find Opportunities" />
+        </div>
+
+        <div className="flex-item-2">
           <SectionImage imgSrc={deliveryPeople} imgAlt="delivering items" />
           <SectionImage imgSrc={manWriting} imgAlt="man writing" />
           <SectionImage imgSrc={manInStore} imgAlt="man inspecting store" />
-        </div>
-        <div className="flex-item-2">
-          <ArticleTitle title="Interested in Building a Career While Making an Impact in a Fast Developing and Connected World?" />
-          <ArticleContent content="Meet our people, see where we work and join a diverse, dynamic and growing organization that continually invests in advancing your skills and professional opportunites while contributing something meaniful to the modern world." />
-          <ArticleContent content="EXPEDY is home and every staff is a family member. Check out our job openings and see where you can come in." />
-          <Button name="Find Opportunities" />
         </div>
       </Flex>
     </Section>
@@ -42,15 +41,23 @@ const Flex = styled.div`
   @media ${devices.tablet} {
     display: flex;
     flex-wrap: wrap;
+  }
 
-    .flex-item-1 {
-      flex: 1;
-      margin-right: 20px;
+  .flex-item-1 {
+    flex: 2;
+    margin-bottom: 20px;
+
+    @media ${devices.tablet} {
+      padding-right: 20px;
+      margin-bottom: 0;
     }
 
-    .flex-item-2 {
-      flex: 1;
-      margin-top: -4px;
+    @media ${devices.laptop} {
+      padding-right: 60px;
     }
+  }
+
+  .flex-item-2 {
+    flex: 1;
   }
 `;

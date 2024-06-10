@@ -1,6 +1,6 @@
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
-import ArticleContent from "./ArticleContent";
+import BodyContent from "./BodyContent";
 import ArticleTitle from "./ArticleTitle";
 import ContactForm from "./ContactForm";
 
@@ -10,23 +10,23 @@ import styled from "styled-components";
 
 const ContactUs = () => {
   return (
-    <Section idValue="contact-us" backgroundColor="#f1f3f5">
+    <Section backgroundColor="#f2f0ea" idValue="contact-us">
       <SectionTitle title="We'd Love to Hear From You" />
 
       <Grid>
         <div className="grid-item-1">
           <ArticleTitle title="Get in Touch Today" />
-          <ArticleContent
+          <BodyContent
             content="Use the secure form to send a message regarding any concerns you may
             have. Should you have any information regarding a referral from a GP
             please also include this and we will be in touch with the next
             steps."
           />
           <Link>
-            Email: <a href="/">info@expedy.com</a>
+            <a href="/">info@expedi.com</a>
           </Link>
           <Link>
-            Tel: <a href="/">(723) 548 4843</a>
+            <a href="/">(723) 548-4843</a>
           </Link>
         </div>
 
@@ -51,6 +51,10 @@ const Grid = styled.div`
     gap: 20px;
   }
 
+  @media ${devices.laptop} {
+    gap: 60px;
+  }
+
   .grid-item-1 {
     display: flex;
     flex-direction: column;
@@ -60,12 +64,20 @@ const Grid = styled.div`
 
 const Link = styled.p`
   font-size: 16px;
-  font-weight: 400;
-  color: #445069;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   width: fit-content;
 
-  @media ${devices.tablet} {
+  a {
+    color: #445069;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  @media ${devices.laptop} {
     font-size: 18px;
+  }
+
+  @media ${devices.laptopL} {
+    font-size: 20px;
   }
 `;

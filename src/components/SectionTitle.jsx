@@ -2,28 +2,30 @@ import styled from "styled-components";
 
 import { devices } from "../utils/breakpoints";
 
-const SectionTitle = ({ title }) => {
-  return <Container>{title}</Container>;
+const SectionTitle = ({ title, color }) => {
+  return <Container style={{ color }}>{title}</Container>;
 };
 
 export default SectionTitle;
 
 const Container = styled.h3`
-  font-family: "Sen", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  color: #1d2b53;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  color: #162a60;
+  margin-bottom: 10px;
   letter-spacing: -1px;
+  text-transform: capitalize;
 
   @media ${devices.tablet} {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   @media ${devices.laptop} {
-    font-size: 22px;
+    font-size: 34px;
+  }
+
+  @media ${devices.laptopL} {
+    font-size: 40px;
   }
 `;

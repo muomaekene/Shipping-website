@@ -1,33 +1,32 @@
-import styled from "styled-components";
 import { devices } from "../utils/breakpoints";
+import styled from "styled-components";
 
 const Partners = () => {
   return (
     <Container>
-      <img
-        src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/maersk_line_limited_rgb_logo.svg"
-        alt="partner-logo"
-        width="200"
-      />
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/9d/FedEx_Express.svg"
-        alt="partner-logo"
-        width="200"
-      />
-      <img
-        src="https://upload.wikimedia.org/wikipedia/en/2/22/Hapag_lloyd_logo.svg"
-        alt="partner-logo"
-      />
-      <img
-        src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/apm-terminals_pos.svg"
-        alt="partner-logo"
-        width="300"
-      />
-      <img
-        src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/svitzer.svg"
-        alt="partner-logo"
-        width="200"
-      />
+      <h3 className="title">Our Official Partners</h3>
+      <div className="images">
+        <img
+          src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/svitzer.svg"
+          alt="partner-logo"
+          width="200"
+        />
+        <img
+          src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/maersk_line_limited_rgb_logo.svg"
+          alt="partner-logo"
+          width="200"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/9d/FedEx_Express.svg"
+          alt="partner-logo"
+          width="200"
+        />
+        <img
+          src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/apm-terminals_pos.svg"
+          alt="partner-logo"
+          width="300"
+        />
+      </div>
     </Container>
   );
 };
@@ -35,20 +34,42 @@ const Partners = () => {
 export default Partners;
 
 const Container = styled.div`
+  background: #fff;
   display: flex;
-  padding: 20px 0 20px 20px;
-  overflow: auto;
-  background: #f1f3f5;
+  flex-direction: column;
+  align-items: center;
 
-  ::-webkit-scrollbar {
-    display: none;
+  .title {
+    margin-top: 40px;
+    font-size: 28px;
+    font-family: "Raleway", sans-serif;
+    color: #1d2b53;
+
+    @media ${devices.tablet} {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    @media ${devices.laptop} {
+      font-size: 34px;
+    }
+
+    @media ${devices.laptopL} {
+      font-size: 40px;
+    }
   }
 
-  @media ${devices.tablet} {
-    margin-bottom: 20px;
+  .images {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    overflow: auto;
+    scrollbar-width: none;
+    display: flex;
+    gap: 30px;
   }
 
   img {
-    margin-right: 40px;
+    height: 120px;
+    padding: 0 10px;
   }
 `;

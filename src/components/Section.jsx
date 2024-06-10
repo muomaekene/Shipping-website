@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../utils/breakpoints";
 
 const Section = ({ backgroundColor, ...props }) => {
   return (
@@ -12,5 +13,14 @@ export default Section;
 
 const Container = styled.section`
   width: 100%;
-  padding: 20px;
+  padding: 30px 20px;
+
+  @media ${devices.laptop} {
+    padding: 50px 60px;
+  }
+
+  @media ${devices.laptopL} {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 `;

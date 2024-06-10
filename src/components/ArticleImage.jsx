@@ -7,9 +7,6 @@ const ArticleImage = ({ imgSrc, imgAlt }) => {
 export default ArticleImage;
 
 const Image = styled.img`
-  width: 100%;
-  height: auto;
-  border: 1px solid #b4b4b8;
-  /* padding: 10px; */
-  margin-bottom: 10px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 `;

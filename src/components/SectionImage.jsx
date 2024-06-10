@@ -10,5 +10,4 @@ const Image = styled.img`
   margin-bottom: 20px;
   width: 100%;
   height: auto;
-  border-radius: 4px;
 `;

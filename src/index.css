@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    font-family: "Sofia Sans", sans-serif;
     font-style: normal;
     font-optical-sizing: auto;
     font-size: 100%;
@@ -12,7 +12,6 @@
 }
 
 body {
-    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -40,6 +39,8 @@ h4,
 h5,
 h6 {
     overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
 }
 
 #root,
