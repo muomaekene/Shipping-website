@@ -10,7 +10,7 @@ export default Button;
 
 const CustomButton = styled.button`
   width: fit-content;
-  padding: 16px 30px;
+  padding: 18px 30px;
   background: #4a4aed;
   color: #fff;
   font-size: 16px;
@@ -28,6 +28,6 @@ const CustomButton = styled.button`
 
   @media ${devices.laptopL} {
     font-size: 20px;
-    padding: 20px 40px;
+    padding: 22px 40px;
   }
 `;

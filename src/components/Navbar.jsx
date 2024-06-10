@@ -52,7 +52,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
           setShowMenu(!showMenu);
         }}
       >
-        <Menu size="25" color="#fff" />
+        <Menu size="30" color="#fff" />
       </button>
     </Nav>
   );
@@ -62,7 +62,7 @@ export default Navbar;
 
 const Nav = styled.nav`
   width: 100%;
-  min-height: 60px;
+  min-height: 70px;
   top: 0;
   z-index: 666;
   display: flex;
@@ -76,8 +76,8 @@ const Nav = styled.nav`
   }
 
   @media ${devices.laptopL} {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   ul {

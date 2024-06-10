@@ -13,14 +13,13 @@ export default Section;
 
 const Container = styled.section`
   width: 100%;
-  padding: 30px 20px;
+  padding: 40px 20px;
 
   @media ${devices.laptop} {
     padding: 50px 60px;
   }
 
   @media ${devices.laptopL} {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 80px;
   }
 `;

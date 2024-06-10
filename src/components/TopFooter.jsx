@@ -23,9 +23,9 @@ const TopFooter = () => {
           <Paragraph>office@expedi.com</Paragraph>
           <Paragraph>(734) 621-9936</Paragraph>
           <div className="socials">
-            <Instagram color="#a0a0a4" strokeWidth="1" />
-            <Facebook color="#a0a0a4" strokeWidth="1" />
-            <Linkedin color="#a0a0a4" strokeWidth="1" />
+            <Instagram color="#a0a0a4" strokeWidth="1.5" />
+            <Facebook color="#a0a0a4" strokeWidth="1.5" />
+            <Linkedin color="#a0a0a4" strokeWidth="1.5" />
           </div>
         </LocationGroup>
       </div>

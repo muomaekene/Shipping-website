@@ -35,7 +35,6 @@ const Form = styled.form`
   }
 
   .input-field {
-    /* border: 1px solid #b4b4b8; */
     border-radius: 4px;
     padding-left: 15px;
     font-size: 16px;
@@ -59,14 +58,12 @@ const Form = styled.form`
 
   .feedback-field {
     margin-bottom: 10px;
-    /* border: 1px solid #b4b4b8; */
     border-radius: 4px;
     padding: 15px;
     font-size: 16px;
     outline: none;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     @media ${devices.laptop} {
       font-size: 18px;
     }

@@ -14,7 +14,7 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
             setShowMenu(!showMenu);
           }}
         >
-          <X size="25" color="#000" />
+          <X size="30" color="#000" />
         </button>
       </div>
 
@@ -50,7 +50,6 @@ const Container = styled.section`
   height: 100vh;
   position: absolute;
   top: 0;
-  /* touch-action: none; */
   z-index: 667;
   background: #fff;
   display: flex;
@@ -64,7 +63,7 @@ const Container = styled.section`
 
     p {
       font-weight: 400;
-      font-size: 22px;
+      font-size: 28px;
     }
   }
 

@@ -9,15 +9,11 @@ const SectionHeader = ({ title }) => {
 export default SectionHeader;
 
 const Container = styled.h3`
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 10px;
   color: #1d2b53;
-
-  @media ${devices.tablet} {
-    font-size: 20px;
-  }
 
   @media ${devices.laptop} {
     font-size: 24px;

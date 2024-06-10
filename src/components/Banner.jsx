@@ -40,23 +40,22 @@ const Container = styled.section`
 
   @media ${devices.tablet} {
     flex-direction: row;
-    height: calc(100vh - 60px);
   }
 
   @media ${devices.laptop} {
     padding-left: 60px;
     padding-right: 60px;
+    height: calc(100vh - 70px);
   }
 
   @media ${devices.laptopL} {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .banner-article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     @media ${devices.tablet} {
       width: 50%;
@@ -71,16 +70,16 @@ const Container = styled.section`
     margin-bottom: 10px;
 
     @media ${devices.mobileL} {
-      font-size: 38px;
+      font-size: 42px;
     }
 
     @media ${devices.laptop} {
-      font-size: 42px;
+      font-size: 46px;
       width: 90%;
     }
 
     @media ${devices.laptopL} {
-      font-size: 50px;
+      font-size: 54px;
     }
   }
 

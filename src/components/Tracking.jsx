@@ -24,7 +24,7 @@ const Container = styled.div`
 
   input {
     width: 100%;
-    height: 60px;
+    height: 70px;
     padding-left: 15px;
     font-size: 16px;
     outline: none;
@@ -39,15 +39,15 @@ const Container = styled.div`
     }
 
     @media ${devices.laptopL} {
+      height: 80px;
       font-size: 20px;
-      height: 70px;
       padding-left: 20px;
     }
   }
 
   button {
     width: 100%;
-    height: 60px;
+    height: 70px;
     font-size: 16px;
     cursor: pointer;
     background: #4a4aed;
@@ -60,7 +60,7 @@ const Container = styled.div`
 
       @media ${devices.laptopL} {
         font-size: 20px;
-        height: 70px;
+        height: 80px;
       }
     }
   }

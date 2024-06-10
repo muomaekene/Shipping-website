@@ -11,9 +11,9 @@ export default ArticleTitle;
 const Heading = styled.h4`
   text-transform: capitalize;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
-  color: #1d2b53;
+  color: #354882;
   letter-spacing: -1px;
   margin-bottom: 10px;
 

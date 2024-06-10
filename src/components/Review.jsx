@@ -12,6 +12,7 @@ const Review = ({ name, comment, imgSrc, imgAlt }) => {
         <img width="20" height="20" src={starIcon} alt="star icon" />
         <img width="20" height="20" src={starIcon} alt="star icon" />
         <img width="20" height="20" src={starIcon} alt="star icon" />
+        <img width="20" height="20" src={starIcon} alt="star icon" />
       </div>
 
       <ArticleContent content={comment} />
@@ -44,7 +45,7 @@ const Article = styled.article`
 
   .stars {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     gap: 5px;
   }
 
@@ -69,8 +70,8 @@ const Article = styled.article`
   }
 
   .image {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     border-radius: 30px;
     margin-right: 10px;
 

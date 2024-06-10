@@ -7,7 +7,7 @@ const SectionImage = ({ imgSrc, imgAlt }) => {
 export default SectionImage;
 
 const Image = styled.img`
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   width: 100%;
   height: auto;
 `;
