@@ -36,6 +36,7 @@ const Form = styled.form`
 
   .input-field {
     border-radius: 4px;
+    border: 1px solid #8d8a8a;
     padding-left: 15px;
     font-size: 16px;
     margin-bottom: 10px;
@@ -59,6 +60,7 @@ const Form = styled.form`
   .feedback-field {
     margin-bottom: 10px;
     border-radius: 4px;
+    border: 1px solid #8d8a8a;
     padding: 15px;
     font-size: 16px;
     outline: none;

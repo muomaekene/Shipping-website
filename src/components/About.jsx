@@ -12,7 +12,7 @@ const About = () => {
     <Section backgroundColor="#f4f5f6" idValue="about">
       <Flex>
         <div className="flex-item-1">
-          <video controls>
+          <video autoPlay playsInline controls>
             <source
               src="https://cdn.pixabay.com/video/2020/10/28/53582-475000650_large.mp4"
               type="video/mp4"
@@ -24,7 +24,7 @@ const About = () => {
 
         <div className="flex-item-2">
           <div className="top-title">ELEVATING THE FUTURE</div>
-          <SectionTitle title="The Journey of Thousands of Successful Shipments Begins Here" />
+          <SectionTitle title="The Journey of A Thousand Successful Shipments Begins Here" />
           <BodyContent content="EXPEDI Shipping Co. is a trans-national forwarder specialized in managing your shipments from one destination to another. We design and implement industry-leading solutions together with our nationwide network of partners. " />
           <BodyContent content="With over 50+ dedicated employees, working around the country, we deliver operational excellence to provide viable solutions to the most challenging supply chain questions. Therefore, most of our clients see us as one of the best logistics companies in the United States." />
           <BodyContent content="Our focus on providing excellence and value to our customers is made possible by our team of experts who bring passion to their work. We are totally commited to meeting and exceeding our customers' expectations" />
@@ -60,15 +60,15 @@ const Flex = styled.div`
   }
 
   .top-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 
     @media ${devices.laptop} {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     @media ${devices.laptop} {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 
@@ -77,6 +77,6 @@ const Flex = styled.div`
     border-radius: 4px;
     max-height: 100%;
     width: 100%;
-    border: none;
+    border: 1px solid #706f6f;
   }
 `;
