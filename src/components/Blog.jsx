@@ -15,7 +15,7 @@ const Blog = ({ image, imageAlt, title, content }) => {
         <ArticleTitle title={title} />
         <ArticleContent content={content} />
         <button>
-          Read More <ArrowRightIcon strokeWidth="1.5" size="20" />
+          Read More <ArrowRightIcon strokeWidth="1.2" size="20" />
         </button>
       </div>
     </Container>

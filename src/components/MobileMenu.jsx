@@ -65,6 +65,10 @@ const Container = styled.section`
       font-weight: 400;
       font-size: 28px;
     }
+
+    button {
+      background: none;
+    }
   }
 
   ul {

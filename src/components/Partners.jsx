@@ -41,6 +41,7 @@ const Container = styled.div`
 
   .title {
     margin-top: 40px;
+    font-weight: 400;
     font-size: 28px;
     font-family: "Raleway", sans-serif;
     color: #1d2b53;

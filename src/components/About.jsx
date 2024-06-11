@@ -5,18 +5,30 @@ import BodyContent from "./BodyContent";
 import styled from "styled-components";
 
 import { devices } from "../utils/breakpoints";
+import Button from "./Button";
 
 const About = () => {
   return (
-    <Section backgroundColor="#f0f6fc" idValue="about">
+    <Section backgroundColor="#f4f5f6" idValue="about">
       <Flex>
         <div className="flex-item-1">
-          <SectionTitle title="We Provide Services That You Can Rely On & Be Totally Satified With" />
+          <video controls>
+            <source
+              src="https://cdn.pixabay.com/video/2020/10/28/53582-475000650_large.mp4"
+              type="video/mp4"
+            />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         <div className="flex-item-2">
-          <BodyContent content="EXPEDY Shipping Co. is an international forwarder specialized in managing your shipments from one destination to another. We design and implement industry-leading solutions together with our worldwide network of partners. " />
-          <BodyContent content="With over 100+ dedicated employees, working around the globe, we deliver operational excellence to provide viable solutions to the most challenging supply chain questions. Therefore, most of our clients see us as one of the best logistics companies in the United States." />
+          <div className="top-title">ELEVATING THE FUTURE</div>
+          <SectionTitle title="The Journey of Thousands of Successful Shipments Begins Here" />
+          <BodyContent content="EXPEDI Shipping Co. is a trans-national forwarder specialized in managing your shipments from one destination to another. We design and implement industry-leading solutions together with our nationwide network of partners. " />
+          <BodyContent content="With over 50+ dedicated employees, working around the country, we deliver operational excellence to provide viable solutions to the most challenging supply chain questions. Therefore, most of our clients see us as one of the best logistics companies in the United States." />
+          <BodyContent content="Our focus on providing excellence and value to our customers is made possible by our team of experts who bring passion to their work. We are totally commited to meeting and exceeding our customers' expectations" />
+          <Button name="Learn More" />
         </div>
       </Flex>
     </Section>
@@ -31,14 +43,40 @@ const Flex = styled.div`
   @media ${devices.tablet} {
     display: flex;
     flex-wrap: wrap;
+    gap: 40px;
+  }
 
-    .flex-item-1 {
-      flex: 1;
-      margin-right: 20px;
+  @media ${devices.laptop} {
+    gap: 60px;
+  }
+
+  .flex-item-1 {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .flex-item-2 {
+    flex: 1;
+  }
+
+  .top-title {
+    font-size: 14px;
+    font-weight: 400;
+
+    @media ${devices.laptop} {
+      font-size: 16px;
     }
 
-    .flex-item-2 {
-      flex: 1;
+    @media ${devices.laptop} {
+      font-size: 18px;
     }
+  }
+
+  video {
+    display: block;
+    border-radius: 4px;
+    max-height: 100%;
+    width: 100%;
+    border: none;
   }
 `;

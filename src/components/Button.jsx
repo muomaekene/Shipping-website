@@ -10,13 +10,13 @@ export default Button;
 
 const CustomButton = styled.button`
   width: fit-content;
-  padding: 18px 30px;
+  padding: 18px 34px;
   background: #4a4aed;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
-  transition: ease all 0.5s;
+  transition: ease all 0.3s;
 
   &:hover {
     background: #3636b5;

@@ -10,7 +10,7 @@ import styled from "styled-components";
 
 const ContactUs = () => {
   return (
-    <Section backgroundColor="#f2f0ea" idValue="contact-us">
+    <Section backgroundColor="#f4f5f6" idValue="contact-us">
       <SectionTitle title="We'd Love to Hear From You" />
 
       <Grid>
@@ -48,7 +48,7 @@ const Grid = styled.div`
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 40px;
   }
 
   @media ${devices.laptop} {
@@ -64,11 +64,11 @@ const Grid = styled.div`
 
 const Link = styled.p`
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   width: fit-content;
 
   a {
-    color: #445069;
+    color: #4a4aed;
     font-weight: 400;
     text-decoration: none;
   }

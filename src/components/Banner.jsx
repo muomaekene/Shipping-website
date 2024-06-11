@@ -65,7 +65,8 @@ const Container = styled.section`
   .banner-title {
     font-family: "Raleway", sans-serif;
     text-transform: capitalize;
-    font-size: 34px;
+    font-size: 38px;
+    font-weight: 400;
     color: #fff;
     margin-bottom: 10px;
 

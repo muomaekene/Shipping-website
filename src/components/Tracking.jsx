@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "lucide-react";
 import { devices } from "../utils/breakpoints";
 
 import styled from "styled-components";
@@ -6,7 +7,9 @@ const Tracking = () => {
   return (
     <Container>
       <input type="text" placeholder="Enter your tracking code" />
-      <button>Track {">>"} </button>
+      <button>
+        Track <ArrowRightIcon strokeWidth="1.2" size="20" />
+      </button>
     </Container>
   );
 };
@@ -53,15 +56,19 @@ const Container = styled.div`
     background: #4a4aed;
     border-radius: 4px;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media ${devices.laptop} {
       width: 40%;
       font-size: 18px;
+    }
 
-      @media ${devices.laptopL} {
-        font-size: 20px;
-        height: 80px;
-      }
+    &:hover {
+      background: #3636b5;
+      border: 1px solid transparent !important;
+      color: #fff !important;
     }
   }
 `;

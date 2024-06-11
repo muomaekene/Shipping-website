@@ -16,7 +16,7 @@ import styled from "styled-components";
 
 const Blogs = () => {
   return (
-    <Section backgroundColor="#f2f0ea" idValue="news">
+    <Section backgroundColor="#f4f5f6" idValue="news">
       <SectionHeader title="Blogs & Media" />
 
       <Grid>

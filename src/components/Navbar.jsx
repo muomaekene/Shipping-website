@@ -108,13 +108,13 @@ const Nav = styled.nav`
       }
 
       a {
-        color: #a0a0a4;
+        color: #fff;
         text-decoration: none;
 
         &:hover {
           text-decoration: underline;
-          text-decoration-color: #fff;
-          color: #fff;
+          text-decoration-color: #a0a0a4;
+          color: #a0a0a4;
           text-decoration-thickness: 0.5px;
           text-underline-position: under;
         }
@@ -123,16 +123,26 @@ const Nav = styled.nav`
   }
 
   li:last-child {
-    background: #4a4aed;
+    border: 1px solid #6b6868;
     border-radius: 4px;
     padding: 12px 24px;
     cursor: pointer;
+
+    @media ${devices.laptop} {
+      padding: 15px 30px;
+    }
+
+    &:hover {
+      background: #3636b5;
+      border: 1px solid transparent;
+    }
 
     a {
       color: #fff;
 
       &:hover {
         text-decoration: none;
+        color: #fff;
       }
     }
   }

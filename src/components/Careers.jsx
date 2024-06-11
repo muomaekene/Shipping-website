@@ -14,11 +14,11 @@ import { devices } from "../utils/breakpoints";
 
 const Careers = () => {
   return (
-    <Section backgroundColor="#fcfbf0" idValue="careers">
+    <Section backgroundColor="#f9f8ef" idValue="careers">
       <Flex>
         <div className="flex-item-1">
           <SectionTitle title="Become A Part of Our Team" />
-          <BodyContent content="Interested in building a career while making an impact in a fast developing and connected world? Meet our people, see where we work and join a diverse, dynamic and growing organization that continually invests in advancing your skills and professional opportunites while contributing something meaningful to the modern and connected world." />
+          <BodyContent content="Interested in building a career while making an impact in a fast developing and connected world? Meet our people, see where we work and join a diverse, dynamic and growing organization that continually invests in advancing your skills and professional opportunites while contributing something meaningful to the modern world." />
           <BodyContent content="EXPEDY is home and every staff is a member of a big and diverse family of innovative service providers. Check out our job openings and see where you can come in." />
           <Button name="Find Opportunities" />
         </div>
@@ -41,20 +41,16 @@ const Flex = styled.div`
   @media ${devices.tablet} {
     display: flex;
     flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  @media ${devices.laptop} {
+    gap: 60px;
   }
 
   .flex-item-1 {
     flex: 2;
     margin-bottom: 20px;
-
-    @media ${devices.tablet} {
-      padding-right: 20px;
-      margin-bottom: 0;
-    }
-
-    @media ${devices.laptop} {
-      padding-right: 60px;
-    }
   }
 
   .flex-item-2 {

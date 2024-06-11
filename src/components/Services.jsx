@@ -15,9 +15,9 @@ import styled from "styled-components";
 
 const Services = () => {
   return (
-    <Section backgroundColor="#f0f6fc" idValue="services">
+    <Section backgroundColor="#f4f5f6" idValue="services">
       <SectionTitle title="Why Choose Us" />
-      <SectionContent content="US-based Freight moving and OTR Trucking company offers Roll-On-Roll-Off services, which is the simplest and cheapest way to get your packages across the country in the shortest time possible" />
+      <SectionContent content="We are a US-based freight moving and OTR trucking company that offers Roll-On-Roll-Off services, which is the simplest and cheapest way to get your packages across the country in the shortest time possible" />
 
       <Grid>
         <div className="grid-item">
@@ -39,7 +39,7 @@ const Services = () => {
             alt="icon of cellphone with checkmark"
           />
           <ArticleTitle title="OTP Confirmation" />
-          <ArticleContent content="Your deliveries are verified so we make sure you're the one receiving them" />
+          <ArticleContent content="Security is our priority. We verify your packages so we are sure you're the one receiving them" />
         </div>
         <div className="grid-item">
           <img
@@ -49,7 +49,7 @@ const Services = () => {
             alt="icon of cellphone with location"
           />
           <ArticleTitle title="Full Tracking" />
-          <ArticleContent content="You can track your deliveries and find out when you'll receive them" />
+          <ArticleContent content="You can track your packages and find out when you'll receive them" />
         </div>
         <div className="grid-item">
           <img
@@ -59,7 +59,7 @@ const Services = () => {
             alt="icon of cash being handed over"
           />
           <ArticleTitle title="Cash on Delivery" />
-          <ArticleContent content="Can't access any of our secure payments, we also accept cash" />
+          <ArticleContent content="Can't access any of our secure payments options? We also accept cash" />
         </div>
       </Grid>
     </Section>
