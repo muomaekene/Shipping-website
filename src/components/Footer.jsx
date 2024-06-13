@@ -1,6 +1,5 @@
-import { devices } from "../utils/breakpoints";
-
 import TopFooter from "./TopFooter";
+import { devices } from "../utils/breakpoints";
 import styled from "styled-components";
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
     <PageFooter>
       <TopFooter />
       <Paragraph className="copyright">
-        &copy; 2024 EXPEDI Shipping Co. All rights reserved.
+        &copy; 2024 EXPEDIT Shipping Co. All rights reserved.
       </Paragraph>
     </PageFooter>
   );
@@ -29,10 +28,10 @@ const Paragraph = styled.p`
   text-align: center;
 
   @media ${devices.laptop} {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   @media ${devices.laptopL} {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;

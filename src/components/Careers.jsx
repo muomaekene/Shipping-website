@@ -8,9 +8,9 @@ import deliveryPeople from "../images/delivery-people.jpg";
 import manWriting from "../images/man-writing.jpg";
 import manInStore from "../images/man-in-store.jpg";
 
-import styled from "styled-components";
-
 import { devices } from "../utils/breakpoints";
+
+import styled from "styled-components";
 
 const Careers = () => {
   return (
@@ -19,7 +19,7 @@ const Careers = () => {
         <div className="flex-item-1">
           <SectionTitle title="Become A Part of Our Team" />
           <BodyContent content="Interested in building a career while making an impact in a fast developing and connected world? Meet our people, see where we work and join a diverse, dynamic and growing organization that continually invests in advancing your skills and professional opportunites while contributing something meaningful to the modern world." />
-          <BodyContent content="EXPEDY is home and every staff is a member of a big and diverse family of innovative service providers. Check out our job openings and see where you can come in." />
+          <BodyContent content="EXPEDIT is home and every staff is a member of a big and diverse family of innovative service providers. Check out our job openings and see where you can come in." />
           <Button name="Find Opportunities" />
         </div>
 

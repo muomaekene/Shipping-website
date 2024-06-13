@@ -24,9 +24,6 @@ const Navbar = ({ showMenu, setShowMenu }) => {
       <Logo />
       <ul>
         <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
           <a href="#about">Company</a>
         </li>
         <li>
@@ -72,6 +69,7 @@ const Nav = styled.nav`
   background: #0e0e0e;
 
   @media ${devices.laptop} {
+    min-height: 80px;
     padding: 0 60px;
   }
 
@@ -98,13 +96,13 @@ const Nav = styled.nav`
       }
 
       @media ${devices.laptop} {
-        font-size: 18px;
-        margin-left: 35px;
+        font-size: 17px;
+        margin-left: 30px;
       }
 
       @media ${devices.laptopL} {
-        font-size: 20px;
-        margin-left: 45px;
+        font-size: 18px;
+        margin-left: 35px;
       }
 
       a {
@@ -113,8 +111,8 @@ const Nav = styled.nav`
 
         &:hover {
           text-decoration: underline;
-          text-decoration-color: #a0a0a4;
-          color: #a0a0a4;
+          text-decoration-color: #d7d7dc;
+          color: #d7d7dc;
           text-decoration-thickness: 0.5px;
           text-underline-position: under;
         }
@@ -123,18 +121,22 @@ const Nav = styled.nav`
   }
 
   li:last-child {
-    border: 1px solid #6b6868;
+    background: #4a4aed;
     border-radius: 4px;
     padding: 12px 24px;
     cursor: pointer;
+    transition: ease all 0.3s;
 
     @media ${devices.laptop} {
-      padding: 15px 30px;
+      padding: 16px 30px;
+    }
+
+    @media ${devices.laptopL} {
+      padding: 18px 34px;
     }
 
     &:hover {
       background: #3636b5;
-      border: 1px solid transparent;
     }
 
     a {

@@ -11,8 +11,8 @@ const TopFooter = () => {
       <div className="left-side">
         <Logo />
         <Paragraph>
-          EXPEDI simplifies how individuals and companies send and receive
-          freight across the world.
+          EXPEDIT simplifies how individuals and companies send and receive
+          freight across the United States
         </Paragraph>
 
         <LocationGroup>
@@ -20,7 +20,7 @@ const TopFooter = () => {
           <Paragraph>
             70 Washington Square South, New York, NY 10012, United States
           </Paragraph>
-          <Paragraph>office@expedi.com</Paragraph>
+          <Paragraph>office@expedit.com</Paragraph>
           <Paragraph>(734) 621-9936</Paragraph>
           <div className="socials">
             <Instagram color="#a0a0a4" strokeWidth="1.2" />
@@ -182,16 +182,16 @@ const Container = styled.section`
 `;
 
 const Header = styled.h4`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: #fff;
 
   @media ${devices.laptop} {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   @media ${devices.laptopL} {
-    font-size: 24px;
+    font-size: 22px;
   }
 `;
 
@@ -201,11 +201,11 @@ const Paragraph = styled.p`
   margin-top: 10px;
 
   @media ${devices.laptop} {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   @media ${devices.laptopL} {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 
@@ -216,11 +216,11 @@ const Link = styled.a`
   text-decoration: none;
 
   @media ${devices.laptop} {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   @media ${devices.laptopL} {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 

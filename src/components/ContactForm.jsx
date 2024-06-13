@@ -36,21 +36,19 @@ const Form = styled.form`
 
   .input-field {
     border-radius: 4px;
-    border: 1px solid #8d8a8a;
+    border: 1px solid #c8c5c5;
     padding-left: 15px;
     font-size: 16px;
     margin-bottom: 10px;
     height: 55px;
     outline: none;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
     @media ${devices.laptop} {
-      font-size: 18px;
+      font-size: 17px;
     }
 
     @media ${devices.laptopL} {
-      font-size: 20px;
+      font-size: 18px;
       height: 70px;
       padding-left: 20px;
       margin-bottom: 15px;
@@ -60,18 +58,17 @@ const Form = styled.form`
   .feedback-field {
     margin-bottom: 10px;
     border-radius: 4px;
-    border: 1px solid #8d8a8a;
+    border: 1px solid #c8c5c5;
     padding: 15px;
     font-size: 16px;
     outline: none;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
     @media ${devices.laptop} {
-      font-size: 18px;
+      font-size: 17px;
     }
 
     @media ${devices.laptopL} {
-      font-size: 20px;
+      font-size: 18px;
       padding-left: 20px;
       margin-bottom: 15px;
     }

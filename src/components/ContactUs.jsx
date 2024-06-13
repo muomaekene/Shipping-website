@@ -23,7 +23,7 @@ const ContactUs = () => {
             steps."
           />
           <Link>
-            <a href="/">info@expedi.com</a>
+            <a href="/">info@expedit.com</a>
           </Link>
           <Link>
             <a href="/">(723) 548-4843</a>
@@ -69,15 +69,14 @@ const Link = styled.p`
 
   a {
     color: #4a4aed;
-    font-weight: 400;
     text-decoration: none;
   }
 
   @media ${devices.laptop} {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   @media ${devices.laptopL} {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;

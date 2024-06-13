@@ -1,13 +1,14 @@
 import Section from "./Section";
 import BodyContent from "./BodyContent";
 import SectionTitle from "./SectionTitle";
-import Tracking from "./Tracking";
+import TrackingForm from "./TrackingForm";
+import SectionImage from "./SectionImage";
 
 import trackingIllustrator from "./../images/tracking.png";
 
-import styled from "styled-components";
 import { devices } from "../utils/breakpoints";
-import SectionImage from "./SectionImage";
+
+import styled from "styled-components";
 
 const Track = () => {
   return (
@@ -18,15 +19,16 @@ const Track = () => {
           <BodyContent
             color="#a0a0a4"
             content=" If you have recently shipped a package with us, enter your tracking
-          code below to check shipping status."
+          code below to check shipping status"
           />
-          <Tracking />
+          <TrackingForm />
         </div>
-
-        <SectionImage
-          imgSrc={trackingIllustrator}
-          imgAlt="Illustration of guy holding a calculator"
-        />
+        <div className="bgImg">
+          <SectionImage
+            imgSrc={trackingIllustrator}
+            imgAlt="Illustration of guy holding a calculator"
+          />
+        </div>
       </Flex>
     </Section>
   );
@@ -54,7 +56,7 @@ const Flex = styled.div`
     }
   }
 
-  img {
+  .bgImg {
     max-inline-size: 100%;
     block-size: auto;
     width: 100%;

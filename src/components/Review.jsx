@@ -37,7 +37,8 @@ const Article = styled.article`
   flex-direction: column;
   justify-content: space-between;
   background: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
   @media ${devices.tablet} {
     margin: 0;
@@ -51,15 +52,15 @@ const Article = styled.article`
 
   h4 {
     font-weight: 400;
-    color: #1d2b53;
-    font-size: 18px;
+    color: #162a60;
+    font-size: 17px;
 
     @media ${devices.laptop} {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     @media ${devices.laptopL} {
-      font-size: 22px;
+      font-size: 19px;
     }
   }
 

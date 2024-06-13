@@ -1,15 +1,15 @@
-import { devices } from "../utils/breakpoints";
-
 import ArticleImage from "./ArticleImage";
 import ArticleTitle from "./ArticleTitle";
 import ArticleContent from "./ArticleContent";
 
-import styled from "styled-components";
 import { ArrowRightIcon } from "lucide-react";
+import { devices } from "../utils/breakpoints";
+
+import styled from "styled-components";
 
 const Blog = ({ image, imageAlt, title, content }) => {
   return (
-    <Container>
+    <Article>
       <ArticleImage imgSrc={image} imgAlt={imageAlt} />
       <div className="article-body">
         <ArticleTitle title={title} />
@@ -18,17 +18,18 @@ const Blog = ({ image, imageAlt, title, content }) => {
           Read More <ArrowRightIcon strokeWidth="1.2" size="20" />
         </button>
       </div>
-    </Container>
+    </Article>
   );
 };
 
 export default Blog;
 
-const Container = styled.article`
+const Article = styled.article`
   margin-bottom: 20px;
   border-radius: 4px;
   background: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
   @media ${devices.tablet} {
     margin-bottom: 0;
@@ -46,13 +47,22 @@ const Container = styled.article`
     width: fit-content;
     display: flex;
     margin-top: 10px;
+    border: 1px solid #bcb8b8;
+    border-radius: 4px;
+    padding: 12px 15px;
 
     @media ${devices.laptop} {
-      font-size: 18px;
+      font-size: 17px;
+      padding: 14px 18px;
     }
 
     @media ${devices.laptopL} {
-      font-size: 20px;
+      font-size: 18px;
+      padding: 16px 20px;
+    }
+
+    &:active {
+      background: #efeeee;
     }
   }
 `;

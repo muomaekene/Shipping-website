@@ -14,6 +14,7 @@ const Container = styled.h3`
   text-transform: capitalize;
   margin-bottom: 10px;
   color: #1d2b53;
+  letter-spacing: -1px;
 
   @media ${devices.laptop} {
     font-size: 24px;

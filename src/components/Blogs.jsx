@@ -1,14 +1,10 @@
-import cargoPlane from "../images/cargo-plane.jpg";
-import wharehouse from "../images/wharehouse.jpg";
-import doorstepDelivery from "../images/doorstep-delivery.jpg";
-
-// import shipAtSea from "../images/ship-at-sea.jpg";
-// import containers from "../images/containers.jpg";
-// import semiTruck from "../images/semi-truck.jpg";
-
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
 import Blog from "./Blog";
+
+import cargoPlane from "../images/cargo-plane.jpg";
+import wharehouse from "../images/wharehouse.jpg";
+import semiTruck from "../images/semi-truck.jpg";
 
 import { devices } from "../utils/breakpoints";
 
@@ -18,26 +14,24 @@ const Blogs = () => {
   return (
     <Section backgroundColor="#f4f5f6" idValue="news">
       <SectionHeader title="Blogs & Media" />
-
       <Grid>
         <Blog
-          image={doorstepDelivery}
-          imageAlt="Ship sailing at sea"
+          image={semiTruck}
+          imageAlt="Truck on the highway"
           title="For Individuals"
-          content="We move freight of all sizes and quantity to over 120
-          destinations all over the world"
+          content="We move freight of all sizes and quantity to over 120 destinations all over the world."
         />
         <Blog
           image={cargoPlane}
-          imageAlt="Container in a port"
+          imageAlt="Cargo plane unloading"
           title="For Businesses"
-          content="Our agents are experts in providing assistance to get goods cleared quickly"
+          content="Our agents are experts in providing assistance to get goods cleared very fast."
         />
         <Blog
           image={wharehouse}
-          imageAlt="Wharehouse operator"
+          imageAlt="Warehouse operator"
           title="For Partners"
-          content="We safely store and keep accurate records of goods of every size and quantity"
+          content="We safely store and keep accurate records of goods of every size and quantity."
         />
       </Grid>
     </Section>

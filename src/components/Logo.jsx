@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { devices } from "../utils/breakpoints";
 
 const Logo = () => {
-  return <Heading>EXPEDI</Heading>;
+  return <Heading>EXPEDIT</Heading>;
 };
 
 export default Logo;
@@ -14,7 +14,11 @@ const Heading = styled.h1`
   color: #fff;
   font-weight: 400;
 
+  @media ${devices.laptop} {
+    font-size: 24px;
+  }
+
   @media ${devices.laptopL} {
-    font-size: 30px;
+    font-size: 26px;
   }
 `;

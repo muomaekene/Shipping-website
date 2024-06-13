@@ -1,15 +1,14 @@
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 import BodyContent from "./BodyContent";
-
-import styled from "styled-components";
+import Button from "./Button";
 
 import { devices } from "../utils/breakpoints";
-import Button from "./Button";
+import styled from "styled-components";
 
 const About = () => {
   return (
-    <Section backgroundColor="#f4f5f6" idValue="about">
+    <Section backgroundColor="#f0f7fa" idValue="about">
       <Flex>
         <div className="flex-item-1">
           <video autoPlay playsInline controls>
@@ -24,10 +23,10 @@ const About = () => {
 
         <div className="flex-item-2">
           <div className="top-title">ELEVATING THE FUTURE</div>
-          <SectionTitle title="The Journey of A Thousand Successful Shipments Begins Here" />
-          <BodyContent content="EXPEDI Shipping Co. is a trans-national forwarder specialized in managing your shipments from one destination to another. We design and implement industry-leading solutions together with our nationwide network of partners. " />
-          <BodyContent content="With over 50+ dedicated employees, working around the country, we deliver operational excellence to provide viable solutions to the most challenging supply chain questions. Therefore, most of our clients see us as one of the best logistics companies in the United States." />
-          <BodyContent content="Our focus on providing excellence and value to our customers is made possible by our team of experts who bring passion to their work. We are totally commited to meeting and exceeding our customers' expectations" />
+          <SectionTitle title="The Journey of A Thousand Successful Shipments Begins With One" />
+          <BodyContent content="EXPEDIT Shipping Co. is a trans-national shipping and truck services company. We design and implement industry-leading solutions together with our nationwide network of partners. " />
+          <BodyContent content="With over 50+ dedicated employees working around the country, we deliver operational excellence to provide viable solutions to the most challenging supply chain questions. Therefore, most of our clients see us as one of the best logistics companies in the United States." />
+          <BodyContent content="Our focus on providing excellence and value to our customers is made possible by our team of experts who bring passion to their work. We are totally commited to meeting and exceeding our customers' expectations." />
           <Button name="Learn More" />
         </div>
       </Flex>
@@ -61,22 +60,22 @@ const Flex = styled.div`
 
   .top-title {
     font-size: 16px;
-    font-weight: 400;
+    color: #283143;
+    letter-spacing: -1px;
 
     @media ${devices.laptop} {
-      font-size: 18px;
+      font-size: 17px;
     }
 
     @media ${devices.laptop} {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 
   video {
     display: block;
-    border-radius: 4px;
+    border-radius: 8px;
     max-height: 100%;
     width: 100%;
-    border: 1px solid #706f6f;
   }
 `;

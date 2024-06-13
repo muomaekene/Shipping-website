@@ -7,10 +7,10 @@ import Careers from "./Careers";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import Partners from "./Partners";
-
-import styled from "styled-components";
 import Quote from "./Quote";
 import Track from "./Track";
+
+import styled from "styled-components";
 
 const PageContent = () => {
   return (

@@ -1,8 +1,7 @@
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 import SectionContent from "./SectionContent";
-import ArticleTitle from "./ArticleTitle";
-import ArticleContent from "./ArticleContent";
+import Service from "./Service";
 
 import payIcon from "../images/pay.png";
 import locationIcon from "../images/location.png";
@@ -15,52 +14,34 @@ import styled from "styled-components";
 
 const Services = () => {
   return (
-    <Section backgroundColor="#f4f5f6" idValue="services">
+    <Section backgroundColor="#f0f7fa" idValue="services">
       <SectionTitle title="Why Choose Us" />
-      <SectionContent content="We are a US-based freight moving and OTR trucking company that offers Roll-On-Roll-Off services, which is the simplest and cheapest way to get your packages across the country in the shortest time possible" />
-
+      <SectionContent content="We strive to make shipping easier, faster, secure and more convenient for you. Trust us to handle your packages with the utmost care and get them where they need to go - on time and in perfect condition" />
       <Grid>
-        <div className="grid-item">
-          <img
-            src={transportIcon}
-            width="70"
-            height="70"
-            alt="icon of delivery van"
-          />
-          <ArticleTitle title="Fastest Service" />
-          <ArticleContent content="We deliver your items on the same day, especially if you live nearby" />
-        </div>
-
-        <div className="grid-item">
-          <img
-            src={securityIcon}
-            width="70"
-            height="70"
-            alt="icon of cellphone with checkmark"
-          />
-          <ArticleTitle title="OTP Confirmation" />
-          <ArticleContent content="Security is our priority. We verify your packages so we are sure you're the one receiving them" />
-        </div>
-        <div className="grid-item">
-          <img
-            src={locationIcon}
-            width="70"
-            height="70"
-            alt="icon of cellphone with location"
-          />
-          <ArticleTitle title="Full Tracking" />
-          <ArticleContent content="You can track your packages and find out when you'll receive them" />
-        </div>
-        <div className="grid-item">
-          <img
-            src={payIcon}
-            width="70"
-            height="70"
-            alt="icon of cash being handed over"
-          />
-          <ArticleTitle title="Cash on Delivery" />
-          <ArticleContent content="Can't access any of our secure payments options? We also accept cash" />
-        </div>
+        <Service
+          imgSrc={transportIcon}
+          imgAlt="icon of delivery van"
+          title="Speedy Delivery"
+          content="We strive to deliver your packages in the fastest time possible and with care"
+        />
+        <Service
+          imgSrc={securityIcon}
+          imgAlt="icon of cellphone with checkmark"
+          title="Secure Shipping"
+          content="Security is our priority. We verify your packages to ensure you're the receiver"
+        />
+        <Service
+          imgSrc={locationIcon}
+          imgAlt="icon of cellphone with location"
+          title="Full Tracking"
+          content="Track and monitor your packages in real-time and know when they'll arrive"
+        />
+        <Service
+          imgSrc={payIcon}
+          imgAlt="icon of cash being handed over"
+          title="Flexible Payments"
+          content="Can't access any of our secure payments options? We also accept cash"
+        />
       </Grid>
     </Section>
   );
@@ -80,21 +61,5 @@ const Grid = styled.div`
 
   @media ${devices.laptop} {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .grid-item {
-    border-radius: 4px;
-    padding: 0 20px;
-    margin-top: 20px;
-    height: 17rem;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-    img {
-      margin-bottom: 20px;
-    }
   }
 `;

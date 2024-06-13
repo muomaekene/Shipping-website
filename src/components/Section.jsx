@@ -13,7 +13,7 @@ export default Section;
 
 const Container = styled.section`
   width: 100%;
-  padding: 40px 20px;
+  padding: 30px 20px;
 
   @media ${devices.laptop} {
     padding: 50px 60px;

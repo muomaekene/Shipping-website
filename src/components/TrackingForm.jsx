@@ -3,18 +3,18 @@ import { devices } from "../utils/breakpoints";
 
 import styled from "styled-components";
 
-const Tracking = () => {
+const TrackingForm = () => {
   return (
     <Container>
       <input type="text" placeholder="Enter your tracking code" />
       <button>
-        Track <ArrowRightIcon strokeWidth="1.2" size="20" />
+        Track <ArrowRightIcon strokeWidth="1.2" size="18" />
       </button>
     </Container>
   );
 };
 
-export default Tracking;
+export default TrackingForm;
 
 const Container = styled.div`
   display: flex;
@@ -38,12 +38,12 @@ const Container = styled.div`
     @media ${devices.laptop} {
       width: 60%;
       margin-bottom: 0;
-      font-size: 18px;
+      font-size: 17px;
     }
 
     @media ${devices.laptopL} {
       height: 80px;
-      font-size: 20px;
+      font-size: 18px;
       padding-left: 20px;
     }
   }
@@ -62,6 +62,11 @@ const Container = styled.div`
 
     @media ${devices.laptop} {
       width: 40%;
+      font-size: 17px;
+    }
+
+    @media ${devices.laptopL} {
+      height: 80px;
       font-size: 18px;
     }
 

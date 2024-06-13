@@ -12,7 +12,6 @@ const Container = styled.h3`
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: 32px;
-  font-weight: 400;
   color: #162a60;
   margin-bottom: 20px;
   letter-spacing: -1px;

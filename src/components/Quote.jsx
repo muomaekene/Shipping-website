@@ -18,15 +18,17 @@ const Quote = () => {
           <SectionTitle color="#fff" title="Get An Instant Quote" />
           <BodyContent
             color="#a0a0a4"
-            content="You shouldn't break the bank to move freight across the country. Use our simple quote estimator to find out how much it'd cost you to ship with us."
+            content="You shouldn't break the bank to move freight across the country. Use our simple quote estimator to find out how much it'd cost you to ship with us"
           />
           <Button name="Calculate Price" />
         </div>
 
-        <SectionImage
-          imgSrc={calculatorCaute}
-          imgAlt="Illustration of guy holding a calculator"
-        />
+        <div className="bgImage">
+          <SectionImage
+            imgSrc={calculatorCaute}
+            imgAlt="Illustration of guy holding a calculator"
+          />
+        </div>
       </Flex>
     </Section>
   );
@@ -54,7 +56,7 @@ const Flex = styled.div`
     }
   }
 
-  img {
+  .bgImage {
     max-inline-size: 100%;
     block-size: auto;
     width: 100%;

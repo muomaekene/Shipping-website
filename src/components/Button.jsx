@@ -23,11 +23,11 @@ const CustomButton = styled.button`
   }
 
   @media ${devices.laptop} {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   @media ${devices.laptopL} {
-    font-size: 20px;
+    font-size: 18px;
     padding: 22px 40px;
   }
 `;

@@ -10,15 +10,15 @@ export default BodyContent;
 
 const Paragraph = styled.p`
   font-size: 16px;
-  color: #505a6f;
+  color: #283143;
   margin-bottom: 20px;
   line-height: 1.5;
 
   @media ${devices.laptop} {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   @media ${devices.laptopL} {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
