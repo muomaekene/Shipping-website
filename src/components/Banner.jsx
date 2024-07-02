@@ -34,7 +34,7 @@ const Banner = () => {
 
 export default Banner;
 
-const Container = styled.section`
+const Container = styled.article`
   display: flex;
   flex-direction: column;
   padding: 20px;

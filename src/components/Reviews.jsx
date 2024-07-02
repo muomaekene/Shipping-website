@@ -13,7 +13,7 @@ import styled from "styled-components";
 
 const Reviews = () => {
   return (
-    <Section backgroundColor="#f9f8ef">
+    <Section backgroundColor="#f4f5f6">
       <SectionTitle title="What our customers are saying" />
       <SectionContent
         content="Some of our satistified customers have reached out and told us how they

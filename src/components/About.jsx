@@ -8,10 +8,10 @@ import styled from "styled-components";
 
 const About = () => {
   return (
-    <Section backgroundColor="#f0f7fa" idValue="about">
+    <Section backgroundColor="#f4f5f6" idValue="about">
       <Flex>
         <div className="flex-item-1">
-          <video autoPlay playsInline controls>
+          <video autoPlay playsInline loop muted>
             <source
               src="https://cdn.pixabay.com/video/2020/10/28/53582-475000650_large.mp4"
               type="video/mp4"
@@ -62,6 +62,10 @@ const Flex = styled.div`
     font-size: 16px;
     color: #283143;
     letter-spacing: -1px;
+    text-decoration: underline;
+    text-decoration-color: #3636b5;
+    text-underline-offset: 4px;
+    margin-bottom: 10px;
 
     @media ${devices.laptop} {
       font-size: 17px;

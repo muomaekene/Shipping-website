@@ -1,26 +1,24 @@
-// import { useState } from "react";
 import Logo from "./Logo";
 
+import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import { devices } from "../utils/breakpoints";
 
 import styled from "styled-components";
 
 const Navbar = ({ showMenu, setShowMenu }) => {
-  // const [navbar, setNavbar] = useState(false);
+  const [scroll, setScroll] = useState(0);
 
-  // const toggleNavbar = () => {
-  //   if (window.scrollY >= 80) {
-  //     setNavbar(true);
-  //   } else {
-  //     setNavbar(false);
-  //   }
-  // };
+  const handleScroll = () => setScroll(document.documentElement.scrollTop);
 
-  // window.addEventListener("scroll", toggleNavbar);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
+  const MainNav = scroll >= 100 ? ScrolledNav : Nav;
 
   return (
-    <Nav>
+    <MainNav>
       <Logo />
       <ul>
         <li>
@@ -47,11 +45,12 @@ const Navbar = ({ showMenu, setShowMenu }) => {
         className="menu-btn"
         onClick={() => {
           setShowMenu(!showMenu);
+          document.body.style.overflow = "hidden";
         }}
       >
-        <Menu size="30" color="#fff" />
+        <Menu size="30" strokeWidth="1.4" color="#fff" />
       </button>
-    </Nav>
+    </MainNav>
   );
 };
 
@@ -66,6 +65,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  /* position: fixed; */
   background: #0e0e0e;
 
   @media ${devices.laptop} {
@@ -159,4 +159,10 @@ const Nav = styled.nav`
       display: none;
     }
   }
+`;
+
+const ScrolledNav = styled(Nav)`
+  background: #131313;
+  position: sticky;
+  border-bottom: 1px solid #585858;
 `;

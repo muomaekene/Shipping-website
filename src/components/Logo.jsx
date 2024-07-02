@@ -8,15 +8,11 @@ const Logo = () => {
 export default Logo;
 
 const Heading = styled.h1`
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: -1px;
   text-transform: uppercase;
   color: #fff;
   font-weight: 400;
-
-  @media ${devices.laptop} {
-    font-size: 24px;
-  }
 
   @media ${devices.laptopL} {
     font-size: 26px;

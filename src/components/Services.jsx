@@ -11,10 +11,11 @@ import transportIcon from "../images/transport.png";
 import { devices } from "../utils/breakpoints";
 
 import styled from "styled-components";
+import Button from "./Button";
 
 const Services = () => {
   return (
-    <Section backgroundColor="#f0f7fa" idValue="services">
+    <Section backgroundColor="#f4f5f6" idValue="services">
       <SectionTitle title="Why Choose Us" />
       <SectionContent content="We strive to make shipping easier, faster, secure and more convenient for you. Trust us to handle your packages with the utmost care and get them where they need to go - on time and in perfect condition" />
       <Grid>
@@ -43,6 +44,7 @@ const Services = () => {
           content="Can't access any of our secure payments options? We also accept cash"
         />
       </Grid>
+      <Button name="View All Services" />
     </Section>
   );
 };
@@ -51,6 +53,7 @@ export default Services;
 
 const Grid = styled.div`
   display: block;
+  margin-bottom: 40px;
 
   @media ${devices.tablet} {
     gap: 20px;

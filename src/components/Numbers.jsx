@@ -11,7 +11,7 @@ const Numbers = () => {
       </div>
 
       <div className="testimonial">
-        <div className="number">60k</div>
+        <div className="number">+62k</div>
         <div className="desc">Customers</div>
       </div>
 
@@ -28,11 +28,12 @@ export default Numbers;
 const Container = styled.div`
   margin: 30px 0;
   display: flex;
-  gap: 30px;
+  gap: 35px;
 
   .number {
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 400;
 
     @media ${devices.laptop} {
       font-size: 24px;

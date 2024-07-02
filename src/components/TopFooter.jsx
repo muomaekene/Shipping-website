@@ -153,7 +153,7 @@ const Container = styled.section`
 
     @media ${devices.tablet} {
       width: 40%;
-      margin-right: 40px;
+      margin-right: 50px;
     }
 
     @media ${devices.laptop} {

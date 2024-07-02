@@ -14,7 +14,7 @@ import styled from "styled-components";
 
 const Careers = () => {
   return (
-    <Section backgroundColor="#f9f8ef" idValue="careers">
+    <Section backgroundColor="#f4f5f6" idValue="careers">
       <Flex>
         <div className="flex-item-1">
           <SectionTitle title="Become A Part of Our Team" />

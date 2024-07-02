@@ -12,9 +12,10 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
         <button
           onClick={() => {
             setShowMenu(!showMenu);
+            document.body.style.overflow = "auto";
           }}
         >
-          <X size="30" color="#000" />
+          <X size="30" strokeWidth="1.4" color="#000" />
         </button>
       </div>
 
@@ -42,12 +43,12 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
 
 export default MobileMenu;
 
-const Container = styled.section`
+const Container = styled.div`
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
-  z-index: 667;
+  z-index: 666;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -55,12 +56,11 @@ const Container = styled.section`
 
   .menu-top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
     p {
       font-weight: 400;
-      font-size: 28px;
+      font-size: 24px;
     }
 
     button {

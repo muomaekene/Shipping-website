@@ -3,8 +3,8 @@ import SectionHeader from "./SectionHeader";
 import Blog from "./Blog";
 
 import cargoPlane from "../images/cargo-plane.jpg";
-import wharehouse from "../images/wharehouse.jpg";
-import semiTruck from "../images/semi-truck.jpg";
+import partners from "../images/partners.jpg";
+import deliveryPerson from "../images/delivery-person.jpg";
 
 import { devices } from "../utils/breakpoints";
 
@@ -16,22 +16,22 @@ const Blogs = () => {
       <SectionHeader title="Blogs & Media" />
       <Grid>
         <Blog
-          image={semiTruck}
-          imageAlt="Truck on the highway"
+          image={deliveryPerson}
+          imageAlt="Customer handed a delivery package"
           title="For Individuals"
-          content="We move freight of all sizes and quantity to over 120 destinations all over the world."
+          content="We deliver packages of varying sizes and quantity to and from every state in contiguous USA."
         />
         <Blog
           image={cargoPlane}
-          imageAlt="Cargo plane unloading"
+          imageAlt="Businessmen and women at a table"
           title="For Businesses"
-          content="Our agents are experts in providing assistance to get goods cleared very fast."
+          content="Our agents are experts in providing assistance to get goods cleared quickly no matter the quantity."
         />
         <Blog
-          image={wharehouse}
-          imageAlt="Warehouse operator"
+          image={partners}
+          imageAlt="Two men shaking hands"
           title="For Partners"
-          content="We safely store and keep accurate records of goods of every size and quantity."
+          content="Working with us to deliver quality services to our clients means a lot to us, so we play our part well."
         />
       </Grid>
     </Section>
