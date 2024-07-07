@@ -15,7 +15,7 @@ const Feature = ({ title, content, buttonName, icon, imgSrc, imgAlt }) => {
         <BodyContent color="#b9b9bd" content={content} />
         <Button name={buttonName} icon={icon} />
       </div>
-      <div className="bgImg">
+      <div className="section-image">
         <SectionImage imgSrc={imgSrc} imgAlt={imgAlt} />
       </div>
     </Flex>
@@ -35,16 +35,18 @@ const Flex = styled.div`
 
   .section-body {
     width: 100%;
+    margin-bottom: 30px;
 
     @media ${devices.tablet} {
       width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-bottom: 0;
     }
   }
 
-  .bgImg {
+  .section-image {
     max-inline-size: 100%;
     block-size: auto;
     width: 100%;

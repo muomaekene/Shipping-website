@@ -41,17 +41,17 @@ const Container = styled.div`
 
   .title {
     margin-top: 40px;
-    font-size: 28px;
+    font-size: 32px;
     font-family: "Raleway", sans-serif;
     color: #1d2b53;
 
     @media ${devices.tablet} {
-      font-size: 30px;
+      font-size: 34px;
       margin-bottom: 10px;
     }
 
     @media ${devices.laptop} {
-      font-size: 34px;
+      font-size: 36px;
     }
 
     @media ${devices.laptopL} {

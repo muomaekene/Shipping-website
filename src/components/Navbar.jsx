@@ -65,7 +65,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  /* position: fixed; */
   background: #0e0e0e;
 
   @media ${devices.laptop} {
@@ -162,7 +161,6 @@ const Nav = styled.nav`
 `;
 
 const ScrolledNav = styled(Nav)`
-  background: #131313;
   position: sticky;
   border-bottom: 1px solid #585858;
 `;

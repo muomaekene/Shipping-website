@@ -8,7 +8,7 @@ import styled from "styled-components";
 const TopFooter = () => {
   return (
     <Container>
-      <div className="left-side">
+      <div className="footer-info">
         <Logo />
         <Paragraph>
           EXPEDIT simplifies how individuals and companies send and receive
@@ -35,22 +35,22 @@ const TopFooter = () => {
           <Header>Services</Header>
           <ul>
             <li>
+              <Link href="#">Road Freight</Link>
+            </li>
+            <li>
               <Link href="#">Air Freight</Link>
             </li>
             <li>
               <Link href="#">Ocean Freight</Link>
             </li>
             <li>
-              <Link href="#">Railway Freight</Link>
+              <Link href="#">Distribution</Link>
             </li>
             <li>
               <Link href="#">Warehousing</Link>
             </li>
             <li>
-              <Link href="#">Distribution</Link>
-            </li>
-            <li>
-              <Link href="#">Value Added</Link>
+              <Link href="#">Fleet Mgmt</Link>
             </li>
           </ul>
         </div>
@@ -63,14 +63,15 @@ const TopFooter = () => {
             <li>
               <Link href="#">Why Choose Us</Link>
             </li>
-            <li>
-              <Link href="#">Case Studies</Link>
-            </li>
+
             <li>
               <Link href="#">Our Certificates</Link>
             </li>
             <li>
               <Link href="#">Our Partners</Link>
+            </li>
+            <li>
+              <Link href="#">Work With Us</Link>
             </li>
             <li>
               <Link href="#">Contact us</Link>
@@ -110,10 +111,10 @@ const TopFooter = () => {
               <Link href="#">Services</Link>
             </li>
             <li>
-              <Link href="#">Price Table</Link>
+              <Link href="#">Get Quote</Link>
             </li>
             <li>
-              <Link href="#">Cost Calculator</Link>
+              <Link href="#">Tracking</Link>
             </li>
             <li>
               <Link href="#">Location</Link>
@@ -148,8 +149,9 @@ const Container = styled.section`
     padding: 80px;
   }
 
-  .left-side {
+  .footer-info {
     width: 100%;
+    margin-bottom: 30px;
 
     @media ${devices.tablet} {
       width: 40%;
@@ -233,7 +235,6 @@ const Grid = styled.div`
   grid-auto-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  margin-top: 30px;
 
   @media ${devices.tablet} {
     grid-template-columns: 1fr 1fr;

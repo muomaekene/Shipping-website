@@ -5,7 +5,7 @@ import styled from "styled-components";
 const BannerImage = ({ imgSrc, imgAlt }) => {
   return (
     <Container>
-      <img src={imgSrc} alt={imgAlt} />;
+      <img src={imgSrc} alt={imgAlt} loading="lazy" />;
     </Container>
   );
 };

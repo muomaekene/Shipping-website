@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ArticleImage = ({ imgSrc, imgAlt }) => {
-  return <Image src={imgSrc} alt={imgAlt} />;
+  return <Image src={imgSrc} alt={imgAlt} loading="lazy" />;
 };
 
 export default ArticleImage;

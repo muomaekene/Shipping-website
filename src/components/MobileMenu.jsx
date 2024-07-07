@@ -4,22 +4,22 @@ import Button from "./Button";
 import styled from "styled-components";
 
 const MobileMenu = ({ showMenu, setShowMenu }) => {
+  const menuToggle = () => {
+    setShowMenu(!showMenu);
+    document.body.style.overflow = "auto";
+  };
+
   return (
     <Container>
       <div className="menu-top">
         <p>MENU</p>
 
-        <button
-          onClick={() => {
-            setShowMenu(!showMenu);
-            document.body.style.overflow = "auto";
-          }}
-        >
+        <button onClick={menuToggle}>
           <X size="30" strokeWidth="1.4" color="#000" />
         </button>
       </div>
 
-      <ul>
+      <ul onClick={menuToggle}>
         <li>
           <a href="#about">Company</a>
         </li>
@@ -57,6 +57,7 @@ const Container = styled.div`
   .menu-top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 
     p {
       font-weight: 400;
@@ -71,11 +72,15 @@ const Container = styled.div`
   ul {
     list-style-type: none;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
   }
 
   li {
-    margin: 25px 0;
     font-size: 16px;
+    display: inline-block;
   }
 
   a {

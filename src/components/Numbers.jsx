@@ -36,11 +36,11 @@ const Container = styled.div`
     font-weight: 400;
 
     @media ${devices.laptop} {
-      font-size: 24px;
+      font-size: 22px;
     }
 
     @media ${devices.laptopL} {
-      font-size: 28px;
+      font-size: 26px;
     }
   }
 
