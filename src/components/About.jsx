@@ -60,7 +60,8 @@ const Flex = styled.div`
 
   .top-title {
     font-size: 16px;
-    color: #283143;
+    font-weight: 400;
+    color: #3636b5;
     letter-spacing: -1px;
     text-decoration: underline;
     text-decoration-color: #3636b5;
@@ -71,7 +72,7 @@ const Flex = styled.div`
       font-size: 17px;
     }
 
-    @media ${devices.laptop} {
+    @media ${devices.laptopL} {
       font-size: 18px;
     }
   }

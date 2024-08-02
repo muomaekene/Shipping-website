@@ -1,4 +1,6 @@
 import { devices } from "../utils/breakpoints";
+
+import martenLogo from "../images/marten.png";
 import styled from "styled-components";
 
 const Partners = () => {
@@ -11,18 +13,20 @@ const Partners = () => {
           alt="partner-logo"
           width="200"
         />
+        <img src={martenLogo} alt="partner-logo" />
         <img
-          src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/maersk_line_limited_rgb_logo.svg"
+          src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/apm-terminals_pos.svg"
           alt="partner-logo"
-          width="200"
+          width="400"
         />
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/9/9d/FedEx_Express.svg"
           alt="partner-logo"
           width="200"
         />
+
         <img
-          src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/apm-terminals_pos.svg"
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Maersk_Group_Logo.svg"
           alt="partner-logo"
           width="300"
         />
@@ -60,8 +64,7 @@ const Container = styled.div`
   }
 
   .images {
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding: 10px 20px;
     overflow: auto;
     scrollbar-width: none;
     display: flex;

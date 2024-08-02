@@ -23,6 +23,7 @@ const CustomButton = styled.button`
   border-radius: 4px;
   transition: ease all 0.3s;
   display: flex;
+  align-items: center;
   gap: 5px;
 
   &:hover {

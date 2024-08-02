@@ -74,17 +74,22 @@ const Container = styled.div`
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin-bottom: 25px;
+    width: 100%;
   }
 
   li {
     font-size: 16px;
     display: inline-block;
+    height: 3.5rem;
+    width: 100%;
   }
 
   a {
     text-decoration: none;
     color: #445069;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 `;

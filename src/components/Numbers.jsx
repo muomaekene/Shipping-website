@@ -11,12 +11,12 @@ const Numbers = () => {
       </div>
 
       <div className="testimonial">
-        <div className="number">+62k</div>
+        <div className="number">+82k</div>
         <div className="desc">Customers</div>
       </div>
 
       <div className="testimonial">
-        <div className="number">+15k</div>
+        <div className="number">+1.5k</div>
         <div className="desc">Reviews</div>
       </div>
     </Container>
