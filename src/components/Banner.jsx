@@ -38,6 +38,7 @@ const Container = styled.article`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  background: #0e0e0e;
 
   @media ${devices.tablet} {
     flex-direction: row;

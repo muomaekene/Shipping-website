@@ -1,7 +1,7 @@
-import PageContent from "./components/PageContent";
+import LandingPage from "./pages/LandingPage";
 
 const App = () => {
-  return <PageContent />;
+  return <LandingPage />;
 };
 
 export default App;
