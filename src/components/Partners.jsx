@@ -13,7 +13,7 @@ const Partners = () => {
           alt="partner-logo"
           width="200"
         />
-        <img src={martenLogo} alt="partner-logo" />
+        <img src={martenLogo} alt="partner-logo" width="400" />
         <img
           src="https://www.maersk.com/~/media_sc9/maersk/homepage/brands/apm-terminals_pos.svg"
           alt="partner-logo"
@@ -44,7 +44,7 @@ const Container = styled.div`
   align-items: center;
 
   .title {
-    margin-top: 40px;
+    margin: 20px 0;
     font-size: 32px;
     font-family: "Raleway", sans-serif;
     color: #1d2b53;
@@ -64,7 +64,7 @@ const Container = styled.div`
   }
 
   .images {
-    padding: 10px 20px;
+    padding: 20px;
     overflow: auto;
     scrollbar-width: none;
     display: flex;

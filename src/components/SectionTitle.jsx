@@ -11,21 +11,21 @@ export default SectionTitle;
 const Container = styled.h3`
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-size: 32px;
+  font-size: 30px;
   color: #162a60;
   margin-bottom: 20px;
   letter-spacing: -1px;
   text-transform: capitalize;
 
   @media ${devices.tablet} {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   @media ${devices.laptop} {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   @media ${devices.laptopL} {
-    font-size: 40px;
+    font-size: 36px;
   }
 `;

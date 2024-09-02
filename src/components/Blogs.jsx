@@ -41,16 +41,16 @@ const Blogs = () => {
 export default Blogs;
 
 const Grid = styled.div`
-  display: block;
+  display: grid;
+  gap: 16px;
 
   @media ${devices.tablet} {
-    display: grid;
     grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media ${devices.laptop} {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 `;

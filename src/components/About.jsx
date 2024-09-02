@@ -46,7 +46,7 @@ const Flex = styled.div`
   }
 
   @media ${devices.laptop} {
-    gap: 60px;
+    gap: 80px;
   }
 
   .flex-item-1 {
@@ -59,17 +59,13 @@ const Flex = styled.div`
   }
 
   .top-title {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     color: #3636b5;
-    letter-spacing: -1px;
-    text-decoration: underline;
-    text-decoration-color: #3636b5;
-    text-underline-offset: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     @media ${devices.laptop} {
-      font-size: 17px;
+      font-size: 16px;
     }
 
     @media ${devices.laptopL} {
@@ -79,7 +75,7 @@ const Flex = styled.div`
 
   video {
     display: block;
-    border-radius: 8px;
+    border-radius: 4px;
     max-height: 100%;
     width: 100%;
   }

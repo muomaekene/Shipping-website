@@ -45,7 +45,7 @@ const Flex = styled.div`
   }
 
   @media ${devices.laptop} {
-    gap: 60px;
+    gap: 80px;
   }
 
   .flex-item-1 {

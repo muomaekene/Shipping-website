@@ -19,7 +19,7 @@ const Review = ({ name, comment, imgSrc, imgAlt }) => {
 
       <div className="details">
         <div className="image">
-          <img height="30" src={imgSrc} alt={imgAlt} />
+          <img src={imgSrc} alt={imgAlt} />
         </div>
         <h4>{name}</h4>
       </div>
@@ -30,15 +30,14 @@ const Review = ({ name, comment, imgSrc, imgAlt }) => {
 export default Review;
 
 const Article = styled.article`
-  margin-top: 20px;
   border-radius: 4px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: #fff;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 
   @media ${devices.tablet} {
     margin: 0;
@@ -71,8 +70,8 @@ const Article = styled.article`
   }
 
   .image {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 30px;
     margin-right: 10px;
 

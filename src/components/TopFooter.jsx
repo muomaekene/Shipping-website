@@ -132,7 +132,7 @@ const TopFooter = () => {
 export default TopFooter;
 
 const Container = styled.section`
-  padding: 40px 20px;
+  padding: 40px 16px;
   background: #0e0e0e;
   display: flex;
   flex-direction: column;
@@ -142,11 +142,7 @@ const Container = styled.section`
   }
 
   @media ${devices.laptop} {
-    padding: 60px;
-  }
-
-  @media ${devices.laptopL} {
-    padding: 80px;
+    padding: 24px;
   }
 
   .footer-info {
@@ -185,7 +181,6 @@ const Container = styled.section`
 
 const Header = styled.h4`
   font-size: 18px;
-  font-weight: 400;
   color: #fff;
 
   @media ${devices.laptop} {

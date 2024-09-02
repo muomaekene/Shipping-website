@@ -37,7 +37,7 @@ export default Banner;
 const Container = styled.article`
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 16px;
   background: #0e0e0e;
 
   @media ${devices.tablet} {
@@ -45,14 +45,9 @@ const Container = styled.article`
   }
 
   @media ${devices.laptop} {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 24px;
+    padding-right: 24px;
     height: calc(100vh - 80px);
-  }
-
-  @media ${devices.laptopL} {
-    padding-left: 80px;
-    padding-right: 80px;
   }
 
   .banner-article {
@@ -67,16 +62,16 @@ const Container = styled.article`
   .banner-title {
     font-family: "Raleway", sans-serif;
     text-transform: capitalize;
-    font-size: 38px;
+    font-size: 34px;
     color: #fff;
     margin-bottom: 10px;
 
     @media ${devices.mobileL} {
-      font-size: 42px;
+      font-size: 40px;
     }
 
     @media ${devices.laptop} {
-      font-size: 46px;
+      font-size: 44px;
       width: 90%;
     }
 

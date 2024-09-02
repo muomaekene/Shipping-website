@@ -64,17 +64,12 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 16px;
   background: #0e0e0e;
 
   @media ${devices.laptop} {
     min-height: 80px;
-    padding: 0 60px;
-  }
-
-  @media ${devices.laptopL} {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 0 24px;
   }
 
   ul {

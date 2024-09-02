@@ -2,6 +2,7 @@ import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 import SectionContent from "./SectionContent";
 import Service from "./Service";
+import Button from "./Button";
 
 import payIcon from "../images/pay.png";
 import locationIcon from "../images/location.png";
@@ -11,7 +12,6 @@ import transportIcon from "../images/transport.png";
 import { devices } from "../utils/breakpoints";
 
 import styled from "styled-components";
-import Button from "./Button";
 
 const Services = () => {
   return (
@@ -29,7 +29,7 @@ const Services = () => {
           imgSrc={securityIcon}
           imgAlt="icon of cellphone with checkmark"
           title="Secure Shipping"
-          content="Security is our priority. We verify your packages to ensure you're the receiver"
+          content="We prioritise safety, so we always verify your packages to ensure you're the receiver"
         />
         <Service
           imgSrc={locationIcon}
@@ -52,17 +52,17 @@ const Services = () => {
 export default Services;
 
 const Grid = styled.div`
-  display: block;
-  margin-bottom: 40px;
+  display: grid;
+  gap: 16px;
+  margin-bottom: 20px;
 
   @media ${devices.tablet} {
-    gap: 20px;
-    display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
   @media ${devices.laptop} {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
   }
 `;

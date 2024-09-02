@@ -10,7 +10,6 @@ export default SectionHeader;
 
 const Container = styled.h3`
   font-size: 22px;
-  font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 10px;
   color: #1d2b53;

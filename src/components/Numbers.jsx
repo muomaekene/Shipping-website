@@ -33,7 +33,6 @@ const Container = styled.div`
   .number {
     color: #fff;
     font-size: 20px;
-    font-weight: 400;
 
     @media ${devices.laptop} {
       font-size: 22px;

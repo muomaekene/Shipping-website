@@ -52,7 +52,7 @@ const Grid = styled.div`
   }
 
   @media ${devices.laptop} {
-    gap: 60px;
+    gap: 80px;
   }
 
   .grid-item-1 {
