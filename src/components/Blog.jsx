@@ -25,7 +25,6 @@ const Blog = ({ image, imageAlt, title, content }) => {
 export default Blog;
 
 const Article = styled.article`
-  margin-bottom: 20px;
   border-radius: 4px;
   background: #fff;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
