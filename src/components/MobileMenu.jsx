@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import { X } from "lucide-react";
 import Button from "./Button";
 
@@ -21,22 +23,21 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
 
       <ul onClick={menuToggle}>
         <li>
-          <a href="#about">Company</a>
+          <NavLink to="/about">Company</NavLink>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <NavLink to="/services">Services</NavLink>
         </li>
         <li>
-          <a href="#careers">Careers</a>
+          <NavLink to="/careers">Careers</NavLink>
         </li>
         <li>
-          <a href="#news">News</a>
-        </li>
-        <li>
-          <a href="#contact-us">Contact Us</a>
+          <NavLink to="/latest-news">News</NavLink>
         </li>
       </ul>
-      <Button name="Ship Now" />
+      <NavLink to="/get-quote">
+        <Button name="Ship Now" />
+      </NavLink>
     </Container>
   );
 };

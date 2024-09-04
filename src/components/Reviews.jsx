@@ -32,7 +32,7 @@ const Reviews = () => {
           imgSrc={womanSmiling}
           imgAlt="Man 2"
           name="Mary Gonzalez"
-          comment="Everything worked out as I hoepd - and it was all so easy. I especially loved the remarkable fast trasit time."
+          comment="Everything worked out as I hoepd - and it was all so easy. I especially loved the remarkable fast transit time."
         />
         <Review
           imgSrc={manSmiling2}

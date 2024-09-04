@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 import BodyContent from "./BodyContent";
@@ -8,7 +10,7 @@ import styled from "styled-components";
 
 const About = () => {
   return (
-    <Section backgroundColor="#f4f5f6" idValue="about">
+    <Section backgroundColor="#f4f5f6">
       <Flex>
         <div className="flex-item-1">
           <video autoPlay playsInline loop muted>
@@ -27,7 +29,10 @@ const About = () => {
           <BodyContent content="EXPEDIT Shipping Co. is a trans-national shipping and truck services company. We design and implement industry-leading solutions together with our nationwide network of partners. " />
           <BodyContent content="With over 50+ dedicated employees working around the country, we deliver operational excellence to provide viable solutions to the most challenging supply chain questions. Therefore, most of our clients see us as one of the best logistics companies in the United States." />
           <BodyContent content="Our focus on providing excellence and value to our customers is made possible by our team of experts who bring passion to their work. We are totally commited to meeting and exceeding our customers' expectations." />
-          <Button name="Learn More" />
+
+          <Link to="/about">
+            <Button name="Learn More" />
+          </Link>
         </div>
       </Flex>
     </Section>

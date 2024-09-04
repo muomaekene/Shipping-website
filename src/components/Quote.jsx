@@ -12,6 +12,7 @@ const Quote = () => {
         buttonName="Calculate Price"
         imgSrc={calculatorCaute}
         imgAlt="Illustration of guy holding a calculator"
+        url="/get-quote"
       />
     </Section>
   );

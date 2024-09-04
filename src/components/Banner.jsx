@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import truckIllustration from "../images/truck-illustration.png";
 
 import Button from "./Button";
@@ -21,7 +23,9 @@ const Banner = () => {
           color="#a0a0a4"
           content=" With our state-of-the-art logistics network and experienced team, we offer a comprehensive range of services tailored to your requirements"
         />
-        <Button name="Explore Now" />
+        <Link to="services">
+          <Button name="Explore Now" />
+        </Link>
         <Numbers />
       </article>
       <BannerImage

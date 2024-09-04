@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 import SectionContent from "./SectionContent";
@@ -15,7 +17,7 @@ import styled from "styled-components";
 
 const Services = () => {
   return (
-    <Section backgroundColor="#f4f5f6" idValue="services">
+    <Section backgroundColor="#f4f5f6">
       <SectionTitle title="Why Choose Us" />
       <SectionContent content="We strive to make shipping easier, faster, secure and more convenient for you. Trust us to handle your packages with the utmost care and get them where they need to go - on time and in perfect condition" />
       <Grid>
@@ -44,7 +46,10 @@ const Services = () => {
           content="Can't access any of our secure payments options? We also accept cash"
         />
       </Grid>
-      <Button name="View All Services" />
+
+      <Link to="/services">
+        <Button name="View All Services" />
+      </Link>
     </Section>
   );
 };

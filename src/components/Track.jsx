@@ -14,6 +14,7 @@ const Track = () => {
         icon={<ArrowRightIcon size="20" strokeWidth="1.5" />}
         imgSrc={trackingIllustrator}
         imgAlt="Illustration of guy operating a gps device"
+        url="/track-now"
       />
     </Section>
   );

@@ -1,6 +1,8 @@
+import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 import Logo from "./Logo";
 
-import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import { devices } from "../utils/breakpoints";
 
@@ -22,22 +24,19 @@ const Navbar = ({ showMenu, setShowMenu }) => {
       <Logo />
       <ul>
         <li>
-          <a href="#about">Company</a>
+          <NavLink to="/about">Company</NavLink>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <NavLink to="/services">Services</NavLink>
         </li>
         <li>
-          <a href="#careers">Careers</a>
+          <NavLink to="/careers">Careers</NavLink>
         </li>
         <li>
-          <a href="#news">News</a>
+          <NavLink to="/latest-news">News</NavLink>
         </li>
         <li>
-          <a href="#contact-us">Contact Us</a>
-        </li>
-        <li>
-          <a href="/ship">Ship Now</a>
+          <NavLink to="/get-quote">Ship Now</NavLink>
         </li>
       </ul>
 
@@ -80,6 +79,14 @@ const Nav = styled.nav`
       display: block;
     }
 
+    .active {
+      color: #a0a0a4;
+      text-decoration: underline;
+      text-decoration-color: #a0a0a4;
+      text-decoration-thickness: 1px;
+      text-underline-position: under;
+    }
+
     li {
       display: inline;
       padding-bottom: 10px;
@@ -104,11 +111,7 @@ const Nav = styled.nav`
         text-decoration: none;
 
         &:hover {
-          text-decoration: underline;
-          text-decoration-color: #d7d7dc;
-          color: #d7d7dc;
-          text-decoration-thickness: 0.5px;
-          text-underline-position: under;
+          color: #a0a0a4;
         }
       }
     }

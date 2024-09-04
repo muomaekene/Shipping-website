@@ -12,7 +12,7 @@ import styled from "styled-components";
 
 const Blogs = () => {
   return (
-    <Section backgroundColor="#f4f5f6" idValue="news">
+    <Section backgroundColor="#f4f5f6">
       <SectionHeader title="Blogs & Media" />
       <Grid>
         <Blog
@@ -20,18 +20,21 @@ const Blogs = () => {
           imageAlt="Customer handed a delivery package"
           title="For Individuals"
           content="We deliver packages of varying sizes and quantity to and from every state in contiguous USA."
+          url="/latest-news/54738"
         />
         <Blog
           image={cargoPlane}
           imageAlt="Businessmen and women at a table"
           title="For Businesses"
           content="Our agents are experts in providing assistance to get goods cleared quickly no matter the quantity."
+          url="/latest-news/67483"
         />
         <Blog
           image={partners}
           imageAlt="Two men shaking hands"
           title="For Partners"
           content="Working with us to deliver quality services to our clients means a lot to us, so we play our part well."
+          url="/latest-news/38549"
         />
       </Grid>
     </Section>

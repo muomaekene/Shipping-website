@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import ArticleImage from "./ArticleImage";
 import ArticleTitle from "./ArticleTitle";
 import ArticleContent from "./ArticleContent";
@@ -7,16 +9,19 @@ import { ArrowRightIcon } from "lucide-react";
 import { devices } from "../utils/breakpoints";
 import styled from "styled-components";
 
-const Blog = ({ image, imageAlt, title, content }) => {
+const Blog = ({ image, imageAlt, title, content, url }) => {
   return (
     <Article>
       <ArticleImage imgSrc={image} imgAlt={imageAlt} />
       <div className="article-body">
         <ArticleTitle title={title} />
         <ArticleContent content={content} />
-        <button>
-          Read More <ArrowRightIcon strokeWidth="1.2" size="20" />
-        </button>
+
+        <Link to={url}>
+          <button>
+            Read More <ArrowRightIcon strokeWidth="1.2" size="20" />
+          </button>
+        </Link>
       </div>
     </Article>
   );

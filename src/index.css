@@ -15,6 +15,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    text-decoration: none;
+    width: fit-content;
+    color: #fff;
+}
+
 img,
 picture,
 video,

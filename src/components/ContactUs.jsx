@@ -10,7 +10,7 @@ import styled from "styled-components";
 
 const ContactUs = () => {
   return (
-    <Section backgroundColor="#f4f5f6" idValue="contact-us">
+    <Section backgroundColor="#f4f5f6">
       <SectionTitle title="We'd Love to Hear From You" />
 
       <Grid>
