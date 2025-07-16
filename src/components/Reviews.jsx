@@ -11,6 +11,7 @@ import womanSmiling from "../images/woman-smiling.jpeg";
 import { devices } from "../utils/breakpoints";
 
 import styled from "styled-components";
+import ButtonLink from "./ButtonLink";
 
 const Reviews = () => {
   return (
@@ -32,7 +33,7 @@ const Reviews = () => {
           imgSrc={womanSmiling}
           imgAlt="Man 2"
           name="Mary Gonzalez"
-          comment="Everything worked out as I hoepd - and it was all so easy. I especially loved the remarkable fast transit time."
+          comment="Everything worked out as I hoped - and it was all so easy. I especially loved the remarkable fast transit time."
         />
         <Review
           imgSrc={manSmiling2}
@@ -53,6 +54,10 @@ const Reviews = () => {
           comment="This team thinks quickly on their feet and always figures out a way to make things happen."
         />
       </Grid>
+
+      <ButtonLink url="/services" hex="#162a60">
+        Leave A Review
+      </ButtonLink>
     </Container>
   );
 };
@@ -72,6 +77,7 @@ const Grid = styled.div`
   grid-auto-flow: column;
   grid-auto-columns: 95%;
   gap: 16px;
+  margin-bottom: 10px;
 
   overflow-x: auto;
   overscroll-behavior-inline: contain;

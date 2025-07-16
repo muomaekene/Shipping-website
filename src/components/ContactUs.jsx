@@ -62,7 +62,7 @@ const Grid = styled.div`
 `;
 
 const Link = styled.p`
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 4px;
   width: fit-content;
 
@@ -77,13 +77,5 @@ const Link = styled.p`
     text-decoration-color: #3d528a;
     text-decoration-thickness: 1px;
     text-underline-position: under;
-  }
-
-  @media ${devices.laptop} {
-    font-size: 17px;
-  }
-
-  @media ${devices.laptopL} {
-    font-size: 18px;
   }
 `;

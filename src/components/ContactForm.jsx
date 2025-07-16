@@ -41,11 +41,10 @@ const Form = styled.form`
     padding-left: 15px;
     font-size: 18px;
     margin-bottom: 10px;
-    height: 60px;
+    height: 70px;
     outline: none;
 
     @media ${devices.laptopL} {
-      height: 70px;
       padding-left: 20px;
       margin-bottom: 15px;
     }

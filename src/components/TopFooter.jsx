@@ -180,16 +180,8 @@ const Container = styled.section`
 `;
 
 const Header = styled.h4`
-  font-size: 18px;
+  font-size: 22px;
   color: #fff;
-
-  @media ${devices.laptop} {
-    font-size: 20px;
-  }
-
-  @media ${devices.laptopL} {
-    font-size: 22px;
-  }
 `;
 
 const Paragraph = styled.p`
