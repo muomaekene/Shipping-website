@@ -23,9 +23,9 @@ const TopFooter = () => {
           <Paragraph>office@expedit.com</Paragraph>
           <Paragraph>(734) 621-9936</Paragraph>
           <div className="socials">
-            <Instagram color="#a0a0a4" strokeWidth="1.2" />
-            <Facebook color="#a0a0a4" strokeWidth="1.2" />
-            <Linkedin color="#a0a0a4" strokeWidth="1.2" />
+            <Instagram color="#d1cfcf" strokeWidth="1.2" />
+            <Facebook color="#d1cfcf" strokeWidth="1.2" />
+            <Linkedin color="#d1cfcf" strokeWidth="1.2" />
           </div>
         </LocationGroup>
       </div>
@@ -142,7 +142,7 @@ const Container = styled.section`
   }
 
   @media ${devices.laptop} {
-    padding: 24px;
+    padding: 40px 24px;
   }
 
   .footer-info {
@@ -165,7 +165,7 @@ const Container = styled.section`
   }
 
   .socials {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100px;
     display: flex;
     justify-content: space-between;
@@ -193,32 +193,16 @@ const Header = styled.h4`
 `;
 
 const Paragraph = styled.p`
-  font-size: 16px;
-  color: #a0a0a4;
+  font-size: 18px;
+  color: #d1cfcf;
   margin-top: 10px;
-
-  @media ${devices.laptop} {
-    font-size: 17px;
-  }
-
-  @media ${devices.laptopL} {
-    font-size: 18px;
-  }
 `;
 
 const Link = styled.a`
-  font-size: 16px;
-  color: #a0a0a4;
+  font-size: 18px;
+  color: #d1cfcf;
   margin-top: 10px;
   text-decoration: none;
-
-  @media ${devices.laptop} {
-    font-size: 17px;
-  }
-
-  @media ${devices.laptopL} {
-    font-size: 18px;
-  }
 `;
 
 const LocationGroup = styled.div`

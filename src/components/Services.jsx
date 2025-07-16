@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom";
-
 import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 import SectionContent from "./SectionContent";
 import Service from "./Service";
-import Button from "./Button";
+import ButtonLink from "./ButtonLink";
 
 import payIcon from "../images/pay.png";
 import locationIcon from "../images/location.png";
@@ -17,9 +15,13 @@ import styled from "styled-components";
 
 const Services = () => {
   return (
-    <Section backgroundColor="#f4f5f6">
-      <SectionTitle title="Why Choose Us" />
-      <SectionContent content="We strive to make shipping easier, faster, secure and more convenient for you. Trust us to handle your packages with the utmost care and get them where they need to go - on time and in perfect condition" />
+    <Section>
+      <SectionTitle>Why Choose Us</SectionTitle>
+      <SectionContent>
+        We strive to make shipping easier, faster, secure and more convenient
+        for you. Trust us to handle your packages with the utmost care and get
+        them where they need to go - on time and in perfect condition
+      </SectionContent>
       <Grid>
         <Service
           imgSrc={transportIcon}
@@ -47,9 +49,9 @@ const Services = () => {
         />
       </Grid>
 
-      <Link to="/services">
-        <Button name="View All Services" />
-      </Link>
+      <ButtonLink url="/services" hex="#162a60">
+        View All Services
+      </ButtonLink>
     </Section>
   );
 };

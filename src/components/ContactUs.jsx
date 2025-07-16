@@ -10,18 +10,17 @@ import styled from "styled-components";
 
 const ContactUs = () => {
   return (
-    <Section backgroundColor="#f4f5f6">
-      <SectionTitle title="We'd Love to Hear From You" />
+    <Section>
+      <SectionTitle>Our Team would be Happy to Hear From You</SectionTitle>
 
       <Grid>
         <div className="grid-item-1">
-          <ArticleTitle title="Get in Touch Today" />
-          <BodyContent
-            content="Use the secure form to send a message regarding any concerns you may
+          <ArticleTitle>Get in Touch Today</ArticleTitle>
+          <BodyContent>
+            Use the secure form to send a message regarding any concerns you may
             have. Should you have any information regarding a referral from a GP
-            please also include this and we will be in touch with the next
-            steps."
-          />
+            please also include this and we will be in touch with the next steps
+          </BodyContent>
           <Link>
             <a href="/">info@expedit.com</a>
           </Link>
@@ -68,8 +67,16 @@ const Link = styled.p`
   width: fit-content;
 
   a {
-    color: #4a4aed;
+    color: #4a62ed;
     text-decoration: none;
+  }
+
+  :hover {
+    color: #3d528a;
+    text-decoration: underline;
+    text-decoration-color: #3d528a;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
   }
 
   @media ${devices.laptop} {

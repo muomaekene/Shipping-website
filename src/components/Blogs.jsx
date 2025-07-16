@@ -12,7 +12,7 @@ import styled from "styled-components";
 
 const Blogs = () => {
   return (
-    <Section backgroundColor="#f4f5f6">
+    <Section>
       <SectionHeader title="Blogs & Media" />
       <Grid>
         <Blog

@@ -6,7 +6,7 @@ import trackingIllustrator from "./../images/tracking.png";
 
 const Track = () => {
   return (
-    <Section backgroundColor="#0e0e0e">
+    <Section hex="#0e0e0e">
       <Feature
         title="Track Your Shipment"
         content="If you have recently shipped a package with us, provide your tracking code and use our tracker to stay up to date with the status of your delivery in real-time"

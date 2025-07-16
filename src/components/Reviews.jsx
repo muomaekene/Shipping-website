@@ -15,11 +15,11 @@ import styled from "styled-components";
 const Reviews = () => {
   return (
     <Container>
-      <SectionTitle title="What our customers are saying" />
-      <SectionContent
-        content="Some of our satistified customers have reached out and told us how they
-        felt about our services. Here are some of the reviews we got:"
-      />
+      <SectionTitle>What our customers are saying</SectionTitle>
+      <SectionContent>
+        Some of our satistified customers have reached out and told us how they
+        felt about our services. Here are some of the reviews we got:
+      </SectionContent>
 
       <Grid>
         <Review

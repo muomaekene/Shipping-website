@@ -1,12 +1,8 @@
 import { devices } from "../utils/breakpoints";
 import styled from "styled-components";
 
-const Section = ({ backgroundColor, ...props }) => {
-  return (
-    <Container id={props.idValue} style={{ backgroundColor }}>
-      {props.children}
-    </Container>
-  );
+const Section = ({ children, hex }) => {
+  return <Container style={{ background: hex }}>{children}</Container>;
 };
 
 export default Section;

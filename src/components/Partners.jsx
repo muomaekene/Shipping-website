@@ -45,17 +45,15 @@ const Container = styled.div`
 
   .title {
     margin: 20px 0;
-    font-size: 32px;
+    font-size: 30px;
     font-family: "Raleway", sans-serif;
-    color: #1d2b53;
+    color: #3d528a;
+    text-transform: lowercase;
+    letter-spacing: -1px;
 
     @media ${devices.tablet} {
       font-size: 34px;
       margin-bottom: 10px;
-    }
-
-    @media ${devices.laptop} {
-      font-size: 36px;
     }
 
     @media ${devices.laptopL} {

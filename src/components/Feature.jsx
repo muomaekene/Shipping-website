@@ -1,23 +1,22 @@
-import { Link } from "react-router-dom";
-
 import BodyContent from "./BodyContent";
 import SectionTitle from "./SectionTitle";
 import SectionImage from "./SectionImage";
-import Button from "./Button";
+import ButtonLink from "./ButtonLink";
 
 import { devices } from "../utils/breakpoints";
 
 import styled from "styled-components";
 
-const Feature = ({ title, content, buttonName, icon, imgSrc, imgAlt, url }) => {
+const Feature = ({ title, content, buttonName, imgSrc, imgAlt, url }) => {
   return (
     <Flex>
       <div className="section-body">
-        <SectionTitle color="#fff" title={title} />
-        <BodyContent color="#b9b9bd" content={content} />
-        <Link to={url}>
-          <Button name={buttonName} icon={icon} />
-        </Link>
+        <SectionTitle color="#fff">{title}</SectionTitle>
+        <BodyContent color="#b9b9bd">{content}</BodyContent>
+
+        <ButtonLink url="/services" hex="#fff">
+          {buttonName}
+        </ButtonLink>
       </div>
       <div className="section-image">
         <SectionImage imgSrc={imgSrc} imgAlt={imgAlt} />

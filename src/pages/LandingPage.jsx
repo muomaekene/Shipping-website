@@ -14,7 +14,6 @@ const LandingPage = () => {
   return (
     <Layout>
       <Banner />
-      <Partners />
       <About />
       <Services />
       <Quote />
@@ -22,6 +21,7 @@ const LandingPage = () => {
       <Careers />
       <Track />
       <Blogs />
+      <Partners />
       <ContactUs />
     </Layout>
   );

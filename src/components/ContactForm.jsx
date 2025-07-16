@@ -1,7 +1,7 @@
-import Button from "./Button";
+import ButtonLink from "./ButtonLink";
 
-import styled from "styled-components";
 import { devices } from "../utils/breakpoints";
+import styled from "styled-components";
 
 const ContactForm = () => {
   return (
@@ -16,8 +16,9 @@ const ContactForm = () => {
         cols="30"
         rows="6"
       />
-
-      <Button name="Send Message" />
+      <ButtonLink url="#" hex="#162a60">
+        Send Message
+      </ButtonLink>
     </Form>
   );
 };
@@ -36,19 +37,14 @@ const Form = styled.form`
 
   .input-field {
     border-radius: 4px;
-    border: 1px solid #c8c5c5;
+    border: 1px solid #bdc1de;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
-    height: 55px;
+    height: 60px;
     outline: none;
 
-    @media ${devices.laptop} {
-      font-size: 17px;
-    }
-
     @media ${devices.laptopL} {
-      font-size: 18px;
       height: 70px;
       padding-left: 20px;
       margin-bottom: 15px;
@@ -58,17 +54,12 @@ const Form = styled.form`
   .feedback-field {
     margin-bottom: 10px;
     border-radius: 4px;
-    border: 1px solid #c8c5c5;
+    border: 1px solid #bdc1de;
     padding: 15px;
-    font-size: 16px;
+    font-size: 18px;
     outline: none;
 
-    @media ${devices.laptop} {
-      font-size: 17px;
-    }
-
     @media ${devices.laptopL} {
-      font-size: 18px;
       padding-left: 20px;
       margin-bottom: 15px;
     }

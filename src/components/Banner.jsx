@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
-
 import truckIllustration from "../images/truck-illustration.png";
 
-import Button from "./Button";
 import Numbers from "./Numbers";
 import BannerImage from "./BannerImage";
 import BodyContent from "./BodyContent";
+import ButtonLink from "./ButtonLink";
 
 import { devices } from "../utils/breakpoints";
 import styled from "styled-components";
@@ -19,13 +17,15 @@ const Banner = () => {
           Seamless Services <br />
           Tailored For You
         </h2>
-        <BodyContent
-          color="#a0a0a4"
-          content=" With our state-of-the-art logistics network and experienced team, we offer a comprehensive range of services tailored to your requirements"
-        />
-        <Link to="services">
-          <Button name="Explore Now" />
-        </Link>
+        <BodyContent color="#d1cfcf">
+          With our state-of-the-art logistics network and experienced team, we
+          offer a comprehensive range of services tailored to your requirements
+        </BodyContent>
+
+        <ButtonLink url="/services" hex="#fff">
+          Explore More
+        </ButtonLink>
+
         <Numbers />
       </article>
       <BannerImage
@@ -65,7 +65,7 @@ const Container = styled.article`
 
   .banner-title {
     font-family: "Raleway", sans-serif;
-    text-transform: capitalize;
+    text-transform: lowercase;
     font-size: 34px;
     color: #fff;
     margin-bottom: 10px;

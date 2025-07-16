@@ -6,12 +6,12 @@ const Numbers = () => {
   return (
     <Container>
       <div className="testimonial">
-        <div className="number">+100k</div>
+        <div className="number">+1m</div>
         <div className="desc">Deliveries</div>
       </div>
 
       <div className="testimonial">
-        <div className="number">+82k</div>
+        <div className="number">+102k</div>
         <div className="desc">Customers</div>
       </div>
 
@@ -44,7 +44,7 @@ const Container = styled.div`
   }
 
   .desc {
-    color: #a0a0a4;
+    color: #d1cfcf;
     font-size: 16px;
 
     @media ${devices.laptop} {

@@ -2,21 +2,13 @@ import styled from "styled-components";
 
 import { devices } from "../utils/breakpoints";
 
-const BodyContent = ({ content }) => {
-  return <Paragraph>{content}</Paragraph>;
+const ArticleContent = ({ children }) => {
+  return <Paragraph>{children}</Paragraph>;
 };
 
-export default BodyContent;
+export default ArticleContent;
 
 const Paragraph = styled.p`
-  font-size: 16px;
-  color: #283143;
-
-  @media ${devices.laptop} {
-    font-size: 17px;
-  }
-
-  @media ${devices.laptopL} {
-    font-size: 18px;
-  }
+  font-size: 18px;
+  color: #3d528a;
 `;

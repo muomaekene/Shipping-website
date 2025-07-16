@@ -7,8 +7,8 @@ const Service = ({ imgSrc, imgAlt, title, content }) => {
   return (
     <Article>
       <img src={imgSrc} width="70" height="70" alt={imgAlt} />
-      <ArticleTitle title={title} />
-      <ArticleContent content={content} />
+      <ArticleTitle>{title}</ArticleTitle>
+      <ArticleContent>{content}</ArticleContent>
     </Article>
   );
 };
@@ -16,15 +16,15 @@ const Service = ({ imgSrc, imgAlt, title, content }) => {
 export default Service;
 
 const Article = styled.article`
-  border-radius: 4px;
-  padding: 0 20px;
-  height: 17rem;
+  border-radius: 6px;
+  padding: 20px;
+  height: 20rem;
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
   img {
     margin-bottom: 20px;

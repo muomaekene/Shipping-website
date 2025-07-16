@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+import ButtonLink from "./ButtonLink";
 import Logo from "./Logo";
 
 import { Menu } from "lucide-react";
@@ -36,7 +37,9 @@ const Navbar = ({ showMenu, setShowMenu }) => {
           <NavLink to="/latest-news">News</NavLink>
         </li>
         <li>
-          <NavLink to="/get-quote">Ship Now</NavLink>
+          <ButtonLink url="/get-quote" hex="#fff">
+            Ship Now
+          </ButtonLink>
         </li>
       </ul>
 
@@ -65,6 +68,7 @@ const Nav = styled.nav`
   align-items: center;
   padding: 0 16px;
   background: #0e0e0e;
+  font-size: 18px;
 
   @media ${devices.laptop} {
     min-height: 80px;
@@ -88,60 +92,21 @@ const Nav = styled.nav`
     }
 
     li {
-      display: inline;
-      padding-bottom: 10px;
-
       @media ${devices.tablet} {
+        display: inline;
         margin-left: 25px;
-        font-size: 16px;
       }
 
       @media ${devices.laptop} {
-        font-size: 17px;
         margin-left: 30px;
       }
 
       @media ${devices.laptopL} {
-        font-size: 18px;
         margin-left: 35px;
       }
 
-      a {
-        color: #fff;
-        text-decoration: none;
-
-        &:hover {
-          color: #a0a0a4;
-        }
-      }
-    }
-  }
-
-  li:last-child {
-    background: #4a4aed;
-    border-radius: 4px;
-    padding: 12px 24px;
-    cursor: pointer;
-    transition: ease all 0.3s;
-
-    @media ${devices.laptop} {
-      padding: 16px 30px;
-    }
-
-    @media ${devices.laptopL} {
-      padding: 18px 34px;
-    }
-
-    &:hover {
-      background: #3636b5;
-    }
-
-    a {
-      color: #fff;
-
-      &:hover {
-        text-decoration: none;
-        color: #fff;
+      :hover {
+        color: #a0a0a4;
       }
     }
   }

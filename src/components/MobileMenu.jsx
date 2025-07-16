@@ -1,9 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { X } from "lucide-react";
-import Button from "./Button";
+// import Button from "./Button";
 
 import styled from "styled-components";
+import ButtonLink from "./ButtonLink";
 
 const MobileMenu = ({ showMenu, setShowMenu }) => {
   const menuToggle = () => {
@@ -21,23 +22,22 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
         </button>
       </div>
 
-      <ul onClick={menuToggle}>
+      <ul>
         <li>
-          <NavLink to="/about">Company</NavLink>
+          <Link to="/about">Company</Link>
         </li>
         <li>
-          <NavLink to="/services">Services</NavLink>
+          <Link to="/services">Services</Link>
         </li>
         <li>
-          <NavLink to="/careers">Careers</NavLink>
+          <Link to="/careers">Careers</Link>
         </li>
         <li>
-          <NavLink to="/latest-news">News</NavLink>
+          <Link to="/latest-news">News</Link>
         </li>
       </ul>
-      <NavLink to="/get-quote">
-        <Button name="Ship Now" />
-      </NavLink>
+
+      <ButtonLink url="/get-quote">Ship Now</ButtonLink>
     </Container>
   );
 };
@@ -79,17 +79,14 @@ const Container = styled.div`
   }
 
   li {
-    font-size: 16px;
+    font-size: 18px;
     display: inline-block;
     height: 3.5rem;
     width: 100%;
   }
 
   a {
-    text-decoration: none;
     color: #445069;
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
   }

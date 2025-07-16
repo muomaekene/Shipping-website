@@ -24,7 +24,7 @@ const Paragraph = styled.p`
   border-top: 1px solid #3a3c3d;
   width: 100%;
   font-size: 16px;
-  color: #a0a0a4;
+  color: #d1cfcf;
   text-align: center;
 
   @media ${devices.laptop} {

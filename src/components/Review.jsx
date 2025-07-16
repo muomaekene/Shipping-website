@@ -15,7 +15,7 @@ const Review = ({ name, comment, imgSrc, imgAlt }) => {
         <img width="20" height="20" src={starIcon} alt="star icon" />
       </div>
 
-      <ArticleContent content={comment} />
+      <ArticleContent>{comment}</ArticleContent>
 
       <div className="details">
         <div className="image">
@@ -30,14 +30,14 @@ const Review = ({ name, comment, imgSrc, imgAlt }) => {
 export default Review;
 
 const Article = styled.article`
-  border-radius: 4px;
-  padding: 20px;
+  border-radius: 6px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: #fff;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
   @media ${devices.tablet} {
     margin: 0;
@@ -50,17 +50,9 @@ const Article = styled.article`
   }
 
   h4 {
-    font-weight: 400;
+    font-weight: 300;
     color: #162a60;
-    font-size: 17px;
-
-    @media ${devices.laptop} {
-      font-size: 18px;
-    }
-
-    @media ${devices.laptopL} {
-      font-size: 19px;
-    }
+    font-size: 18px;
   }
 
   .details {
