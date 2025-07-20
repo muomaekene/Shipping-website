@@ -1,5 +1,3 @@
-import { devices } from "../utils/breakpoints";
-
 import styled from "styled-components";
 
 const ArticleTitle = ({ children }) => {
@@ -13,6 +11,5 @@ const Heading = styled.h4`
   font-style: normal;
   font-size: 24px;
   color: #162a60;
-  letter-spacing: -1px;
   margin-bottom: 5px;
 `;

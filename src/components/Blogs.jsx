@@ -13,7 +13,7 @@ import styled from "styled-components";
 const Blogs = () => {
   return (
     <Section>
-      <SectionHeader title="Blogs & Media" />
+      <SectionHeader title="Latest News" />
       <Grid>
         <Blog
           image={deliveryPerson}

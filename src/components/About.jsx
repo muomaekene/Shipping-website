@@ -3,6 +3,8 @@ import SectionTitle from "./SectionTitle";
 import BodyContent from "./BodyContent";
 import ButtonLink from "./ButtonLink";
 
+import seaport from "../images/seaport.jpg";
+
 import { devices } from "../utils/breakpoints";
 import styled from "styled-components";
 
@@ -11,14 +13,7 @@ const About = () => {
     <Section>
       <Flex>
         <div className="flex-item-1">
-          <video autoPlay playsInline loop muted>
-            <source
-              src="https://cdn.pixabay.com/video/2020/10/28/53582-475000650_large.mp4"
-              type="video/mp4"
-            />
-            <source src="movie.ogg" type="video/ogg" />
-            Your browser does not support the video tag.
-          </video>
+          <img src={seaport} alt="Ship at seaport" />
         </div>
 
         <div className="flex-item-2">
@@ -65,10 +60,6 @@ const Flex = styled.div`
     gap: 40px;
   }
 
-  @media ${devices.laptop} {
-    gap: 80px;
-  }
-
   .flex-item-1 {
     flex: 1;
     margin-bottom: 20px;
@@ -94,10 +85,10 @@ const Flex = styled.div`
     }
   }
 
-  video {
+  img {
     display: block;
-    border-radius: 6px;
     max-height: 100%;
     width: 100%;
+    object-fit: contain;
   }
 `;

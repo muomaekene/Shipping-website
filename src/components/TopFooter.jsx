@@ -23,9 +23,9 @@ const TopFooter = () => {
           <Paragraph>office@expedit.com</Paragraph>
           <Paragraph>(734) 621-9936</Paragraph>
           <div className="socials">
-            <Instagram color="#d1cfcf" strokeWidth="1.2" />
-            <Facebook color="#d1cfcf" strokeWidth="1.2" />
-            <Linkedin color="#d1cfcf" strokeWidth="1.2" />
+            <Instagram color="#d1cfcf" size="30" strokeWidth="1.2" />
+            <Facebook color="#d1cfcf" size="30" strokeWidth="1.2" />
+            <Linkedin color="#d1cfcf" size="30" strokeWidth="1.2" />
           </div>
         </LocationGroup>
       </div>
@@ -165,7 +165,7 @@ const Container = styled.section`
   }
 
   .socials {
-    margin-top: 30px;
+    margin-top: 40px;
     width: 100px;
     display: flex;
     justify-content: space-between;
@@ -198,7 +198,7 @@ const Link = styled.a`
 `;
 
 const LocationGroup = styled.div`
-  margin-top: 30px;
+  margin-top: 40px;
 `;
 
 const Grid = styled.div`

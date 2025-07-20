@@ -66,7 +66,7 @@ const Container = styled.article`
   .banner-title {
     font-family: "Raleway", sans-serif;
     text-transform: lowercase;
-    font-size: 34px;
+    font-size: 36px;
     color: #fff;
     margin-bottom: 10px;
 
@@ -75,12 +75,12 @@ const Container = styled.article`
     }
 
     @media ${devices.laptop} {
-      font-size: 44px;
+      font-size: 46px;
       width: 90%;
     }
 
-    @media ${devices.laptopL} {
+    /* @media ${devices.laptopL} {
       font-size: 54px;
-    }
+    } */
   }
 `;

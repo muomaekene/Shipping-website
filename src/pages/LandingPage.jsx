@@ -18,10 +18,10 @@ const LandingPage = () => {
       <Services />
       <Quote />
       <Reviews />
-      <Careers />
-      <Track />
       <Blogs />
+      <Track />
       <Partners />
+      <Careers />
       <ContactUs />
     </Layout>
   );

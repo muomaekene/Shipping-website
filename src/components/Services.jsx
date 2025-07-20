@@ -27,7 +27,7 @@ const Services = () => {
           imgSrc={transportIcon}
           imgAlt="icon of delivery van"
           title="Speedy Delivery"
-          content="We strive to deliver your packages in the fastest time possible and with care"
+          content="Your packages are delivered in the fastest time possible and with utmost care"
         />
         <Service
           imgSrc={securityIcon}

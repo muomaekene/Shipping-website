@@ -7,7 +7,7 @@ const Footer = () => {
     <PageFooter>
       <TopFooter />
       <Paragraph className="copyright">
-        &copy; 2024 EXPEDIT Shipping Co. All rights reserved.
+        &copy; 2025 EXPEDIT Shipping Co. <br /> All rights reserved
       </Paragraph>
     </PageFooter>
   );
