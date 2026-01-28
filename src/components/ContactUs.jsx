@@ -11,15 +11,15 @@ import styled from "styled-components";
 const ContactUs = () => {
   return (
     <Section>
-      <SectionTitle>Our Team would be Happy to Hear From You</SectionTitle>
-
       <Grid>
         <div className="grid-item-1">
-          <ArticleTitle>Get in Touch Today</ArticleTitle>
+          <SectionTitle>Our Team would be Happy to Hear From You</SectionTitle>
+
           <BodyContent>
-            Use the secure form to send a message regarding any concerns you may
-            have. Should you have any information regarding a referral from a GP
-            please also include this and we will be in touch with the next steps
+            Have a question about our services or need assistance with your
+            shipment? Our dedicated team is here to help you every step of the
+            way. Reach out to us via email, phone, or our secure form and we'll
+            ensure your logistics needs are met with professionalism and care.
           </BodyContent>
           <Link>
             <a href="/">info@expedit.com</a>
@@ -30,6 +30,8 @@ const ContactUs = () => {
         </div>
 
         <div className="grid-item-2">
+          <ArticleTitle>Get in Touch</ArticleTitle>
+
           <ContactForm />
         </div>
       </Grid>
@@ -58,16 +60,23 @@ const Grid = styled.div`
     display: flex;
     flex-direction: column;
     justify-self: right;
+    margin-bottom: 40px;
+  }
+
+  .grid-item-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
   }
 `;
 
 const Link = styled.p`
   font-size: 18px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   width: fit-content;
 
   a {
-    color: #4a62ed;
+    color: #0eaae8;
     text-decoration: none;
   }
 

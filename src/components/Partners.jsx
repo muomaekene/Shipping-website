@@ -38,15 +38,14 @@ const Partners = () => {
 export default Partners;
 
 const Container = styled.div`
-  background: #fff;
+  background: #f5f7ff;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   .title {
-    margin: 20px 0;
+    margin-top: 40px;
     font-size: 30px;
-    font-family: "Raleway", sans-serif;
     color: #3d528a;
     text-transform: lowercase;
     letter-spacing: -1px;

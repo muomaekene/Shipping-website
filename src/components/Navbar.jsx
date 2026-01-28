@@ -10,18 +10,18 @@ import { devices } from "../utils/breakpoints";
 import styled from "styled-components";
 
 const Navbar = ({ showMenu, setShowMenu }) => {
-  const [scroll, setScroll] = useState(0);
+  // const [scroll, setScroll] = useState(0);
 
-  const handleScroll = () => setScroll(document.documentElement.scrollTop);
+  // const handleScroll = () => setScroll(document.documentElement.scrollTop);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  // }, []);
 
-  const MainNav = scroll >= 100 ? ScrolledNav : Nav;
+  // const MainNav = scroll >= 100 ? ScrolledNav : Nav;
 
   return (
-    <MainNav>
+    <Nav>
       <Logo />
       <ul>
         <li>
@@ -52,7 +52,7 @@ const Navbar = ({ showMenu, setShowMenu }) => {
       >
         <Menu size="30" strokeWidth="1.4" color="#fff" />
       </button>
-    </MainNav>
+    </Nav>
   );
 };
 
@@ -61,6 +61,7 @@ export default Navbar;
 const Nav = styled.nav`
   width: 100%;
   min-height: 70px;
+  position: sticky;
   top: 0;
   z-index: 666;
   display: flex;
@@ -69,6 +70,7 @@ const Nav = styled.nav`
   padding: 0 16px;
   background: #0e0e0e;
   font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   @media ${devices.laptop} {
     min-height: 80px;
@@ -106,7 +108,8 @@ const Nav = styled.nav`
       }
 
       :hover {
-        color: #a0a0a4;
+        color: #0eaae8;
+        font-weight: 400;
       }
     }
   }
@@ -123,7 +126,7 @@ const Nav = styled.nav`
   }
 `;
 
-const ScrolledNav = styled(Nav)`
-  position: sticky;
-  border-bottom: 1px solid #585858;
-`;
+// const ScrolledNav = styled(Nav)`
+//   position: sticky;
+//   border-bottom: 1px solid #585858;
+// `;

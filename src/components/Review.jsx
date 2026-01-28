@@ -35,8 +35,9 @@ const Article = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #fff;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+  background: #f0f0f0;
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
   @media ${devices.tablet} {
@@ -50,7 +51,6 @@ const Article = styled.article`
   }
 
   h4 {
-    font-weight: 300;
     color: #162a60;
     font-size: 18px;
   }

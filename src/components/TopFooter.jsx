@@ -181,7 +181,9 @@ const Container = styled.section`
 
 const Header = styled.h4`
   font-size: 22px;
-  color: #fff;
+  color: #0eaae8;
+  font-weight: 500;
+  margin-bottom: 10px;
 `;
 
 const Paragraph = styled.p`

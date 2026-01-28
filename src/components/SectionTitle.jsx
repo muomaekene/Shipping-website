@@ -9,16 +9,15 @@ const SectionTitle = ({ color, children }) => {
 export default SectionTitle;
 
 const Container = styled.h3`
-  font-family: "Raleway", sans-serif;
+  font-family: "Orelega One", serif;
   font-style: normal;
-  font-size: 34px;
-  color: #3d528a;
+  font-size: 36px;
+  color: #0eaae8;
   margin-bottom: 20px;
-  line-height: 1.2;
   letter-spacing: -1px;
-  text-transform: lowercase;
+  text-transform: capitalize;
 
   @media ${devices.laptop} {
-    font-size: 34px;
+    font-size: 40px;
   }
 `;

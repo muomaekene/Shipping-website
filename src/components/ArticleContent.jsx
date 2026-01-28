@@ -10,5 +10,5 @@ export default ArticleContent;
 
 const Paragraph = styled.p`
   font-size: 18px;
-  color: #3d528a;
+  color: #252121;
 `;

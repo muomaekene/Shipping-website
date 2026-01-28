@@ -60,7 +60,7 @@ export default Services;
 
 const Grid = styled.div`
   display: grid;
-  gap: 16px;
+  gap: 20px;
   margin-bottom: 20px;
 
   @media ${devices.tablet} {

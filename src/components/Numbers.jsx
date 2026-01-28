@@ -31,11 +31,13 @@ const Container = styled.div`
   gap: 35px;
 
   .number {
-    color: #fff;
-    font-size: 20px;
+    color: #b50834;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "REM", sans-serif;
 
     @media ${devices.laptop} {
-      font-size: 22px;
+      font-size: 24px;
     }
 
     @media ${devices.laptopL} {

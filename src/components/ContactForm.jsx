@@ -31,18 +31,19 @@ const Form = styled.form`
   flex-direction: column;
   margin-top: 10px;
 
-  @media ${devices.tablet} {
-    margin-top: 0;
-  }
-
   .input-field {
-    border-radius: 4px;
-    border: 1px solid #c1c3cf;
+    border-radius: 6px;
+    border: 1px solid #b3b4bc;
+    background: #f0f0f0;
     padding-left: 15px;
     font-size: 18px;
-    margin-bottom: 10px;
-    height: 70px;
+    margin-bottom: 15px;
+    height: 60px;
     outline: none;
+
+    :focus {
+      background: red;
+    }
 
     @media ${devices.laptopL} {
       padding-left: 20px;
@@ -51,9 +52,10 @@ const Form = styled.form`
   }
 
   .feedback-field {
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #c1c3cf;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #b3b4bc;
+    background: #f0f0f0;
     padding: 15px;
     font-size: 18px;
     outline: none;

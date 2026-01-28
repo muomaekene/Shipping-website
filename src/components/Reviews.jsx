@@ -80,7 +80,8 @@ const Grid = styled.div`
   margin-bottom: 10px;
 
   overflow-x: auto;
-  overscroll-behavior-inline: contain;
+  /* scroll-snap-type: x mandatory; */
+  /* overscroll-behavior-inline: contain; */
   scrollbar-width: none;
 
   padding: 5px 10px 10px 5px;

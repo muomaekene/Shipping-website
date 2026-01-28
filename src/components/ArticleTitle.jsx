@@ -9,7 +9,9 @@ export default ArticleTitle;
 const Heading = styled.h4`
   text-transform: capitalize;
   font-style: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 22px;
   color: #162a60;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-family: "REM", sans-serif;
 `;

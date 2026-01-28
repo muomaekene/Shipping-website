@@ -18,7 +18,8 @@ const About = () => {
 
         <div className="flex-item-2">
           <SectionTitle>
-            The Journey of A million Successful Shipments Begins With One
+            The Journey of A million Successful Shipments Begins With One, let's
+            take you there
           </SectionTitle>
 
           <BodyContent>
@@ -57,7 +58,7 @@ const Flex = styled.div`
   @media ${devices.tablet} {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
   }
 
   .flex-item-1 {
@@ -90,5 +91,6 @@ const Flex = styled.div`
     max-height: 100%;
     width: 100%;
     object-fit: contain;
+    border-radius: 8px;
   }
 `;

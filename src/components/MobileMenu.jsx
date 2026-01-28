@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 import { X } from "lucide-react";
-// import Button from "./Button";
 
 import styled from "styled-components";
 import ButtonLink from "./ButtonLink";
@@ -37,7 +36,7 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
         </li>
       </ul>
 
-      <ButtonLink url="/get-quote">Ship Now</ButtonLink>
+      <ShipNowButton url="/get-quote">Ship Now</ShipNowButton>
     </Container>
   );
 };
@@ -89,5 +88,21 @@ const Container = styled.div`
     color: #445069;
     display: flex;
     align-items: center;
+  }
+`;
+
+const ShipNowButton = styled(ButtonLink)`
+  margin-top: auto;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  background: #3d528a;
+  color: #fff;
+  border-radius: 6px;
+
+  &:hover {
+    background: #2e3e66;
   }
 `;

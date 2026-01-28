@@ -13,13 +13,13 @@ const Banner = () => {
     <Container>
       <article className="banner-article">
         <h2 className="banner-title">
-          Swift Solutions <br />
-          Seamless Services <br />
+          Swift Solutions, <br />
+          Seamless Services, <br />
           Tailored For You
         </h2>
         <BodyContent color="#d1cfcf">
           With our state-of-the-art logistics network and experienced team, we
-          offer a comprehensive range of services tailored to your requirements
+          offer a comprehensive range of services tailored to your business
         </BodyContent>
 
         <ButtonLink url="/services" hex="#fff">
@@ -64,10 +64,9 @@ const Container = styled.article`
   }
 
   .banner-title {
-    font-family: "Raleway", sans-serif;
-    text-transform: lowercase;
+    font-family: "REM", sans-serif;
     font-size: 36px;
-    color: #fff;
+    color: #0eaae8;
     margin-bottom: 10px;
 
     @media ${devices.mobileL} {

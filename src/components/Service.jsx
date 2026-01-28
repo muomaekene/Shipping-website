@@ -18,12 +18,13 @@ export default Service;
 const Article = styled.article`
   border-radius: 6px;
   padding: 20px;
-  height: 20rem;
-  background: #fff;
+  height: 22rem;
+  background: #f0f0f0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
   img {

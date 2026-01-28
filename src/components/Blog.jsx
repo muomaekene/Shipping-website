@@ -31,8 +31,9 @@ export default Blog;
 
 const Article = styled.article`
   border-radius: 6px;
-  background: #fff;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+  background: #f0f0f0;
+  box-shadow:
+    rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 
   @media ${devices.tablet} {

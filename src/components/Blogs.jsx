@@ -45,7 +45,7 @@ export default Blogs;
 
 const Grid = styled.div`
   display: grid;
-  gap: 16px;
+  gap: 20px;
 
   @media ${devices.tablet} {
     grid-auto-rows: 1fr;

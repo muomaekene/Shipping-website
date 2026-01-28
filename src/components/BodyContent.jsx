@@ -1,5 +1,3 @@
-import { devices } from "../utils/breakpoints";
-
 import styled from "styled-components";
 
 const BodyContent = ({ color, children }) => {
@@ -10,7 +8,7 @@ export default BodyContent;
 
 const Paragraph = styled.p`
   font-size: 18px;
-  color: #162a60;
+  color: #252121;
   margin-bottom: 20px;
   line-height: 1.5;
 `;
