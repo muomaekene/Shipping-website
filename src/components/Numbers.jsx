@@ -31,7 +31,7 @@ const Container = styled.div`
   gap: 35px;
 
   .number {
-    color: #b50834;
+    color: #cb1d49;
     font-size: 22px;
     font-weight: 500;
     font-family: "REM", sans-serif;

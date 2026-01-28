@@ -14,7 +14,7 @@ const Heading = styled(Link)`
   letter-spacing: -1px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #b50834;
+  color: #cb1d49;
 
   @media ${devices.laptopL} {
     font-size: 26px;
