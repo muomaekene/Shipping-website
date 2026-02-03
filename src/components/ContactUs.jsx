@@ -76,7 +76,7 @@ const Link = styled.p`
   width: fit-content;
 
   a {
-    color: #0eaae8;
+    color: #33365e;
     text-decoration: none;
   }
 

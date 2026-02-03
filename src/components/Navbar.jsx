@@ -70,7 +70,9 @@ const Nav = styled.nav`
   padding: 0 16px;
   background: #0e0e0e;
   font-size: 18px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 2px 4px -1px rgba(0, 0, 0, 0.1);
 
   @media ${devices.laptop} {
     min-height: 80px;
@@ -108,7 +110,7 @@ const Nav = styled.nav`
       }
 
       :hover {
-        color: #0eaae8;
+        color: #a0a5b1;
         font-weight: 400;
       }
     }

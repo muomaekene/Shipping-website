@@ -11,8 +11,8 @@ const Feature = ({ title, content, buttonName, imgSrc, imgAlt, url }) => {
   return (
     <Flex>
       <div className="section-body">
-        <SectionTitle color="#0eaae8">{title}</SectionTitle>
-        <BodyContent color="#b9b9bd">{content}</BodyContent>
+        <SectionTitle color="#f5f7ff">{title}</SectionTitle>
+        <BodyContent color="#c1c1c6">{content}</BodyContent>
 
         <ButtonLink url="/services" hex="#fff">
           {buttonName}

@@ -17,7 +17,7 @@ const Banner = () => {
           Seamless Services, <br />
           Tailored For You
         </h2>
-        <BodyContent color="#d1cfcf">
+        <BodyContent color="#c1c1c6">
           With our state-of-the-art logistics network and experienced team, we
           offer a comprehensive range of services tailored to your business
         </BodyContent>
@@ -66,7 +66,7 @@ const Container = styled.article`
   .banner-title {
     font-family: "REM", sans-serif;
     font-size: 36px;
-    color: #0eaae8;
+    color: #f5f7ff;
     margin-bottom: 10px;
 
     @media ${devices.mobileL} {
@@ -77,9 +77,5 @@ const Container = styled.article`
       font-size: 46px;
       width: 90%;
     }
-
-    /* @media ${devices.laptopL} {
-      font-size: 54px;
-    } */
   }
 `;

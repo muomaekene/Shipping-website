@@ -12,7 +12,7 @@ const Container = styled.h3`
   font-family: "Orelega One", serif;
   font-style: normal;
   font-size: 36px;
-  color: #0eaae8;
+  color: #33365e;
   margin-bottom: 20px;
   letter-spacing: -1px;
   text-transform: capitalize;

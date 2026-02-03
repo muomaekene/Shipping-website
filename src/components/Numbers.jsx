@@ -31,7 +31,7 @@ const Container = styled.div`
   gap: 35px;
 
   .number {
-    color: #cb1d49;
+    color: #f5f7ff;
     font-size: 22px;
     font-weight: 500;
     font-family: "REM", sans-serif;
@@ -46,7 +46,7 @@ const Container = styled.div`
   }
 
   .desc {
-    color: #d1cfcf;
+    color: #c1c1c6;
     font-size: 16px;
 
     @media ${devices.laptop} {

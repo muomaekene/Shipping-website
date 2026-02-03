@@ -181,14 +181,14 @@ const Container = styled.section`
 
 const Header = styled.h4`
   font-size: 22px;
-  color: #0eaae8;
+  color: #f5f7ff;
   font-weight: 500;
   margin-bottom: 10px;
 `;
 
 const Paragraph = styled.p`
   font-size: 18px;
-  color: #d1cfcf;
+  color: #c1c1c6;
   margin-top: 10px;
 `;
 

@@ -8,7 +8,7 @@ export default BodyContent;
 
 const Paragraph = styled.p`
   font-size: 18px;
-  color: #252121;
+  color: #26284a;
   margin-bottom: 20px;
   line-height: 1.5;
 `;

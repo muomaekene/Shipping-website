@@ -11,7 +11,7 @@ const Heading = styled.h4`
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  color: #162a60;
+  color: #33365e;
   margin-bottom: 10px;
   font-family: "REM", sans-serif;
 `;

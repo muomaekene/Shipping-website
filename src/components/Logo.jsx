@@ -10,11 +10,11 @@ const Logo = () => {
 export default Logo;
 
 const Heading = styled(Link)`
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: -1px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #cb1d49;
+  color: #c7314d;
 
   @media ${devices.laptopL} {
     font-size: 26px;
