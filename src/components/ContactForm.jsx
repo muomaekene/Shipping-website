@@ -6,9 +6,24 @@ import styled from "styled-components";
 const ContactForm = () => {
   return (
     <Form>
-      <input placeholder="Name" className="input-field" type="text" />
-      <input placeholder="Email Address" className="input-field" type="email" />
-      <input placeholder="Phone Number" className="input-field" type="text" />
+      <input
+        name="Fullname"
+        placeholder="Full Name"
+        className="input-field"
+        type="text"
+      />
+      <input
+        name="EmailAddress"
+        placeholder="Email Address"
+        className="input-field"
+        type="email"
+      />
+      <input
+        name="PhoneNumber"
+        placeholder="Phone Number"
+        className="input-field"
+        type="text"
+      />
       <textarea
         className="feedback-field"
         name="feedback"
@@ -33,16 +48,16 @@ const Form = styled.form`
 
   .input-field {
     border-radius: 6px;
-    border: 1px solid #b3b4bc;
-    background: #f0f0f0;
+    border: 1px solid #afb1be;
+    background: #f4f6fe;
     padding-left: 15px;
     font-size: 18px;
     margin-bottom: 15px;
     height: 60px;
     outline: none;
 
-    :focus {
-      background: red;
+    ::placeholder {
+      color: #afb1be;
     }
 
     @media ${devices.laptopL} {
@@ -54,8 +69,8 @@ const Form = styled.form`
   .feedback-field {
     margin-bottom: 20px;
     border-radius: 6px;
-    border: 1px solid #b3b4bc;
-    background: #f0f0f0;
+    border: 1px solid #afb1be;
+    background: #f4f6fe;
     padding: 15px;
     font-size: 18px;
     outline: none;

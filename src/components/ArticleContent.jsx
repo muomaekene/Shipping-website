@@ -9,4 +9,5 @@ export default ArticleContent;
 const Paragraph = styled.p`
   font-size: 18px;
   color: #484a64;
+  margin-top: 10px;
 `;

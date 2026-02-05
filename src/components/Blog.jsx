@@ -18,9 +18,7 @@ const Blog = ({ image, imageAlt, title, content, url }) => {
         <ArticleContent>{content}</ArticleContent>
 
         <Link to={url}>
-          <button>
-            Read More <ArrowRightIcon strokeWidth="1.2" size="20" />
-          </button>
+          Read More <ArrowRightIcon strokeWidth="1.2" size="20" />
         </Link>
       </div>
     </Article>
@@ -31,10 +29,10 @@ export default Blog;
 
 const Article = styled.article`
   border-radius: 6px;
-  background: #f0f0f0;
+  background: #f4f6fe;
   box-shadow:
-    rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
   @media ${devices.tablet} {
     margin-bottom: 0;
@@ -47,30 +45,29 @@ const Article = styled.article`
   a {
     display: inline-block;
 
-    button {
-      color: #4a4aed;
-      font-size: 18px;
-      cursor: pointer;
-      background: none;
-      width: fit-content;
-      display: flex;
-      align-items: center;
-      margin-top: 20px;
-      border: 1px solid #bcb8b8;
-      border-radius: 6px;
-      padding: 12px 15px;
+    color: #4a4aed;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #bcb8b8;
+    border-radius: 6px;
+    padding: 12px 15px;
+    background: #fff;
 
-      @media ${devices.laptop} {
-        padding: 14px 18px;
-      }
+    @media ${devices.laptop} {
+      padding: 14px 18px;
+    }
 
-      @media ${devices.laptopL} {
-        padding: 16px 20px;
-      }
+    @media ${devices.laptopL} {
+      padding: 16px 20px;
+    }
 
-      &:active {
-        background: #efeeee;
-      }
+    &:active {
+      background: #efeeee;
     }
   }
 `;

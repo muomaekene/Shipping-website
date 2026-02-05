@@ -72,6 +72,7 @@ const Grid = styled.div`
 
 const Link = styled.p`
   font-size: 18px;
+  font-weight: 500;
   margin-bottom: 10px;
   width: fit-content;
 

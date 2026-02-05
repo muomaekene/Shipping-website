@@ -19,13 +19,13 @@ const Article = styled.article`
   border-radius: 6px;
   padding: 20px;
   height: 22rem;
-  background: #f0f0f0;
+  background: #f4f6fe;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-shadow:
-    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
   img {
     margin-bottom: 20px;

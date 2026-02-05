@@ -24,14 +24,14 @@ const StyledLink = styled(Link)`
     cursor: pointer;
     border-radius: 6px;
     transition: ease all 0.3s;
-    border: 1px solid#33365e;
+    border: 1px solid#42447e;
     @media ${devices.laptopL} {
       padding: 22px 40px;
     }
   }
 
   :hover {
-    background: #33365e;
+    background: #42447e;
     color: #fff !important;
   }
 `;

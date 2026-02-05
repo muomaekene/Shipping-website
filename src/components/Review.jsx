@@ -35,10 +35,10 @@ const Article = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #f0f0f0;
+  background: #f4f6fe;
   box-shadow:
-    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
   @media ${devices.tablet} {
     margin: 0;
@@ -53,6 +53,7 @@ const Article = styled.article`
   h4 {
     color: #162a60;
     font-size: 18px;
+    font-weight: 500;
   }
 
   .details {

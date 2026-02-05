@@ -12,6 +12,6 @@ const Container = styled.section`
   padding: 24px 16px;
 
   @media ${devices.laptop} {
-    padding: 40px 24px;
+    padding: 30px 24px;
   }
 `;

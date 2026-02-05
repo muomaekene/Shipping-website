@@ -44,11 +44,10 @@ const Container = styled.div`
   align-items: center;
 
   .title {
-    margin-top: 40px;
+    margin: 40px 0;
     font-size: 30px;
     color: #3d528a;
-    text-transform: lowercase;
-    letter-spacing: -1px;
+    font-weight: 500;
 
     @media ${devices.tablet} {
       font-size: 34px;
