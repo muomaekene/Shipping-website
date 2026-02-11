@@ -29,7 +29,6 @@ export default Blog;
 
 const Article = styled.article`
   border-radius: 6px;
-  background: #f4f6fe;
   box-shadow:
     rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;

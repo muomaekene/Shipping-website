@@ -19,7 +19,7 @@ const Article = styled.article`
   border-radius: 6px;
   padding: 20px;
   height: 22rem;
-  background: #f4f6fe;
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;

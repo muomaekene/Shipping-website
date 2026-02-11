@@ -35,7 +35,6 @@ const Article = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #f4f6fe;
   box-shadow:
     rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -46,7 +45,7 @@ const Article = styled.article`
 
   .stars {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     gap: 5px;
   }
 

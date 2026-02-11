@@ -48,13 +48,14 @@ const Form = styled.form`
 
   .input-field {
     border-radius: 6px;
-    border: 1px solid #afb1be;
-    background: #f4f6fe;
     padding-left: 15px;
     font-size: 18px;
     margin-bottom: 15px;
     height: 60px;
     outline: none;
+    box-shadow:
+      rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
     ::placeholder {
       color: #afb1be;
@@ -69,11 +70,12 @@ const Form = styled.form`
   .feedback-field {
     margin-bottom: 20px;
     border-radius: 6px;
-    border: 1px solid #afb1be;
-    background: #f4f6fe;
     padding: 15px;
     font-size: 18px;
     outline: none;
+    box-shadow:
+      rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
     @media ${devices.laptopL} {
       padding-left: 20px;

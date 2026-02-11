@@ -8,6 +8,6 @@ export default ArticleContent;
 
 const Paragraph = styled.p`
   font-size: 18px;
-  color: #484a64;
+  color: #363643;
   margin-top: 10px;
 `;
