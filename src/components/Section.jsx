@@ -9,7 +9,7 @@ export default Section;
 
 const Container = styled.section`
   width: 100%;
-  padding: 24px 16px;
+  padding: 30px 16px;
 
   @media ${devices.laptop} {
     padding: 30px 24px;

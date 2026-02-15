@@ -18,7 +18,7 @@ const Blog = ({ image, imageAlt, title, content, url }) => {
         <ArticleContent>{content}</ArticleContent>
 
         <Link to={url}>
-          Read More <ArrowRightIcon strokeWidth="1.2" size="20" />
+          Read More <ArrowRightIcon strokeWidth="1.2" size="22" />
         </Link>
       </div>
     </Article>
@@ -43,9 +43,8 @@ const Article = styled.article`
 
   a {
     display: inline-block;
-
     color: #4a4aed;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     background: none;
     width: fit-content;

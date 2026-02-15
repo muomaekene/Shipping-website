@@ -27,13 +27,13 @@ const Services = () => {
           imgSrc={transportIcon}
           imgAlt="icon of delivery van"
           title="Speedy Delivery"
-          content="Your packages are delivered in the fastest time possible and with utmost care"
+          content="Your packages are delivered in the fastest time possible with utmost care"
         />
         <Service
           imgSrc={securityIcon}
           imgAlt="icon of cellphone with checkmark"
           title="Secure Shipping"
-          content="We prioritise safety, so we always verify your packages to ensure you're the receiver"
+          content="We prioritise safety, so we verify your packages to ensure you're the receiver"
         />
         <Service
           imgSrc={locationIcon}

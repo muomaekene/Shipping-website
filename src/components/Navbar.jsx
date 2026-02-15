@@ -76,7 +76,7 @@ const Nav = styled.nav`
 
   @media ${devices.laptop} {
     min-height: 80px;
-    padding: 0 24px;
+    padding: 0 30px;
   }
 
   ul {

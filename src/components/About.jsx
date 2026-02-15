@@ -18,8 +18,8 @@ const About = () => {
 
         <div className="flex-item-2">
           <SectionTitle>
-            The Journey of A million Successful Shipments Begins With One, let's
-            take you there
+            We Offer Seamless Freight and Distribution Services Backed by
+            Industry Experience
           </SectionTitle>
 
           <BodyContent>
@@ -91,6 +91,5 @@ const Flex = styled.div`
     max-height: 100%;
     width: 100%;
     object-fit: contain;
-    border-radius: 8px;
   }
 `;

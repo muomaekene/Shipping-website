@@ -51,7 +51,7 @@ const Article = styled.article`
 
   h4 {
     color: #162a60;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
   }
 

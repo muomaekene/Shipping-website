@@ -10,7 +10,6 @@ const Heading = styled.h4`
   text-transform: capitalize;
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
-  color: #33365e;
-  font-family: "REM", sans-serif;
+  font-size: 24px;
+  color: #3d4170;
 `;

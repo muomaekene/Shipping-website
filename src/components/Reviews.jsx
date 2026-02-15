@@ -1,4 +1,5 @@
 import Review from "./Review";
+import Section from "./Section";
 import SectionTitle from "./SectionTitle";
 import SectionContent from "./SectionContent";
 
@@ -15,7 +16,7 @@ import ButtonLink from "./ButtonLink";
 
 const Reviews = () => {
   return (
-    <Container>
+    <Section>
       <SectionTitle>What our customers are saying</SectionTitle>
       <SectionContent>
         Some of our satistified customers have reached out and told us how they
@@ -58,19 +59,11 @@ const Reviews = () => {
       <ButtonLink url="/services" hex="#162a60">
         Leave A Review
       </ButtonLink>
-    </Container>
+    </Section>
   );
 };
 
 export default Reviews;
-
-const Container = styled.div`
-  padding: 24px 16px;
-
-  @media ${devices.laptop} {
-    padding: 40px 24px;
-  }
-`;
 
 const Grid = styled.div`
   display: grid;

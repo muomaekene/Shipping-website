@@ -49,7 +49,7 @@ const Form = styled.form`
   .input-field {
     border-radius: 6px;
     padding-left: 15px;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
     height: 60px;
     outline: none;
@@ -71,7 +71,7 @@ const Form = styled.form`
     margin-bottom: 20px;
     border-radius: 6px;
     padding: 15px;
-    font-size: 18px;
+    font-size: 20px;
     outline: none;
     box-shadow:
       rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,

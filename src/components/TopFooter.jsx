@@ -10,6 +10,7 @@ const TopFooter = () => {
     <Container>
       <div className="footer-info">
         <Logo />
+
         <Paragraph>
           EXPEDIT simplifies how individuals and companies send and receive
           freight across the United States
@@ -180,20 +181,21 @@ const Container = styled.section`
 `;
 
 const Header = styled.h4`
-  font-size: 22px;
+  font-size: 24px;
   color: #f5f7ff;
   font-weight: 500;
   margin-bottom: 10px;
 `;
 
 const Paragraph = styled.p`
-  font-size: 18px;
+  font-size: 20px;
   color: #c1c1c6;
   margin-top: 10px;
+  line-height: 1.5;
 `;
 
 const Link = styled.a`
-  font-size: 18px;
+  font-size: 20px;
   color: #d1cfcf;
   margin-top: 10px;
   text-decoration: none;
@@ -208,6 +210,7 @@ const Grid = styled.div`
   grid-auto-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  margin-top: 20px;
 
   @media ${devices.tablet} {
     grid-template-columns: 1fr 1fr;
@@ -217,6 +220,7 @@ const Grid = styled.div`
 
   @media ${devices.laptop} {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 40px;
   }
 
   @media ${devices.laptopL} {

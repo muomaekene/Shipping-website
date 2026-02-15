@@ -7,7 +7,8 @@ const ArticleContent = ({ children }) => {
 export default ArticleContent;
 
 const Paragraph = styled.p`
-  font-size: 18px;
-  color: #363643;
+  font-size: 20px;
+  color: #2d3054;
   margin-top: 10px;
+  line-height: 1.5;
 `;

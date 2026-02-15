@@ -23,7 +23,7 @@ const Paragraph = styled.p`
   padding: 20px;
   border-top: 1px solid #3a3c3d;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   color: #d1cfcf;
   text-align: center;
 
