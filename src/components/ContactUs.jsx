@@ -30,7 +30,7 @@ const ContactUs = () => {
         </div>
 
         <div className="grid-item-2">
-          <ArticleTitle>Get in Touch</ArticleTitle>
+          <ArticleTitle>GET IN TOUCH</ArticleTitle>
 
           <ContactForm />
         </div>
@@ -72,7 +72,7 @@ const Grid = styled.div`
 
 const Link = styled.p`
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
   width: fit-content;
 

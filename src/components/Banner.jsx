@@ -69,10 +69,6 @@ const Container = styled.article`
     color: #f5f7ff;
     margin-bottom: 10px;
 
-    @media ${devices.mobileL} {
-      font-size: 40px;
-    }
-
     @media ${devices.laptop} {
       font-size: 46px;
       width: 90%;

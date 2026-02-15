@@ -11,12 +11,13 @@ export default SectionTitle;
 const Container = styled.h3`
   font-family: "REM", sans-serif;
   font-style: normal;
-  font-size: 36px;
+  font-size: 34px;
   color: #3d4170;
   margin-bottom: 15px;
   text-transform: capitalize;
+  line-height: 1.2;
 
   @media ${devices.laptop} {
-    font-size: 38px;
+    font-size: 40px;
   }
 `;

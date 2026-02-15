@@ -78,7 +78,7 @@ const Container = styled.div`
   }
 
   li {
-    font-size: 18px;
+    font-size: 20px;
     display: inline-block;
     height: 3.5rem;
     width: 100%;
@@ -96,7 +96,7 @@ const ShipNowButton = styled(ButtonLink)`
   width: 100%;
   padding: 15px 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   background: #3d528a;
   color: #fff;
