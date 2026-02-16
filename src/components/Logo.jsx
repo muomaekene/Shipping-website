@@ -9,7 +9,7 @@ const Logo = () => {
 export default Logo;
 
 const Heading = styled(Link)`
-  font-size: 28px;
+  font-size: 26px;
   letter-spacing: -1px;
   text-transform: uppercase;
   font-weight: 600;

@@ -18,20 +18,22 @@ const StyledLink = styled(Link)`
 
   button {
     width: fit-content;
-    font-size: 20px;
+    font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
     padding: 18px 30px;
     background: transparent;
     cursor: pointer;
     border-radius: 8px;
     transition: ease all 0.3s;
-    border: 1px solid#3d4170;
+    border: 1px solid#2b4a88;
+    color: #304c83;
+
     @media ${devices.laptopL} {
       padding: 22px 40px;
     }
   }
 
   :hover {
-    background: #3d4170;
+    background: #2b4a88;
     color: #fff !important;
   }
 `;

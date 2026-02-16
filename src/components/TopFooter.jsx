@@ -4,6 +4,7 @@ import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { devices } from "../utils/breakpoints";
 
 import styled from "styled-components";
+import ArticleContent from "./ArticleContent";
 
 const TopFooter = () => {
   return (
@@ -15,6 +16,8 @@ const TopFooter = () => {
           EXPEDIT simplifies how individuals and companies send and receive
           freight across the United States
         </Paragraph>
+
+        <ArticleContent></ArticleContent>
 
         <LocationGroup>
           <Header>Our Location</Header>
@@ -133,17 +136,13 @@ const TopFooter = () => {
 export default TopFooter;
 
 const Container = styled.section`
-  padding: 40px 16px;
+  padding: 40px 15px;
   background: #0e0e0e;
   display: flex;
   flex-direction: column;
 
   @media ${devices.tablet} {
     flex-direction: row;
-  }
-
-  @media ${devices.laptop} {
-    padding: 40px 24px;
   }
 
   .footer-info {
@@ -188,14 +187,14 @@ const Header = styled.h4`
 `;
 
 const Paragraph = styled.p`
-  font-size: 20px;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
   color: #c1c1c6;
   margin-top: 10px;
   line-height: 1.5;
 `;
 
 const Link = styled.a`
-  font-size: 20px;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
   color: #d1cfcf;
   margin-top: 10px;
   text-decoration: none;

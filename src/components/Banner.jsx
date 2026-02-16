@@ -41,7 +41,7 @@ export default Banner;
 const Container = styled.article`
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 15px;
   background: #0e0e0e;
 
   @media ${devices.tablet} {
@@ -49,8 +49,7 @@ const Container = styled.article`
   }
 
   @media ${devices.laptop} {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 0 15px;
     height: calc(100vh - 80px);
   }
 

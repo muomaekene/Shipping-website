@@ -44,7 +44,7 @@ const Article = styled.article`
   a {
     display: inline-block;
     color: #4a4aed;
-    font-size: 20px;
+    font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
     cursor: pointer;
     background: none;
     width: fit-content;

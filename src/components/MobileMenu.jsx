@@ -36,7 +36,7 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
         </li>
       </ul>
 
-      <ShipNowButton url="/get-quote">Ship Now</ShipNowButton>
+      <ButtonLink url="/get-quote">Ship Now</ButtonLink>
     </Container>
   );
 };
@@ -78,31 +78,15 @@ const Container = styled.div`
   }
 
   li {
-    font-size: 20px;
+    font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
     display: inline-block;
     height: 3.5rem;
     width: 100%;
   }
 
   a {
-    color: #445069;
+    color: #2a3f68;
     display: flex;
     align-items: center;
-  }
-`;
-
-const ShipNowButton = styled(ButtonLink)`
-  margin-top: auto;
-  width: 100%;
-  padding: 15px 0;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  background: #3d528a;
-  color: #fff;
-  border-radius: 6px;
-
-  &:hover {
-    background: #2e3e66;
   }
 `;

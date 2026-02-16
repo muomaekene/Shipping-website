@@ -67,7 +67,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 15px;
   background: #0e0e0e;
   font-size: 18px;
   box-shadow:
@@ -76,7 +76,7 @@ const Nav = styled.nav`
 
   @media ${devices.laptop} {
     min-height: 80px;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   ul {

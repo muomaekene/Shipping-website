@@ -46,7 +46,7 @@ const Container = styled.div`
 
   .desc {
     color: #c1c1c6;
-    font-size: 20px;
+    font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
 
     @media ${devices.laptop} {
       font-size: 17px;

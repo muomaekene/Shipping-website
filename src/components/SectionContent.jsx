@@ -9,7 +9,7 @@ const SectionContent = ({ color, children }) => {
 export default SectionContent;
 
 const Paragraph = styled.p`
-  font-size: 20px;
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
   color: #2d3054;
   margin-bottom: 20px;
   line-height: 1.5;
