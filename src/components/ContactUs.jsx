@@ -71,7 +71,7 @@ const Grid = styled.div`
 `;
 
 const Link = styled.p`
-  font-size: 20px;
+  font-size: clamp(1.125rem, 1.05rem + 0.5vw, 1.375rem);
   font-weight: 500;
   margin-bottom: 10px;
   width: fit-content;

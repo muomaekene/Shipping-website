@@ -187,14 +187,14 @@ const Header = styled.h4`
 `;
 
 const Paragraph = styled.p`
-  font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
+  font-size: clamp(1.125rem, 1.05rem + 0.5vw, 1.375rem);
   color: #c1c1c6;
   margin-top: 10px;
   line-height: 1.5;
 `;
 
 const Link = styled.a`
-  font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
+  font-size: clamp(1.125rem, 1.05rem + 0.5vw, 1.375rem);
   color: #d1cfcf;
   margin-top: 10px;
   text-decoration: none;
