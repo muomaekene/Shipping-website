@@ -69,7 +69,7 @@ const Nav = styled.nav`
   align-items: center;
   padding: 0 15px;
   background: #0e0e0e;
-  font-size: 18px;
+  font-size: clamp(1.125rem, 1.05rem + 0.5vw, 1.375rem);
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.3),
     0 2px 4px -1px rgba(0, 0, 0, 0.1);

@@ -7,8 +7,9 @@ const BodyContent = ({ color, children }) => {
 export default BodyContent;
 
 const Paragraph = styled.p`
-  font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
+  font-size: clamp(1.125rem, 1.05rem + 0.5vw, 1.375rem);
   color: #2d3054;
   margin-bottom: 20px;
-  line-height: 1.5;
+  line-height: 1.6;
+  max-width: 65ch;
 `;

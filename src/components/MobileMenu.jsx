@@ -78,7 +78,7 @@ const Container = styled.div`
   }
 
   li {
-    font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
+    font-size: 20px;
     display: inline-block;
     height: 3.5rem;
     width: 100%;

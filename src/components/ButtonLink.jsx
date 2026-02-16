@@ -18,7 +18,7 @@ const StyledLink = styled(Link)`
 
   button {
     width: fit-content;
-    font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
+    font-size: clamp(1.125rem, 1.05rem + 0.5vw, 1.375rem);
     padding: 18px 30px;
     background: transparent;
     cursor: pointer;

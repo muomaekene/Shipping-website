@@ -46,14 +46,6 @@ const Container = styled.div`
 
   .desc {
     color: #c1c1c6;
-    font-size: clamp(1rem, 1rem + 0.5vw, 1.35rem);
-
-    @media ${devices.laptop} {
-      font-size: 17px;
-    }
-
-    @media ${devices.laptopL} {
-      font-size: 18px;
-    }
+    font-size: clamp(1.125rem, 1.05rem + 0.5vw, 1.375rem);
   }
 `;

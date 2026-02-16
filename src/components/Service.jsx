@@ -18,7 +18,7 @@ export default Service;
 const Article = styled.article`
   border-radius: 6px;
   padding: 20px;
-  height: 22rem;
+  height: 20rem;
   background: #fff;
   display: flex;
   flex-direction: column;
